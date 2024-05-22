@@ -1,0 +1,27 @@
+#* */4 * * * python3 /home/ebo/conella.py > /dev/null 2>&1
+#* */4 * * * python3 /home/ebo/jav.py > /dev/null 2>&1
+#* */2 * * * python3 /home/ebo/shez.py > /dev/null 2>&1
+#* */2 * * * php /home/ebo/parse/hn_review.php > /dev/null 2>&1
+#* */2 * * * php /home/ebo/parse/thezam_review.php > /dev/null 2>&1
+#* */2 * * * php /home/ebo/parse/come.php > /dev/null 2>&1
+#* */2 * * * php /home/ebo/parse/bbong_review.php > /dev/null 2>&1
+#* */2 * * * php /home/ebo/parse/dorosi_review.php > /dev/null 2>&1
+#* */2 * * * php /home/ebo/parse/soul_review.php > /dev/null 2>&1
+#* */2 * * * php /home/ebo/parse/play_review.php > /dev/null 2>&1
+#* */2 * * * php /home/ebo/parse/love_review.php > /dev/null 2>&1
+#* */2 * * * php /home/ebo/parse/bali_review.php > /dev/null 2>&1
+#* 06 * * * php /home/ebo/parse/delete_query.php > /dev/null 2>&1
+* */1 * * * php /var/www/ebo/public_html/subject.php > /dev/null 2>&1
+* */1 * * * sleep 59; python3 /home/ebo/subject_count.py > /dev/null 2>&1
+#*/10 * * * * php /home/ebo/parse/eto_free_ela.php > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/clien_def_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/eto_def_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/ddanzi_free_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/ppomppu_def_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/ppomppu_humor_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/ppomppu_free_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/todayhumor_def_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/slrclub_def_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/ruliweb_def_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/bobae_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/utdae_ela.py > /dev/null 2>&1

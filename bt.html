@@ -1,0 +1,1938 @@
+<html lang="ko"><head>
+<script type="text/javascript">
+</script>
+<!-- meta tags -->
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes" name="viewport"/>
+<meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+<!-- favicon 임시 처리 -->
+<link href="/images/comm/favicon.ico" rel="shrtcut icon"/>
+<link href="/images/comm/favicon.png" rel="apple-touch-icon-precomposed"/>
+<!-- libraries -->
+<script src="/js/jquery.js" type="text/javascript"></script>
+<script src="/js/jquery-ui.js" type="text/javascript"></script>
+<script src="/js/jquery.bxslider.min.js" type="text/javascript"></script>
+<script src="/js/jquery.dataTables.min.origin.js" type="text/javascript"></script>
+<script src="/js/dataTables.fixedColumns.min.js" type="text/javascript"></script>
+<script src="/js/jquery.ui.monthpicker.js" type="text/javascript"></script>
+<script src="/js/jquery.history.js" type="text/javascript"></script>
+<!-- 퍼블리싱팀 영역 -->
+<link href="/css/ui-common.css" rel="stylesheet" type="text/css"/>
+<script src="/js/ui-common.js" type="text/javascript"></script>
+<!-- 공통 개발팀 영역 -->
+<script src="/js/requestClient.js" type="text/javascript"></script>
+<script src="/js/loading-common.js" type="text/javascript"></script>
+<script src="/js/code-common.js" type="text/javascript"></script>
+<script src="/js/serialize-common.js" type="text/javascript"></script>
+<script src="/js/message-common.js" type="text/javascript"></script>
+<script src="/js/grid-common.js" type="text/javascript"></script>
+<script src="/js/BUICommon.js" type="text/javascript"></script>
+<script src="/js/login.js" type="text/javascript"></script>
+<script src="/js/common.js" type="text/javascript"></script>
+<!-- 임시 영역 -->
+<link href="/css/jquery.dataTables.min.origin.css" rel="stylesheet" type="text/css"/>
+<link href="/js/betcoach/betcoach.style.css" rel="stylesheet" type="text/css"/>
+<script src="/js/betcoach/betcoach.js" type="text/javascript"></script>
+<script src="/js/betcoach/mybetcoach.js" type="text/javascript"></script>
+<script src="/js/betcoach/betcoach.drawer.js" type="text/javascript"></script>
+<script src="/js/betcoach/betcoach.util.js" type="text/javascript"></script>
+<script src="/js/betcoach/betcoach.on.js" type="text/javascript"></script>
+<title>축구토토 승무패 | BETMAN</title></head>
+<body>
+<!-- html 전체 wrapper  -->
+<div class="docWrap">
+<!-- mobile top 영역 -->
+<script src="/js/makePCookie.js;jsessionid=o0nbY80kzD8WeAvoToh1ccdNqr6DNzevDB1xgACCNW9qA6lan8Iq7fkfjSXkGMqW.amV1c19kb21haW4vTWJldG1hbjIx" type="text/javascript"></script> <!-- 2020.08.24 황용민대리 요청으로 추가 -->
+<script src="/js/clickEvent.js;jsessionid=o0nbY80kzD8WeAvoToh1ccdNqr6DNzevDB1xgACCNW9qA6lan8Iq7fkfjSXkGMqW.amV1c19kb21haW4vTWJldG1hbjIx" type="text/javascript"></script>
+<!-- 스포츠토토 사이트 연계 관련 탑,푸터 영역 숨김처리 -->
+<!-- 
+화면 기준 PC메뉴는 3단계, 모바일메뉴는 2단계임
+
+* 메뉴별 button class 가 다름 
+	1. 게임정보 iconGameInfo01
+	2. 경기정보 iconGameInfo02
+	3. 토토카페 iconTotoCafe
+	4. 고객센터 iconCustomer
+	5. 마이페이지 iconMyPage
+-->
+<!-- skip navi -->
+<div class="skipNavi">
+<ul>
+<li><a href="#container">본문 바로가기</a></li>
+<li><a href="#nav">주 메뉴 바로가기</a></li>
+<li><a href="#footer">하단 푸터 바로가기</a></li>
+</ul>
+</div>
+<!-- //skip navi -->
+<!-- header -->
+<header id="header">
+<div class="headerArea">
+<div class="headerTop">
+<h1 class="mLogo"><a href="javascript:movePage('0', '/');"><img alt="betman" src="/images/comm/mLogo.png"/></a></h1>
+<!-- 상세 메뉴 -->
+<div class="hMenu">
+<button class="hmBtn" type="button"><span class="blind">상세 메뉴 열기</span></button>
+<div class="hmMask"></div>
+<div class="hmArea">
+<h2 class="blind">상세 메뉴</h2>
+<div class="hmLogo"><img alt="betman" src="/images/comm/hmLogo.png"/></div>
+<div class="hmQuick">
+<!-- 로그아웃 상테 -->
+<div class="hmqLogout">
+<div class="hmqTopInfo">
+<p class="hmqTxt"><strong>베트맨</strong>에 오신것을 환영합니다.</p>
+</div>
+<div class="hmqTopMenu">
+<a class="iconLogin01" onclick="openLoginPage();"><span>로그인</span></a>
+<a class="iconLogin02" href="javascript:movePage('0', '/main/mainPage/mbrsvc/join/joinMbrMain.do');"><span>회원가입</span></a>
+<a class="iconLogin03" href="javascript:movePage('0', '/main/mainPage/mbrsvc/mobFindIdResetPwd.do?cmd=findId');"><span>아이디찾기</span></a>
+</div>
+</div>
+<!-- //로그아웃 상태 -->
+<!-- 로그인 상테 -->
+<!-- //로그인 상태 -->
+</div>
+<div class="htMenu">
+<ul class="htList01 acdWrap">
+<!-- 메뉴별 button class 가 다름 (iconArry)
+   							1. 게임정보 iconGameInfo01
+   							2. 경기정보 iconGameInfo02
+   							3. 토토카페 iconTotoCafe
+   							4. 고객센터 iconCustomer
+   							5. 마이페이지 iconMyPage
+   							6. 회원서비스 iconMyPage
+   							7. ~ 10: ""
+   						-->
+<!-- 첫번째 대메뉴  -->
+<!-- <li> -->
+<li class="htDepth01 acdTit">
+<button class="iconGameInfo01 acdBtn" type="button"><span class="txt">게임정보</span><span class="acdTxt">하위 메뉴 열기</span></button>
+<ul class="htList02 acdCon">
+<!-- buyable -->
+<li class="htDepth02">
+<a href="javascript:movePage('302010000', '/main/mainPage/gamebuy/buyableGameList.do');"><span>발매중게임</span><span class="num">0</span></a>
+</li>
+<!-- 자식메뉴 -->
+<li class="htDepth02">
+<a href="javascript:movePage('302020000', '/main/mainPage/gamebuy/closedGameList.do');"><span>마감게임</span></a>
+</li>
+<!-- 자식메뉴 -->
+<li class="htDepth02">
+<a href="javascript:movePage('302030000', '/main/mainPage/gamebuy/gameSchedule/listView.do');"><span>게임일정</span></a>
+</li>
+<!-- 자식메뉴 -->
+<li class="htDepth02">
+<a href="javascript:movePage('302040000', '/main/mainPage/gamebuy/winrstList.do');"><span>적중결과</span></a>
+</li>
+</ul>
+</li>
+<!-- 첫번째가 아닌 대메뉴 -->
+<li class="htDepth01 acdTit">
+<!-- <button type="button" class="iconGameInfo02 acdBtn"> -->
+<button class="iconGameInfo02 acdBtn" type="button">
+<span class="txt">경기정보</span><span class="acdTxt">하위 메뉴 열기</span></button>
+<ul class="htList02 acdCon">
+<!-- 자식메뉴 -->
+<li class="htDepth02">
+<a href="javascript:movePage('303010000', '/main/mainPage/matchinfo/mobLivescreMch.do');"><span>경기별 스코어</span></a>
+</li>
+<!-- 자식메뉴 -->
+<li class="htDepth02">
+<a href="javascript:movePage('303020000', '/main/mainPage/matchinfo/mobLivescreGame.do');"><span>게임별 스코어</span></a>
+</li>
+<!-- 자식메뉴 -->
+<li class="htDepth02">
+<a href="javascript:movePage('303030000', '/main/mainPage/gameinfo/totoGuideEbook.do');"><span>토토가이드</span></a>
+</li>
+</ul>
+</li>
+<!-- 첫번째가 아닌 대메뉴 -->
+<li class="htDepth01 acdTit">
+<!-- <button type="button" class="iconGameInfo02 acdBtn"> -->
+<button class="iconTotoCafe acdBtn" type="button">
+<span class="txt">토토카페</span><span class="acdTxt">하위 메뉴 열기</span></button>
+<ul class="htList02 acdCon">
+<!-- 자식메뉴 -->
+<li class="htDepth02">
+<a href="javascript:movePage('304010000', '/main/mainPage/totocafe/totocafeHonorHall.do');"><span>명예의전당</span></a>
+</li>
+<!-- 자식메뉴 -->
+<li class="htDepth02">
+<a href="javascript:movePage('304020000', '/main/mainPage/totocafe/totocafeBuyPick.do');"><span>구매픽</span></a>
+</li>
+<!-- 자식메뉴 -->
+<li class="htDepth02">
+<a href="javascript:movePage('304030000', '/main/mainPage/totocafe/totocafeWinShare.do');"><span>적중공유</span></a>
+</li>
+<!-- 자식메뉴 -->
+<li class="htDepth02">
+<a href="javascript:movePage('304040000', '/main/mainPage/totocafe/totocafeFreeBoard.do');"><span>자유게시판</span></a>
+</li>
+<!-- 자식메뉴 -->
+<li class="htDepth02">
+<a href="javascript:movePage('304050000', '/main/mainPage/totocafe/betPointGuidance.do');"><span>벳포인트</span></a>
+</li>
+</ul>
+</li>
+<!-- 첫번째가 아닌 대메뉴 -->
+<li class="htDepth01 acdTit">
+<!-- <button type="button" class="iconGameInfo02 acdBtn"> -->
+<button class="iconCustomer acdBtn" type="button">
+<span class="txt">고객센터</span><span class="acdTxt">하위 메뉴 열기</span></button>
+<ul class="htList02 acdCon">
+<!-- 자식메뉴 -->
+<li class="htDepth02">
+<a href="javascript:movePage('305010000', '/main/mainPage/customercenter/notice.do');"><span>공지사항</span></a>
+</li>
+<li class="htDepth02">
+<a href="javascript:movePage('305020000', '/main/mainPage/customercenter/personalInfoPolicy.do');"><span><strong>개인정보처리방침</strong></span></a>
+</li>
+<!-- 자식메뉴 -->
+<li class="htDepth02">
+<a href="javascript:movePage('305030000', '/main/mainPage/customercenter/agreement.do');"><span>이용약관</span></a>
+</li>
+<!-- 자식메뉴 -->
+<li class="htDepth02">
+<a href="javascript:movePage('305040000', '/main/mainPage/customercenter/operationPolicy.do');"><span>운영정책</span></a>
+</li>
+<!-- 자식메뉴 -->
+<li class="htDepth02">
+<a href="javascript:movePage('305050000', '/main/mainPage/customercenter/winrstOffline.do');"><span>오프라인 영수증 조회</span></a>
+</li>
+</ul>
+</li>
+<!-- 첫번째가 아닌 대메뉴 -->
+<!-- mypg -->
+<!-- mypg -->
+<!-- mypg -->
+<!-- mypg -->
+<!-- mypg -->
+<!-- mypg -->
+<!-- mypg -->
+</ul>
+</div>
+<button class="hmCloseBtn" type="button"><span class="blind">상세메뉴 닫기</span></button>
+</div>
+</div>
+<!-- //상세 메뉴 -->
+</div>
+<div class="headerBtm">
+<h2 class="blind">메인 메뉴</h2>
+<!-- //주 메뉴 -->
+<nav class="mMenu" id="nav">
+<ul class="mmList">
+<li id="home">
+<a href="/"><span class="txt">홈</span></a>
+</li>
+<li class="active">
+<a href="javascript:movePage('302000000', '', '3');"><span class="txt">게임정보</span></a>
+</li>
+<li>
+<a href="javascript:movePage('303000000', '', '3');"><span class="txt">경기정보</span></a>
+</li>
+<li>
+<a href="javascript:movePage('304000000', '', '3');"><span class="txt">토토카페</span></a>
+</li>
+<li>
+<a href="javascript:movePage('305000000', '', '3');"><span class="txt">고객센터</span></a>
+</li>
+<!-- mypg -->
+</ul>
+</nav>
+<!-- //상세 메뉴 -->
+</div>
+</div>
+</header>
+<!-- //header -->
+<script>
+var isMobile = true;
+var isLogin = false;
+
+$(function (){
+	//구매가능게임수 - SNB 네이게이션 바를 클릭하여 메뉴가 펼쳐지는 시점에만 조회
+	$(document).on("click", '.hMenu button.hmBtn', function(){
+		requestClient.requestPostMethod("/main/inqBuyPsblGameCnt.do", {}, true, function(returnData){
+			$(".htDepth02 .num").text(returnData.buyPsblGameCnt);
+		});
+	});
+	
+	if(false) {
+		//betmanOnlineFront.loginVO = loginVO;
+	    //$('#btnLogin').html(' Welcome <a onClick="openLogoutPop(); return false;">Logout</a>');	
+		
+	    var loginInfo = {"id": '',
+	    		"name": '',
+	    		"ihidNum": '',
+	    		"email": '',
+	    		"password": '',
+	    		"passwordHint": '',
+	    		"passwordCnsr": '',
+	    		"userSe": '',
+	    		"orgnztId": '',
+	    		"orgnztNm": '',
+	    		"uniqId": '',
+	    		"url": '',
+	    		"ip": '',
+	    		"dn": ''			    		
+	    };
+	    	
+	    login.Info(loginInfo);
+		
+		
+		showConncTime();
+		
+		//알림
+		//notiCntInqCallback();
+	} else {
+		//$('#btnLogin').html('<a onClick="openLoginPage();">로그인</a>');
+	}
+});
+
+function openLogoutDlg() {
+	
+    if( !confirm("로그아웃 하시겠습니까?") ) {
+        return;
+    }
+	
+	var data = {};
+	var url = '/egov/uat/uia/actionLogout.do;jsessionid=o0nbY80kzD8WeAvoToh1ccdNqr6DNzevDB1xgACCNW9qA6lan8Iq7fkfjSXkGMqW.amV1c19kb21haW4vTWJldG1hbjIx';
+	requestClient.requestPostMethod(url, data, true, function(returnData) {
+		if(returnData.rsMsg.statusCode == 'S'){
+// 			window.location.href = "/";
+			window.location.replace("/");
+			
+/*			
+// 			window.location = window.location.href + "&logout=1";
+			if(window.location.href.indexOf("?") > -1) window.location.href = window.location.href + "&logout=1";
+			else window.location.href = window.location.href + "?logout=1";
+// 			window.location.reload(true)	//logout parameter가 있어야 accessDenied에서 로그아웃 여부를 체크할 수 있기 때문에 주석처리
+*/
+		}
+		else{
+// 			alert(returnData.rsMsg.message); return;
+			//로그아웃 시 오류 발생
+// 			window.location.href = "/";
+			window.location.replace("/");
+		}
+	});
+}
+
+
+function openLoginPage()
+{
+	var url = '/main/mainPage/mbrsvc/mobLoginUsr.do';
+	location.href = url;
+}
+
+/**
+ * 로그인 창 호출 : 로그인 완료 후 특정 url 호출 필요한 경우
+ * @param reqUrl : 로그인 성공 후 호출할 url
+ */
+function openLoginPageMark(reqUrl)
+{
+	var url = '/main/mainPage/mbrsvc/mobLoginUsr.do?reqUrl=' + reqUrl;
+	location.href = url;
+}
+</script>
+<script>
+    function movePage (menuNo, menuUrl, menuLevel) {
+    	var currentUri = window.location.pathname;
+    	//해당 GNB가 URL을 가지고 있다면 이동
+    	if (menuUrl != null && menuUrl != "") {
+    		
+        	if (typeof menuLevel != 'undefined' && menuLevel == '3') {
+	    		var splitUrl = menuUrl.split("/");
+        		clickEvent('common', 'gnb', splitUrl[3]);
+        	}
+        	
+        	if (menuNo == '0' && menuUrl.indexOf('mypgNoticeMain') > -1) {
+        		clickEvent('common', 'alarm', '');
+        	}
+        	
+    		// 20200707 KKB 구매가능게임 쪽 check 추가 요청(유진주책임)
+    		if (currentUri != null && currentUri != "" && currentUri == "/main/mainPage/gamebuy/gameSlip.do") {
+    			var rtn = slipUtil.getPageVariable().checkSelectedItemValue();
+    			
+    			if (rtn != null && rtn != "") {
+					if (!confirm(getMessage(rtn))) {
+						return;
+					}
+    			}
+    		}
+    		
+    		location.href = menuUrl;
+    	} else {
+    		//해당 GNB가 URL을 가지고 있지 않다면 첫번째 자식메뉴의 URL로 이동
+			var menuObj = [{"menuLevel":1,"menuPath":"MobileRoot","menuNm":"MobileRoot","programFileName":"MobileDir","menuNo":"300000000","upperMenuNo":"0","menuOrdr":1,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"N","programUrl":null,"frameTypeCd":null,"gnbMenuNo":null,"lnbMenuNo":null,"needAuth":false},{"menuLevel":2,"menuPath":"  메인","menuNm":"메인","programFileName":"MobileDir","menuNo":"301000000","upperMenuNo":"300000000","menuOrdr":1,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":null,"frameTypeCd":null,"gnbMenuNo":null,"lnbMenuNo":null,"needAuth":false},{"menuLevel":3,"menuPath":"  ㅏ게임정보","menuNm":"게임정보","programFileName":"MobileDir","menuNo":"302000000","upperMenuNo":"301000000","menuOrdr":1,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":null,"frameTypeCd":null,"gnbMenuNo":"302000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ발매중게임","menuNm":"발매중게임","programFileName":"uiMGP001","menuNo":"302010000","upperMenuNo":"302000000","menuOrdr":1,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/gamebuy/buyableGameList.do","frameTypeCd":"1","gnbMenuNo":"302000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ발매중게임 상세","menuNm":"발매중게임 상세","programFileName":"uiMGP001_1","menuNo":"302010100","upperMenuNo":"302010000","menuOrdr":1,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/gamebuy/gameSlip.do","frameTypeCd":"1","gnbMenuNo":"302000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ마감게임","menuNm":"마감게임","programFileName":"uiMGP200","menuNo":"302020000","upperMenuNo":"302000000","menuOrdr":2,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/gamebuy/closedGameList.do","frameTypeCd":"1","gnbMenuNo":"302000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ마감게임 상세","menuNm":"마감게임 상세","programFileName":"uiMGP200_1","menuNo":"302020100","upperMenuNo":"302020000","menuOrdr":1,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/gamebuy/closedGameSlip.do","frameTypeCd":"1","gnbMenuNo":"302000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ게임일정","menuNm":"게임일정","programFileName":"uiMGP126","menuNo":"302030000","upperMenuNo":"302000000","menuOrdr":3,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/gamebuy/gameSchedule/listView.do","frameTypeCd":"1","gnbMenuNo":"302000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ게임일정 상세","menuNm":"게임일정 상세","programFileName":"uiMGP126_1","menuNo":"302030100","upperMenuNo":"302030000","menuOrdr":1,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/gamebuy/gameSchedule.do","frameTypeCd":"1","gnbMenuNo":"302000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ적중결과","menuNm":"적중결과","programFileName":"uiMGP159","menuNo":"302040000","upperMenuNo":"302000000","menuOrdr":4,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/gamebuy/winrstList.do","frameTypeCd":"1","gnbMenuNo":"302000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ적중결과 상세","menuNm":"적중결과 상세","programFileName":"uiMGP159_1","menuNo":"302040100","upperMenuNo":"302040000","menuOrdr":1,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/gamebuy/winrstDetl.do","frameTypeCd":"1","gnbMenuNo":"302000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":3,"menuPath":"  ㅏ경기정보","menuNm":"경기정보","programFileName":"MobileDir","menuNo":"303000000","upperMenuNo":"301000000","menuOrdr":2,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":null,"frameTypeCd":null,"gnbMenuNo":"303000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ경기별 스코어","menuNm":"경기별 스코어","programFileName":"uiMGI001","menuNo":"303010000","upperMenuNo":"303000000","menuOrdr":1,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/matchinfo/mobLivescreMch.do","frameTypeCd":"1","gnbMenuNo":"303000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ게임별 스코어","menuNm":"게임별 스코어","programFileName":"uiMGI007","menuNo":"303020000","upperMenuNo":"303000000","menuOrdr":2,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/matchinfo/mobLivescreGame.do","frameTypeCd":"1","gnbMenuNo":"303000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ월드컵","menuNm":"월드컵","programFileName":"uiMGI010","menuNo":"30303010000000","upperMenuNo":"303000000","menuOrdr":3,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[{"searchCondition":"","searchKeyword":"","searchUseYn":"","pageIndex":1,"pageUnit":10,"pageSize":10,"firstIndex":1,"lastIndex":1,"recordCountPerPage":10,"searchKeywordFrom":"","searchKeywordTo":"","menuNo":"30303010000000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y","frstRefistPnttm":null,"frstRegisterId":"D4005140","lastUpdusrId":"D4005140","lastUpdtPnttm":1667972470000,"menuNm":"월드컵","sysCode":"MOBILE"}],"userMenuAuth":{"menuNo":"30303010000000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y"},"emgcOffUseAt":"Y","programUrl":"/main/mainPage/etc/worldcup.do","frameTypeCd":"1","gnbMenuNo":null,"lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ토토가이드","menuNm":"토토가이드","programFileName":"uiMGI009","menuNo":"303030000","upperMenuNo":"303000000","menuOrdr":4,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/gameinfo/totoGuideEbook.do","frameTypeCd":"1","gnbMenuNo":"303000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":3,"menuPath":"  ㅏ토토카페","menuNm":"토토카페","programFileName":"MobileDir","menuNo":"304000000","upperMenuNo":"301000000","menuOrdr":3,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":null,"frameTypeCd":null,"gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ명예의전당","menuNm":"명예의전당","programFileName":"uiMBT001","menuNo":"304010000","upperMenuNo":"304000000","menuOrdr":1,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/totocafe/totocafeHonorHall.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ명예의전당 상세","menuNm":"명예의전당 상세","programFileName":"uiMBT001_1","menuNo":"304010100","upperMenuNo":"304010000","menuOrdr":1,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/totocafe/mbrActInfo.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ구매픽","menuNm":"구매픽","programFileName":"uiMBT002","menuNo":"304020000","upperMenuNo":"304000000","menuOrdr":2,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/totocafe/totocafeBuyPick.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ구매픽 상세","menuNm":"구매픽 상세","programFileName":"uiMBT002_1","menuNo":"304020100","upperMenuNo":"304020000","menuOrdr":1,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/totocafe/totocafeBuyPickDetail.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ구매픽_작성","menuNm":"구매픽_작성","programFileName":"uiMBT002_2","menuNo":"304020200","upperMenuNo":"304020000","menuOrdr":2,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"N","programUrl":"/main/mainPage/totocafe/totocafeBuyPickWrite.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ적중공유","menuNm":"적중공유","programFileName":"uiMBT005","menuNo":"304030000","upperMenuNo":"304000000","menuOrdr":3,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/totocafe/totocafeWinShare.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ적중공유 상세","menuNm":"적중공유 상세","programFileName":"uiMBT005_1","menuNo":"304030100","upperMenuNo":"304030000","menuOrdr":1,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/totocafe/winShareDetail.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ적중공유_작성","menuNm":"적중공유_작성","programFileName":"uiMBT005_2","menuNo":"304030200","upperMenuNo":"304030000","menuOrdr":2,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"N","programUrl":"/main/mainPage/totocafe/totocafeWinShareWrite.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ자유게시판","menuNm":"자유게시판","programFileName":"uiMBT008","menuNo":"304040000","upperMenuNo":"304000000","menuOrdr":4,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/totocafe/totocafeFreeBoard.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ자유게시판 상세","menuNm":"자유게시판 상세","programFileName":"uiMBT008_1","menuNo":"304040100","upperMenuNo":"304040000","menuOrdr":1,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/totocafe/totocafeFreeBoardDetail.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ자유게시판_작성","menuNm":"자유게시판_작성","programFileName":"uiMBT008_2","menuNo":"304040200","upperMenuNo":"304040000","menuOrdr":2,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"N","programUrl":"/main/mainPage/totocafe/totocafeFreeBoardWrite.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ벳포인트","menuNm":"벳포인트","programFileName":"uiMBT051","menuNo":"304050000","upperMenuNo":"304000000","menuOrdr":5,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/totocafe/betPointGuidance.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ벳포인트_전환","menuNm":"벳포인트_전환","programFileName":"uiMBT051_1","menuNo":"304050100","upperMenuNo":"304050000","menuOrdr":1,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"N","programUrl":"/main/mainPage/totocafe/changeBetPoint.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ모의체험","menuNm":"모의체험","programFileName":"uiMBT053","menuNo":"304060000","upperMenuNo":"304000000","menuOrdr":6,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/totocafe/mockList.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ모의체험 참여","menuNm":"모의체험 참여","programFileName":"uiMBT054","menuNo":"304060100","upperMenuNo":"304060000","menuOrdr":1,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/totocafe/mockJoin.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ참여/적중 내역 목록","menuNm":"참여/적중 내역 목록","programFileName":"uiMBT055","menuNo":"304060200","upperMenuNo":"304060000","menuOrdr":2,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/totocafe/mockJoinList.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ참여/적중 내역 상세","menuNm":"참여/적중 내역 상세","programFileName":"uiMBT056","menuNo":"304060300","upperMenuNo":"304060000","menuOrdr":3,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/totocafe/mockJoinView.do","frameTypeCd":"1","gnbMenuNo":"304000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":3,"menuPath":"  ㅏ고객센터","menuNm":"고객센터","programFileName":"MobileDir","menuNo":"305000000","upperMenuNo":"301000000","menuOrdr":4,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":null,"frameTypeCd":null,"gnbMenuNo":"305000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ공지사항","menuNm":"공지사항","programFileName":"uiMCC001","menuNo":"305010000","upperMenuNo":"305000000","menuOrdr":1,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[{"searchCondition":"","searchKeyword":"","searchUseYn":"","pageIndex":1,"pageUnit":10,"pageSize":10,"firstIndex":1,"lastIndex":1,"recordCountPerPage":10,"searchKeywordFrom":"","searchKeywordTo":"","menuNo":"305010000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y","frstRefistPnttm":null,"frstRegisterId":"DEVELOPER12","lastUpdusrId":"DEVELOPER12","lastUpdtPnttm":1601339436000,"menuNm":"공지사항","sysCode":"MOBILE"}],"userMenuAuth":{"menuNo":"305010000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y"},"emgcOffUseAt":"Y","programUrl":"/main/mainPage/customercenter/notice.do","frameTypeCd":"1","gnbMenuNo":"305000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ개인정보처리방침","menuNm":"개인정보처리방침","programFileName":"uiMCC003","menuNo":"305020000","upperMenuNo":"305000000","menuOrdr":2,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[{"searchCondition":"","searchKeyword":"","searchUseYn":"","pageIndex":1,"pageUnit":10,"pageSize":10,"firstIndex":1,"lastIndex":1,"recordCountPerPage":10,"searchKeywordFrom":"","searchKeywordTo":"","menuNo":"305020000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y","frstRefistPnttm":null,"frstRegisterId":"DEVELOPER12","lastUpdusrId":"DEVELOPER12","lastUpdtPnttm":1601339445000,"menuNm":"개인정보처리방침","sysCode":"MOBILE"}],"userMenuAuth":{"menuNo":"305020000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y"},"emgcOffUseAt":"Y","programUrl":"/main/mainPage/customercenter/personalInfoPolicy.do","frameTypeCd":"1","gnbMenuNo":"305000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ이용약관","menuNm":"이용약관","programFileName":"uiMCC004","menuNo":"305030000","upperMenuNo":"305000000","menuOrdr":3,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[{"searchCondition":"","searchKeyword":"","searchUseYn":"","pageIndex":1,"pageUnit":10,"pageSize":10,"firstIndex":1,"lastIndex":1,"recordCountPerPage":10,"searchKeywordFrom":"","searchKeywordTo":"","menuNo":"305030000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y","frstRefistPnttm":null,"frstRegisterId":"DEVELOPER12","lastUpdusrId":"DEVELOPER12","lastUpdtPnttm":1601339452000,"menuNm":"이용약관","sysCode":"MOBILE"}],"userMenuAuth":{"menuNo":"305030000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y"},"emgcOffUseAt":"Y","programUrl":"/main/mainPage/customercenter/agreement.do","frameTypeCd":"1","gnbMenuNo":"305000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ운영정책","menuNm":"운영정책","programFileName":"uiMCC005","menuNo":"305040000","upperMenuNo":"305000000","menuOrdr":4,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[{"searchCondition":"","searchKeyword":"","searchUseYn":"","pageIndex":1,"pageUnit":10,"pageSize":10,"firstIndex":1,"lastIndex":1,"recordCountPerPage":10,"searchKeywordFrom":"","searchKeywordTo":"","menuNo":"305040000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y","frstRefistPnttm":null,"frstRegisterId":"DEVELOPER12","lastUpdusrId":"DEVELOPER12","lastUpdtPnttm":1601339466000,"menuNm":"운영정책","sysCode":"MOBILE"}],"userMenuAuth":{"menuNo":"305040000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y"},"emgcOffUseAt":"Y","programUrl":"/main/mainPage/customercenter/operationPolicy.do","frameTypeCd":"1","gnbMenuNo":"305000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ오프라인 영수증 조회","menuNm":"오프라인 영수증 조회","programFileName":"uiMCC006","menuNo":"305050000","upperMenuNo":"305000000","menuOrdr":5,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[{"searchCondition":"","searchKeyword":"","searchUseYn":"","pageIndex":1,"pageUnit":10,"pageSize":10,"firstIndex":1,"lastIndex":1,"recordCountPerPage":10,"searchKeywordFrom":"","searchKeywordTo":"","menuNo":"305050000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y","frstRefistPnttm":null,"frstRegisterId":"DEVELOPER12","lastUpdusrId":"DEVELOPER12","lastUpdtPnttm":1601339473000,"menuNm":"오프라인 영수증 조회","sysCode":"MOBILE"}],"userMenuAuth":{"menuNo":"305050000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y"},"emgcOffUseAt":"Y","programUrl":"/main/mainPage/customercenter/winrstOffline.do","frameTypeCd":"1","gnbMenuNo":"305000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":3,"menuPath":"  ㅏ마이페이지","menuNm":"마이페이지","programFileName":"MobileDir","menuNo":"306000000","upperMenuNo":"301000000","menuOrdr":5,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"N","programUrl":null,"frameTypeCd":null,"gnbMenuNo":"306000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏMY홈","menuNm":"MY홈","programFileName":"uiMMP001","menuNo":"306010000","upperMenuNo":"306000000","menuOrdr":1,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/mypage/mypageMain.do","frameTypeCd":"1","gnbMenuNo":"306000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ구매/적중내역","menuNm":"구매/적중내역","programFileName":"uiMMP005","menuNo":"306020000","upperMenuNo":"306000000","menuOrdr":2,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/mypage/myPurchaseWinList.do","frameTypeCd":"1","gnbMenuNo":"306000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ구매/적중내역 상세","menuNm":"구매/적중내역 상세","programFileName":"uiMMP005_1","menuNo":"306020100","upperMenuNo":"306020000","menuOrdr":1,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/mypage/myPurchaseWinDetail.do","frameTypeCd":"1","gnbMenuNo":"306000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ예치금","menuNm":"예치금","programFileName":"uiMMP046","menuNo":"306030000","upperMenuNo":"306000000","menuOrdr":3,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/mypage/mypgDsmnList.do","frameTypeCd":"1","gnbMenuNo":"306000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ예치금충전","menuNm":"예치금충전","programFileName":"uiMMP046_1","menuNo":"306030200","upperMenuNo":"306030000","menuOrdr":1,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"N","programUrl":"/main/mainPage/mypage/mypgDsmnFilling.do","frameTypeCd":"1","gnbMenuNo":"306000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ예치금출금","menuNm":"예치금출금","programFileName":"uiMMP046_2","menuNo":"306030300","upperMenuNo":"306030000","menuOrdr":2,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"N","programUrl":"/main/mainPage/mypage/mypgDsmnPaymentList.do","frameTypeCd":"1","gnbMenuNo":"306000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ예치금출금_출금 신청서 작성","menuNm":"예치금출금_출금 신청서 작성","programFileName":"uiMMP046_3","menuNo":"306030400","upperMenuNo":"306030000","menuOrdr":3,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"N","programUrl":"/main/mainPage/mypage/mypgDsmnPaymentPage.do","frameTypeCd":"1","gnbMenuNo":"306000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ예치금출금_출금 신청 접수 완료","menuNm":"예치금출금_출금 신청 접수 완료","programFileName":"uiMMP046_4","menuNo":"306030500","upperMenuNo":"306030000","menuOrdr":4,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"N","programUrl":"/main/mainPage/mypage/mypgDsmnPaymentPageChk.do","frameTypeCd":"1","gnbMenuNo":"306000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ알림센터","menuNm":"알림센터","programFileName":"uiMMP056","menuNo":"306040000","upperMenuNo":"306000000","menuOrdr":4,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/mypage/mypgNoticeMain.do","frameTypeCd":"1","gnbMenuNo":"306000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ1:1문의","menuNm":"1:1문의","programFileName":"uiMMP058","menuNo":"306050000","upperMenuNo":"306000000","menuOrdr":5,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/mypage/rgstQestnList.do","frameTypeCd":"1","gnbMenuNo":"306000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ개인정보","menuNm":"개인정보","programFileName":"uiMMP002","menuNo":"306060000","upperMenuNo":"306000000","menuOrdr":6,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/mypage/mypgUserInfo.do","frameTypeCd":"1","gnbMenuNo":"306000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ개인정보수정","menuNm":"개인정보수정","programFileName":"uiMMP002_1","menuNo":"306060100","upperMenuNo":"306060000","menuOrdr":1,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"Y","programUrl":"/main/mainPage/mbrsvc/mobMyPrsnInfoUpdt.do","frameTypeCd":"1","gnbMenuNo":"306000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ회원탈퇴","menuNm":"회원탈퇴","programFileName":"uiMMP003","menuNo":"30606010000000","upperMenuNo":"306000000","menuOrdr":7,"menuGnbYn":"Y","menuNewOpenYn":"N","authority":[{"searchCondition":"","searchKeyword":"","searchUseYn":"","pageIndex":1,"pageUnit":10,"pageSize":10,"firstIndex":1,"lastIndex":1,"recordCountPerPage":10,"searchKeywordFrom":"","searchKeywordTo":"","menuNo":"30606010000000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y","frstRefistPnttm":null,"frstRegisterId":"yunkyounglee","lastUpdusrId":"yunkyounglee","lastUpdtPnttm":1639541922000,"menuNm":"회원탈퇴","sysCode":"MOBILE"}],"userMenuAuth":{"menuNo":"30606010000000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y"},"emgcOffUseAt":"Y","programUrl":"/main/mainPage/mypage/chkPwdMbrQuit.do","frameTypeCd":"1","gnbMenuNo":"306000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ회원탈퇴신청","menuNm":"회원탈퇴신청","programFileName":"uiMMP003_1","menuNo":"30606010100000","upperMenuNo":"30606010000000","menuOrdr":1,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[{"searchCondition":"","searchKeyword":"","searchUseYn":"","pageIndex":1,"pageUnit":10,"pageSize":10,"firstIndex":1,"lastIndex":1,"recordCountPerPage":10,"searchKeywordFrom":"","searchKeywordTo":"","menuNo":"30606010100000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y","frstRefistPnttm":null,"frstRegisterId":"yunkyounglee","lastUpdusrId":"yunkyounglee","lastUpdtPnttm":1639541952000,"menuNm":"회원탈퇴신청","sysCode":"MOBILE"}],"userMenuAuth":{"menuNo":"30606010100000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y"},"emgcOffUseAt":"N","programUrl":"/main/mainPage/mbrsvc/myMbrQuitGuide.do","frameTypeCd":"1","gnbMenuNo":"306000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":5,"menuPath":"      ㅏ회원탈퇴완료","menuNm":"회원탈퇴완료","programFileName":"uiMMP003_2","menuNo":"30606010200000","upperMenuNo":"30606010000000","menuOrdr":2,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[{"searchCondition":"","searchKeyword":"","searchUseYn":"","pageIndex":1,"pageUnit":10,"pageSize":10,"firstIndex":1,"lastIndex":1,"recordCountPerPage":10,"searchKeywordFrom":"","searchKeywordTo":"","menuNo":"30606010200000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y","frstRefistPnttm":null,"frstRegisterId":"yunkyounglee","lastUpdusrId":"yunkyounglee","lastUpdtPnttm":1639541987000,"menuNm":"회원탈퇴완료","sysCode":"MOBILE"}],"userMenuAuth":{"menuNo":"30606010200000","authorCode":"ROLE_ANONYMOUS","createAuthYn":"Y","updateAuthYn":"Y","deleteAuthYn":"Y","excelAuthYn":"Y"},"emgcOffUseAt":"N","programUrl":"/main/mainPage/mbrsvc/myMbrQuitCmpt.do","frameTypeCd":"1","gnbMenuNo":"306000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":3,"menuPath":"  ㅏ회원서비스","menuNm":"회원서비스","programFileName":"MobileDir","menuNo":"307000000","upperMenuNo":"301000000","menuOrdr":6,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"N","programUrl":null,"frameTypeCd":null,"gnbMenuNo":"307000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ회원가입","menuNm":"회원가입","programFileName":"uiMMS001","menuNo":"307010000","upperMenuNo":"307000000","menuOrdr":1,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"N","programUrl":"/main/mainPage/mbrsvc/join/joinMbrMain.do","frameTypeCd":"1","gnbMenuNo":"307000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ로그인","menuNm":"로그인","programFileName":"uiMMS008","menuNo":"307020000","upperMenuNo":"307000000","menuOrdr":2,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"N","programUrl":"/main/mainPage/mbrsvc/mobLoginUsr.do","frameTypeCd":"1","gnbMenuNo":"307000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ아이디찾기","menuNm":"아이디찾기","programFileName":"uiMMS020","menuNo":"307030000","upperMenuNo":"307000000","menuOrdr":3,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"N","programUrl":"/main/mainPage/mbrsvc/mobFindIdResetPwd.do","frameTypeCd":"1","gnbMenuNo":"307000000","lnbMenuNo":null,"needAuth":false},{"menuLevel":4,"menuPath":"    ㅏ비밀번호 재설정","menuNm":"비밀번호 재설정","programFileName":"uiMMS023","menuNo":"307040000","upperMenuNo":"307000000","menuOrdr":4,"menuGnbYn":"N","menuNewOpenYn":"N","authority":[],"userMenuAuth":null,"emgcOffUseAt":"N","programUrl":"/main/mainPage/mbrsvc/mobResetPwd.do","frameTypeCd":"1","gnbMenuNo":"307000000","lnbMenuNo":null,"needAuth":false}];
+    		var menuJson =  menuObj;
+    		
+    		for(var i = 0; i < menuJson.length; i++){
+    			if(menuJson[i].menuLevel == 4){
+    				if(menuJson[i].upperMenuNo == menuNo){
+    		    		if(currentUri != null && currentUri != "" && currentUri == "/main/mainPage/gamebuy/gameSlip.do") {
+    		    			var rtn = slipUtil.getPageVariable().checkSelectedItemValue();
+    		    			
+    		    			if(rtn != null && rtn != "") {
+    							if(!confirm(getMessage(rtn))){
+    								return;
+    							}
+    		    			}
+    		    		}
+    		    		
+    		        	
+    		    		if (typeof menuLevel != 'undefined' && menuLevel == '3') {
+	    		    		var splitUrl = menuJson[i].programUrl.split("/");
+    		    			clickEvent('common', 'gnb', splitUrl[3]);
+    		        	}
+    		        	
+    					location.href = menuJson[i].programUrl;
+    					break;
+    				}
+    			}
+    		}
+    	}
+	}
+    
+	//경과시간
+	function showConncTime() {
+		if($('.hmqTopInfo .hmqTime').contents().length == 0) return;
+		var lastLoginTime = localStorage.getItem('lastLoginTime');
+		
+		var second = 1000;
+		var minute = second * 60;
+		var hour = minute * 60;
+		var day = hour * 24;
+		
+		setInterval(function() {
+			
+			var time = new Date().getTime() - lastLoginTime
+	    	var days = Math.floor(time / day);
+			var hours = Math.floor((time % day) / hour);
+			var minutes = Math.floor((time % hour) / minute);
+			var seconds = Math.floor((time % minute) / second);
+			
+			if(hours < 10) hours = "0" + hours;
+			if(seconds < 10) seconds = "0" + seconds;
+			if(minutes < 10) minutes = "0" + minutes;
+
+			$('.hmqTopInfo .hmqTime').contents().filter(function() {
+			    if(this.nodeType === 3) {
+					if(time > 0) {
+						if(time >= hour) {
+							this.textContent = hours + ":" + minutes + ":" + seconds + " 경과";
+						} else {
+							this.textContent = minutes + ":" + seconds + " 경과";
+						}	
+					} else {
+						this.textContent = "00:00";
+					}
+			    }
+			});
+		}, second);
+	}
+  
+	//알림
+	function notiCntInqCallback (result) {
+		requestClient.requestPostMethod("/main/inqMypgNotiListCnt.do", {}, true, 
+				function(result){
+					var notiCntVal = result.items.totalCnt;
+					if (notiCntVal > 0) {
+						$("#informYN").append('<span class="mark"><span class="blind">알림 있음</span></span>');
+					}
+			});
+	}
+	
+	/**
+     * 강제 로그아웃
+     */
+    function forceLogout() {
+    	requestClient.requestPostMethod('/egov/uat/uia/actionLogout.do', {}, true, 
+   			function(response) {
+	    		if(response.rsMsg.statusCode == 'S') {
+	    			/*
+	    			if(window.location.href.indexOf("?") > -1) window.location.href = window.location.href + "&logout=1";
+	    			else window.location.href = window.location.href + "?logout=1";
+	    			*/
+	    			window.location.href = "/";
+	    		}
+	    		else
+    			{
+	    			//로그아웃 시 오류 발생
+	    			window.location.href = "/";
+    			}
+   			}, 
+   			function(response) { window.location.href = '/'; }
+		);
+    }
+	
+	function moveWorldcup() { 
+		var popupUrl = 'https://api01.statiz.co.kr:444/worldcup/gameInfo/';
+		var height = 1335;
+    	var width = 455;
+		window.open(popupUrl , '월드컵 경기정보' , 'width='+width+', height='+height+',scrollbars=no');
+	}
+</script>
+<link href="/css/billboard.css" rel="stylesheet" type="text/css"/>
+<script src="/js/billboard.pkgd.min.js" type="text/javascript"></script>
+<script src="/js/snsLib.js" type="text/javascript"></script>
+<div class="content gamebuy">
+<!-- fixed title -->
+<div class="fixTitArea fixTitFn">
+<div class="ftInner">
+<a class="flPage" href="javascript:history.back();" id="slipPagePreLocation"><span class="blind">이전 페이지</span></a>
+<h3 class="flTit" id="slipPageTopTit">발매중 게임</h3>
+</div>
+</div>
+<hr class="sp"/>
+<!-- //fixed title -->
+<div class="schAcd">
+<span class="selectBox type2">
+<select class="selectMenu" id="selectBoxGameRnd" title="회차 선택"><option data-status="SaleProgress" selected="" value="G011,230051">축구토토 승무패 51회차</option><option data-status="PayoStart" value="G011,230050">축구토토 승무패 50회차</option><option data-status="PayoStart" value="G011,230049">축구토토 승무패 49회차</option><option data-status="PayoStart" value="G011,230048">축구토토 승무패 48회차</option><option data-status="PayoStart" value="G011,230047">축구토토 승무패 47회차</option><option data-status="PayoStart" value="G011,230046">축구토토 승무패 46회차</option><option data-status="PayoStart" value="G011,230045">축구토토 승무패 45회차</option><option data-status="PayoStart" value="G011,230044">축구토토 승무패 44회차</option><option data-status="PayoStart" value="G011,230043">축구토토 승무패 43회차</option><option data-status="PayoStart" value="G011,230042">축구토토 승무패 42회차</option><option data-status="PayoStart" value="G011,230041">축구토토 승무패 41회차</option><option data-status="PayoStart" value="G011,230040">축구토토 승무패 40회차</option><option data-status="PayoStart" value="G011,230039">축구토토 승무패 39회차</option><option data-status="PayoStart" value="G011,230038">축구토토 승무패 38회차</option><option data-status="PayoStart" value="G011,230037">축구토토 승무패 37회차</option><option data-status="PayoStart" value="G011,230036">축구토토 승무패 36회차</option><option data-status="PayoStart" value="G011,230035">축구토토 승무패 35회차</option><option data-status="PayoStart" value="G011,230034">축구토토 승무패 34회차</option><option data-status="PayoStart" value="G011,230033">축구토토 승무패 33회차</option><option data-status="PayoStart" value="G011,230032">축구토토 승무패 32회차</option><option data-status="PayoStart" value="G011,230031">축구토토 승무패 31회차</option><option data-status="PayoStart" value="G011,230030">축구토토 승무패 30회차</option><option data-status="PayoStart" value="G011,230029">축구토토 승무패 29회차</option><option data-status="PayoStart" value="G011,230028">축구토토 승무패 28회차</option><option data-status="PayoStart" value="G011,230027">축구토토 승무패 27회차</option><option data-status="PayoStart" value="G011,230026">축구토토 승무패 26회차</option><option data-status="PayoStart" value="G011,230025">축구토토 승무패 25회차</option><option data-status="PayoStart" value="G011,230024">축구토토 승무패 24회차</option><option data-status="PayoStart" value="G011,230023">축구토토 승무패 23회차</option><option data-status="PayoStart" value="G011,230022">축구토토 승무패 22회차</option><option data-status="PayoStart" value="G011,230021">축구토토 승무패 21회차</option><option data-status="PayoStart" value="G011,230020">축구토토 승무패 20회차</option><option data-status="PayoStart" value="G011,230019">축구토토 승무패 19회차</option><option data-status="PayoStart" value="G011,230018">축구토토 승무패 18회차</option><option data-status="PayoStart" value="G011,230017">축구토토 승무패 17회차</option><option data-status="PayoStart" value="G011,230016">축구토토 승무패 16회차</option><option data-status="PayoStart" value="G011,230015">축구토토 승무패 15회차</option><option data-status="PayoStart" value="G011,230014">축구토토 승무패 14회차</option><option data-status="PayoStart" value="G011,230013">축구토토 승무패 13회차</option><option data-status="PayoStart" value="G011,230012">축구토토 승무패 12회차</option><option data-status="PayoStart" value="G011,230011">축구토토 승무패 11회차</option><option data-status="PayoStart" value="G011,230010">축구토토 승무패 10회차</option><option data-status="PayoStart" value="G011,230009">축구토토 승무패 9회차</option><option data-status="PayoStart" value="G011,230008">축구토토 승무패 8회차</option><option data-status="PayoStart" value="G011,230007">축구토토 승무패 7회차</option><option data-status="PayoStart" value="G011,230006">축구토토 승무패 6회차</option><option data-status="PayoStart" value="G011,230005">축구토토 승무패 5회차</option><option data-status="PayoStart" value="G011,230004">축구토토 승무패 4회차</option><option data-status="PayoStart" value="G011,230003">축구토토 승무패 3회차</option><option data-status="PayoStart" value="G011,230002">축구토토 승무패 2회차</option><option data-status="PayoStart" value="G011,230001">축구토토 승무패 1회차</option><option data-status="PayoStart" value="G011,220067">축구토토 승무패 67회차</option><option data-status="PayoStart" value="G011,220066">축구토토 승무패 66회차</option><option data-status="PayoStart" value="G011,220065">축구토토 승무패 65회차</option><option data-status="PayoStart" value="G011,220064">축구토토 승무패 64회차</option><option data-status="PayoStart" value="G011,220063">축구토토 승무패 63회차</option><option data-status="PayoStart" value="G011,220062">축구토토 승무패 62회차</option><option data-status="PayoStart" value="G011,220061">축구토토 승무패 61회차</option><option data-status="PayoStart" value="G011,220060">축구토토 승무패 60회차</option><option data-status="PayoStart" value="G011,220059">축구토토 승무패 59회차</option><option data-status="PayoStart" value="G011,220058">축구토토 승무패 58회차</option><option data-status="PayoStart" value="G011,220057">축구토토 승무패 57회차</option><option data-status="PayoStart" value="G011,220056">축구토토 승무패 56회차</option><option data-status="PayoStart" value="G011,220055">축구토토 승무패 55회차</option><option data-status="PayoStart" value="G011,220054">축구토토 승무패 54회차</option><option data-status="PayoStart" value="G011,220053">축구토토 승무패 53회차</option><option data-status="PayoStart" value="G011,220052">축구토토 승무패 52회차</option><option data-status="PayoStart" value="G011,220051">축구토토 승무패 51회차</option><option data-status="PayoStart" value="G011,220050">축구토토 승무패 50회차</option><option data-status="PayoStart" value="G011,220049">축구토토 승무패 49회차</option><option data-status="PayoStart" value="G011,220048">축구토토 승무패 48회차</option><option data-status="PayoStart" value="G011,220047">축구토토 승무패 47회차</option><option data-status="CancelStart" value="G011,220046">축구토토 승무패 46회차</option><option data-status="PayoStart" value="G011,220045">축구토토 승무패 45회차</option><option data-status="PayoStart" value="G011,220044">축구토토 승무패 44회차</option><option data-status="PayoStart" value="G011,220043">축구토토 승무패 43회차</option><option data-status="PayoStart" value="G011,220042">축구토토 승무패 42회차</option><option data-status="PayoStart" value="G011,220041">축구토토 승무패 41회차</option><option data-status="PayoStart" value="G011,220040">축구토토 승무패 40회차</option><option data-status="PayoStart" value="G011,220039">축구토토 승무패 39회차</option><option data-status="PayoStart" value="G011,220038">축구토토 승무패 38회차</option><option data-status="PayoStart" value="G011,220037">축구토토 승무패 37회차</option><option data-status="PayoStart" value="G011,220036">축구토토 승무패 36회차</option><option data-status="PayoStart" value="G011,220035">축구토토 승무패 35회차</option><option data-status="PayoStart" value="G011,220034">축구토토 승무패 34회차</option><option data-status="PayoStart" value="G011,220033">축구토토 승무패 33회차</option><option data-status="PayoStart" value="G011,220032">축구토토 승무패 32회차</option><option data-status="PayoStart" value="G011,220031">축구토토 승무패 31회차</option><option data-status="PayoStart" value="G011,220030">축구토토 승무패 30회차</option><option data-status="PayoStart" value="G011,220029">축구토토 승무패 29회차</option><option data-status="PayoStart" value="G011,220028">축구토토 승무패 28회차</option><option data-status="PayoStart" value="G011,220027">축구토토 승무패 27회차</option><option data-status="PayoStart" value="G011,220026">축구토토 승무패 26회차</option><option data-status="PayoStart" value="G011,220025">축구토토 승무패 25회차</option><option data-status="PayoStart" value="G011,220024">축구토토 승무패 24회차</option><option data-status="PayoStart" value="G011,220023">축구토토 승무패 23회차</option><option data-status="PayoStart" value="G011,220022">축구토토 승무패 22회차</option><option data-status="PayoStart" value="G011,220021">축구토토 승무패 21회차</option><option data-status="PayoStart" value="G011,220020">축구토토 승무패 20회차</option><option data-status="PayoStart" value="G011,220019">축구토토 승무패 19회차</option><option data-status="PayoStart" value="G011,220018">축구토토 승무패 18회차</option><option data-status="PayoStart" value="G011,220017">축구토토 승무패 17회차</option><option data-status="PayoStart" value="G011,220016">축구토토 승무패 16회차</option><option data-status="PayoStart" value="G011,220015">축구토토 승무패 15회차</option><option data-status="PayoStart" value="G011,220014">축구토토 승무패 14회차</option><option data-status="PayoStart" value="G011,220013">축구토토 승무패 13회차</option><option data-status="PayoStart" value="G011,220012">축구토토 승무패 12회차</option><option data-status="PayoStart" value="G011,220011">축구토토 승무패 11회차</option><option data-status="PayoStart" value="G011,220010">축구토토 승무패 10회차</option><option data-status="PayoStart" value="G011,220009">축구토토 승무패 9회차</option><option data-status="PayoStart" value="G011,220008">축구토토 승무패 8회차</option><option data-status="PayoStart" value="G011,220007">축구토토 승무패 7회차</option><option data-status="PayoStart" value="G011,220006">축구토토 승무패 6회차</option><option data-status="PayoStart" value="G011,220005">축구토토 승무패 5회차</option><option data-status="PayoStart" value="G011,220004">축구토토 승무패 4회차</option><option data-status="PayoStart" value="G011,220003">축구토토 승무패 3회차</option><option data-status="PayoStart" value="G011,220002">축구토토 승무패 2회차</option><option data-status="PayoStart" value="G011,220001">축구토토 승무패 1회차</option><option data-status="PayoStart" value="G011,210060">축구토토 승무패 60회차</option><option data-status="CancelStart" value="G011,210059">축구토토 승무패 59회차</option><option data-status="PayoStart" value="G011,210058">축구토토 승무패 58회차</option><option data-status="PayoStart" value="G011,210057">축구토토 승무패 57회차</option><option data-status="PayoStart" value="G011,210056">축구토토 승무패 56회차</option><option data-status="PayoStart" value="G011,210055">축구토토 승무패 55회차</option><option data-status="PayoStart" value="G011,210054">축구토토 승무패 54회차</option><option data-status="PayoStart" value="G011,210053">축구토토 승무패 53회차</option><option data-status="PayoStart" value="G011,210052">축구토토 승무패 52회차</option><option data-status="PayoStart" value="G011,210051">축구토토 승무패 51회차</option><option data-status="PayoStart" value="G011,210050">축구토토 승무패 50회차</option><option data-status="PayoStart" value="G011,210049">축구토토 승무패 49회차</option><option data-status="PayoStart" value="G011,210048">축구토토 승무패 48회차</option><option data-status="PayoStart" value="G011,210047">축구토토 승무패 47회차</option><option data-status="PayoStart" value="G011,210046">축구토토 승무패 46회차</option><option data-status="PayoStart" value="G011,210045">축구토토 승무패 45회차</option><option data-status="PayoStart" value="G011,210044">축구토토 승무패 44회차</option><option data-status="PayoStart" value="G011,210043">축구토토 승무패 43회차</option><option data-status="PayoStart" value="G011,210042">축구토토 승무패 42회차</option><option data-status="PayoStart" value="G011,210041">축구토토 승무패 41회차</option><option data-status="PayoStart" value="G011,210040">축구토토 승무패 40회차</option><option data-status="PayoStart" value="G011,210039">축구토토 승무패 39회차</option><option data-status="PayoStart" value="G011,210038">축구토토 승무패 38회차</option><option data-status="PayoStart" value="G011,210037">축구토토 승무패 37회차</option><option data-status="PayoStart" value="G011,210036">축구토토 승무패 36회차</option><option data-status="PayoStart" value="G011,210035">축구토토 승무패 35회차</option><option data-status="PayoStart" value="G011,210034">축구토토 승무패 34회차</option><option data-status="PayoStart" value="G011,210033">축구토토 승무패 33회차</option><option data-status="PayoStart" value="G011,210032">축구토토 승무패 32회차</option><option data-status="PayoStart" value="G011,210031">축구토토 승무패 31회차</option><option data-status="PayoStart" value="G011,210030">축구토토 승무패 30회차</option><option data-status="PayoStart" value="G011,210029">축구토토 승무패 29회차</option><option data-status="PayoStart" value="G011,210028">축구토토 승무패 28회차</option></select>
+</span>
+<div class="tabWrap tabLink tabTop" style="display: none;">
+<div class="tabBox under">
+<ul id="tabUlTypeBtn">
+<li class="tabTit">
+<button class="tabBtn" id="tabUlType1" style="display: none;" type="button"></button>
+</li>
+<li class="tabTit">
+<button class="tabBtn" id="tabUlType2" style="display: none;" type="button"></button>
+</li>
+</ul>
+</div>
+</div>
+<div class="lyboxVm">
+<span class="cell date" id="spanStandardDate">23.09.14(목) 15:33 기준</span>
+<div class="cell tar" id="spanVoteTimerArea">
+<span class="switchTit">투표현황 실시간</span>
+<span class="switchButton">
+<input checked="" id="checkboxVoteTimeReal" type="checkbox"/>
+<label aria-label="투표현황 실시간" for="checkboxVoteTimeReal">
+<span class="blind" id="spanVoteTimerTit">투표현황 실시간</span>
+<span class="on">on</span>
+<span class="off">off</span>
+</label>
+</span>
+</div>
+</div>
+</div>
+<!-- 공지사항 -->
+<div class="gameNotice" style="display: none;">
+<a class="popOpen01" href="javascript:;" id="openNoti" title="팝업 열림">
+<span class="badge base blue">공지</span>
+<span class="txt" id="layoutNoticeDivArea"></span>
+</a>
+<!-- 팝업 -->
+<div class="popupArea popFull popWrap01 devpopNotice">
+<a class="popupFocus" href="javascript:;">레이어 팝업</a>
+<div class="popupContent">
+<div class="popContitle">
+<h1 class="titlePop">공지사항</h1>
+</div>
+<div class="popCont">
+<div class="popInner">
+<!-- 검색영역 -->
+<div class="schAcd3">
+<span class="selectBox">
+<select class="selectMenu" id="searchType" title="검색조건 선택">
+<option selected="" value="title">제목</option>
+<option value="content">내용</option>
+</select>
+</span>
+<span class="inputBox">
+<input id="keyWord" title="검색어 입력" type="text"/>
+</span>
+<button class="btn btnM bgBlue" onclick="inqSchNoti('1');" type="submit"><span>검색</span></button>
+</div>
+<!-- //검색영역 -->
+<!-- 리스트 -->
+<div class="gmNoticeList" id="gmNotiList">
+<ul class="acdWrap"></ul>
+</div>
+<!-- //리스트 -->
+<div class="btnWrap">
+<div class="btnBox">
+<button class="btn btnL bdNone" id="moreBtn" onclick="javascript:inqNotiMore();"><span class="btnMore"></span></button>
+</div>
+</div>
+</div>
+</div>
+<button class="popClose" onclick="common.popupFull('popOpen01', 'devpopNotice');"><span class="blind">팝업 닫기</span></button>
+</div>
+</div>
+<!-- //팝업 -->
+<script>
+	var gmId = 'G011';
+	var gmOsidTs = '';
+	var gmTs = '230051';
+	var gameYear = '' ? '' : '';
+	
+	var totalCount = 0;
+	var nowPage = 1;
+	var totalPage = 0;
+	var moreCnt = 10;
+	var schData = '';
+	
+	var totalCnt = 0;
+	
+	function drawNoti() {
+		var notiData = '';
+		var notiList = '';
+		
+		//처음 로딩했을 때에는 기존 조회 데이터를 활용하고 검색 또는 더보기 클릭시에 데이터 조회함
+		if (initNoti) {
+			notiData = memoryScheduleInfo.gameNoticeList;
+			totalCnt = memoryScheduleInfo.gameNoticeList.length;
+			var filterList = betmanOnlineFront.dlSort(notiData, 'VIEWNO', true);
+			notiList = filterList.slice(0, moreCnt);
+			initNoti = false;
+		} else {
+			notiList = schData;
+		}
+		
+		if (notiList == '' || typeof notiList == 'undefined') {
+			var noString = '';
+			noString += '<li class="nocText">';
+			noString += 	'<p>조회 결과가 없습니다</p>';
+			noString += '</li>';
+			
+			$('#gmNotiList ul').html(noString);
+			$('.btnWrap .btnBox').hide();
+			
+			return;
+		} else {
+			var className = $('#gmNotiList ul li').attr('class');
+			if (className == 'nocText') {
+				$('#gmNotiList ul').empty();
+			}
+		}
+		
+		totalPage = Math.ceil(totalCnt / 10);
+		
+		var notiHtml = '';
+		$("#keyWord").val('');
+		$("#searchType").val('title');
+		$('#gmNotiList ul').empty();
+		gmOsidTs = notiList[0].GM_OSID_TS;
+		notiList.forEach(function(el, idx) {
+			notiHtml += '<li>';
+			notiHtml += 	'<div class="acdTit">';
+			notiHtml += 		'<button type="button" class="accArr acdBtn" onclick="if(!$(this).parent().hasClass(\'acdAct\')) inqNotiDetail('+idx+', '+el.SEQUENCENO+', '+el.VIEWNO+');">';
+			notiHtml += 			'<span class="num">' + el.VIEWNO + '</span>';
+			notiHtml += 			'<span class="txt">' + el.TITLE + '</span>';
+			notiHtml += 			'<span class="acdTxt">상세내용 열기</span>';
+			notiHtml += 		'</button>';
+			notiHtml += 	'</div>';
+			notiHtml += 	'<div class="accCont acdCon" id="div_noti_detail_tbl'+idx+'">';
+			notiHtml += 		betmanOnlineFront.unescapeString(betmanOnlineFront.unescapeXml(el.CONTENT));
+			notiHtml += 	'</div>';
+			notiHtml += '</li>';
+		});
+		
+		$('.btnMore').html('더보기 <strong>' + nowPage + '</strong>/' + totalPage);
+		$('#gmNotiList ul').append(notiHtml);
+		
+		if(totalPage == 0) {
+			$('.btnWrap .btnBox').hide();
+		} else {
+			$('.btnWrap .btnBox').show();
+		}
+	}
+	
+	//더보기
+	function inqNotiMore(){
+		if (nowPage >= totalPage) {
+			return false;
+		} else {
+			nowPage++;
+		}
+		
+		moreCnt = 10 * nowPage;
+		//조회
+		inqSchNoti(nowPage);
+	}
+	
+	//검색
+	function inqSchNoti(nNowPage) {
+		nowPage = nNowPage;
+		var searchType = $("#searchType").val(); //default는 title
+		var keyWord = $("#keyWord").val();
+		var param = {
+			"searchType" : searchType,
+			"keyWord" : keyWord,
+			"gmId" : gmId,
+			"gmOsidTs" : gmOsidTs,
+			"gmTs" : gmTs,
+			"gameYear" : gameYear,
+			"nowPage" : nowPage,
+			"showCnt" : 10
+		};
+		
+		requestClient.requestPostMethod("/buyPsblGame/gameNotiList.do", param, true, function(data) {
+			schData = data.gameNoticeList;
+			totalCnt = data.noticeListCount;
+			drawNoti();
+		});
+	}
+	
+	//공지사항 상세 조회
+	function inqNotiDetail(idx, seqNo, viewNo) {
+		var param = {
+			"searchType" : "searchNo",
+			"gmId" : gmId,
+			"gmOsidTs" : gmOsidTs,
+			"gmTs" : gmTs,
+			"gameYear" : gameYear,
+			"sequenceNo" : seqNo,
+			"viewNo" : viewNo
+		}
+		
+		requestClient.requestPostMethod("/buyPsblGame/gameNotiDetail.do", param, true, function(data) {
+			notiDataList = data.gameNoticeList;
+			var viewCnt = 0;
+			if (notiDataList.length > 0) {
+				for (var i=0; i<notiDataList.length; i++) {
+					var temp = notiDataList[i];
+					if (temp.MATCHYN == 'Y') {
+						var notiDate = trans(temp.REGISRATIONDATE);
+						$("#div_noti_detail_tbl"+idx).html('<p class="date" id="notiDate">'+notiDate+'</p>');
+						var no = temp.NO;
+						var title = temp.TITLE;
+						var regDt = trans(temp.REGISRATIONDATE);
+						viewCnt = temp.VIEWCOUNT;
+						seqNo = temp.SEQUENCENO;
+						
+						var content = replacePageUrl(temp.CONTENT);
+						
+						$("#div_noti_detail_tbl"+idx).append(content);
+						$("#span_noti_detail_reg_dt").text(regDt);
+					}
+				}
+			}
+		});
+	}
+	
+	//공지사항 등록일 변형
+	function trans(str) {
+		var y = str.substr(0,4);
+		var m = str.substr(4,2);
+		var d = str.substr(6,2);
+		var hour = str.substr(8,2);
+		var min = str.substr(10,2);
+		var sec = str.substr(12,2);
+		var date = new Date(y+'/'+m+'/'+d+' '+hour+':'+min+':'+sec);
+		
+		var res = betmanOnlineFront.getDateFullFormatDayOfWeek(date,'y.mm.dd',':');
+		return res;
+	}
+	
+	//as-is url to-be로 변경
+	function replacePageUrl(ctt) {
+		var tmp = $('<div>');
+		tmp.html(betmanOnlineFront.unescapeString(ctt));
+		var uri = 'https://www.betman.co.kr';
+		
+		var aTags = tmp.find('a');
+		aTags.each(function() {
+			var url = $(this).attr('href');
+			if(!url) return;
+			var params = url.substr(url.indexOf('?')+1).split('&');
+			
+			if(url.indexOf('GameScheduleList.so?method=schedule') > -1) {
+				params = params.map(function(e) {
+					//변경할 파라미터들
+					var key = e.split('=')[0];
+					switch(key) {
+						case 'yearMonth': return e;
+//	 					case 'viewmethod': return e.replace('viewmethod', 'state');
+//	 					case 'gameId': return e.replace('gameId', 'sbx_gmKind');
+//	 					case 'league': return e.replace('league', 'sbx_gmLeag');
+//	 					case 'team': return e.replace('outerRound', 'sbx_gmTeam');
+					}
+				}).filter(function(e){ return e; });
+				url = uri + '/main/mainPage/gamebuy/gameScheduleList.do?' + params.join('&'); 
+			}
+			else if(url.indexOf('GameScheduleList.so?method=detailSchedule') > -1) {
+				params = params.map(function(e) {
+					//변경할 파라미터들
+					var key = e.split('=')[0];
+					switch(key) {
+						case 'gameId': return e.replace('gameId', 'gmId');
+						case 'gameRound': return e.replace('gameRound', 'gmTs');
+						case 'outerRound': return e.replace('outerRound', 'gmOsidTs');
+						case 'saleYear': return e;
+						case 'yearMonth': return e;
+					}
+				}).filter(function(e){ return e; });
+				url = uri + '/main/mainPage/gamebuy/gameScheduleDetl.do?' + params.join('&'); 
+			}
+			else if(url.indexOf('gameInfoMain.so?') > -1) {
+				params = params.map(function(e) {
+					//변경할 파라미터들
+					var key = e.split('=')[0];
+					switch(key) {
+						case 'gameId': return e.replace('gameId', 'gmId');
+						case 'gameRound': return e.replace('gameRound', 'gmTs');
+						case 'year': return e;
+					}
+				}).filter(function(e){ return e; });
+				url = uri + '/main/mainPage/gamebuy/gameSlip.do?' + params.join('&'); 
+			}
+// 			else if(url.indexOf('popup/20200612/popup_main.html') > -1) {
+// 				url = uri + '/main/mainPage/etc/sosfoArticle.do';
+// 			}
+			$(this).attr('href', url);
+		});
+		
+		return tmp.html();
+	}
+</script>
+</div>
+<!-- //공지사항 -->
+<div class="relePerWarp acdWrap">
+<div class="relePerBox">
+<div class="rpTit acdTit">
+<div class="rpInfo titBox">
+<em class="tit" id="winnerTotalPrizeTit">1등 총 예상적중금액</em>
+<span class="cnt v3" id="winnerTotalPrize">31,601,250원</span>
+<button class="rpBtn acdBtn"><span class="acdTxt">상세내용 열기</span></button>
+</div>
+</div>
+<div class="rpCon acdCon">
+<ul class="rpInfo">
+<li>
+<em class="tit">발매기간</em>
+<span class="cnt v3" id="sellDate">23.09.14(목) 08:00 ~ 23.09.16(토) 21:50</span>
+</li>
+<li>
+<em class="tit">총 발매금액</em>
+<span class="cnt v3" id="totSellAmt">126,405,000원</span>
+</li>
+</ul>
+<ul class="rpInfo" id="protoTopInfo" style="display:none">
+<li>
+<em class="tit">적중결과 발표일</em>
+<span class="cnt v2" id="gameInfoResultDateStr">-</span>
+</li>
+<li>
+<em class="tit">환불(환급)기간</em>
+<span class="cnt v2" id="gameInfoPayoStr">-</span>
+</li>
+</ul>
+<div class="btmInfo">
+<ul class="nbBul" id="gameInfoTextList"><li> 적중결과 발표일은 최종경기 종료 당일 예정입니다.</li><li> 대상경기 적용 시간은 경기 시작부터 후반 경기 종료 시까지(연장전, 승부차기 제외)를 기준으로 합니다.</li><li> 환급(환불)기간은 공식 적중결과 발표일 익일(지급개시일)부터 1년간이며, 적중결과 발표 당일부터 지급 가능합니다.</li><li> 전체 투표수: 126,405 / 전회차 이월금액: 0원</li></ul>
+</div>
+</div>
+</div>
+</div>
+<hr class="sp"/>
+<script>
+	var initNoti = '';
+	$(document).ready(function() {
+		$('#openNoti').on("click", function() {
+			common.popupFull('popOpen01', 'devpopNotice');
+			initNoti = true;
+			drawNoti();
+		})
+	});
+</script>
+<script src="/js/slip/slipUtils.js" type="text/javascript"></script>
+<!-- tblList game : 투표지영역 -->
+<div class="tblList game acc">
+<ul class="acdWrap" id="dataBodyList"><li><div class="subInfo wing"><span class="cell type"><span class="divArea">
+1경기</span></span><span class="cell">23.09.16 (토) 23:00
+
+<div class="tooltipArea stType2 tipWrap"><button class="icoSt1 taBtn tipBtn" type="button"><span class="blind">경기장 상세내용 열기</span></button><div class="taHide tipCon"><div class="tahCon">빌라파크 </div><button class="tipBtnClose tipBtn" type="button"><span class="blind">경기장 상세내용 닫기</span></button></div></div></span></div><div class="vsWrap acdTit"><div class="vsItme hTim"><span class="viTit">애스턴</span><span class="viHome">(홈팀)</span></div><span class="vsItme viVs">vs</span><div class="vsItme aTim"><span class="viAway">(원정팀)</span><span class="viTit">크리스털</span></div><button class="accArr acdBtn" type="button"><span class="acdTxt">상세내용 열기</span></button></div><div class="ballotWrap ckWrap ckMul"><div class="balCb unNum"><button class="ckBtn" id="mk_0_0_1" name="mk_0_0_1" onclick="victory.clickMarking(0,0,1)" type="button" value="0"><span class="tit">승</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_0_2" name="mk_0_0_2" onclick="victory.clickMarking(0,0,2)" type="button" value="0"><span class="tit">무</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_0_3" name="mk_0_0_3" onclick="victory.clickMarking(0,0,3)" type="button" value="0"><span class="tit">패</span></button></div></div><div class="accCont acdCon bgGray"><span class="perbarTit">투표현황</span><ul class="perbarList"><li class="win"><span class="itemTit"><span class="badgeF red">승</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:51.21158182033938%;"></div></div></div><span class="itemPer">51.2%</span><span class="itemNum">(64,734)</span></li><li class="tie"><span class="itemTit"><span class="badgeF gray">무</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:31.145919860765005%;"></div></div></div><span class="itemPer">31.1%</span><span class="itemNum">(39,370)</span></li><li class="lose"><span class="itemTit"><span class="badgeF blue">패</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:17.642498318895612%;"></div></div></div><span class="itemPer">17.6%</span><span class="itemNum">(22,301)</span></li></ul><div class="btnWrap"><div class="btnBox"><button class="btn btnMs bdGray btnSlipMatchRecord" id="btnSlipMatchRecord_0" title="팝업 열림" type="button"><span>맞대결정보</span></button><button class="btn btnMs bdGray btnSlipBetCoach" id="btnSlipBetCoach_0" title="팝업 열림" type="button"><span>BET코치</span></button></div></div></div></li><li><div class="subInfo wing"><span class="cell type"><span class="divArea">
+2경기</span></span><span class="cell">23.09.16 (토) 23:00
+
+<div class="tooltipArea stType2 tipWrap"><button class="icoSt1 taBtn tipBtn" type="button"><span class="blind">경기장 상세내용 열기</span></button><div class="taHide tipCon"><div class="tahCon">크레이븐코티지 </div><button class="tipBtnClose tipBtn" type="button"><span class="blind">경기장 상세내용 닫기</span></button></div></div></span></div><div class="vsWrap acdTit"><div class="vsItme hTim"><span class="viTit">풀럼</span><span class="viHome">(홈팀)</span></div><span class="vsItme viVs">vs</span><div class="vsItme aTim"><span class="viAway">(원정팀)</span><span class="viTit">루턴타운</span></div><button class="accArr acdBtn" type="button"><span class="acdTxt">상세내용 열기</span></button></div><div class="ballotWrap ckWrap ckMul"><div class="balCb unNum"><button class="ckBtn" id="mk_0_1_1" name="mk_0_1_1" onclick="victory.clickMarking(0,1,1)" type="button" value="1"><span class="tit">승</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_1_2" name="mk_0_1_2" onclick="victory.clickMarking(0,1,2)" type="button" value="1"><span class="tit">무</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_1_3" name="mk_0_1_3" onclick="victory.clickMarking(0,1,3)" type="button" value="1"><span class="tit">패</span></button></div></div><div class="accCont acdCon bgGray"><span class="perbarTit">투표현황</span><ul class="perbarList"><li class="win"><span class="itemTit"><span class="badgeF red">승</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:83.06000553775561%;"></div></div></div><span class="itemPer">83.1%</span><span class="itemNum">(104,992)</span></li><li class="tie"><span class="itemTit"><span class="badgeF gray">무</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:11.715517582374115%;"></div></div></div><span class="itemPer">11.7%</span><span class="itemNum">(14,809)</span></li><li class="lose"><span class="itemTit"><span class="badgeF blue">패</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:5.224476879870258%;"></div></div></div><span class="itemPer">5.2%</span><span class="itemNum">(6,604)</span></li></ul><div class="btnWrap"><div class="btnBox"><button class="btn btnMs bdGray btnSlipMatchRecord" id="btnSlipMatchRecord_1" title="팝업 열림" type="button"><span>맞대결정보</span></button><button class="btn btnMs bdGray btnSlipBetCoach" id="btnSlipBetCoach_1" title="팝업 열림" type="button"><span>BET코치</span></button></div></div></div></li><li><div class="subInfo wing"><span class="cell type"><span class="divArea">
+3경기</span></span><span class="cell">23.09.16 (토) 23:00
+
+<div class="tooltipArea stType2 tipWrap"><button class="icoSt1 taBtn tipBtn" type="button"><span class="blind">경기장 상세내용 열기</span></button><div class="taHide tipCon"><div class="tahCon">올드트래포드 </div><button class="tipBtnClose tipBtn" type="button"><span class="blind">경기장 상세내용 닫기</span></button></div></div></span></div><div class="vsWrap acdTit"><div class="vsItme hTim"><span class="viTit">맨체스U</span><span class="viHome">(홈팀)</span></div><span class="vsItme viVs">vs</span><div class="vsItme aTim"><span class="viAway">(원정팀)</span><span class="viTit">브라이턴</span></div><button class="accArr acdBtn" type="button"><span class="acdTxt">상세내용 열기</span></button></div><div class="ballotWrap ckWrap ckMul"><div class="balCb unNum"><button class="ckBtn" id="mk_0_2_1" name="mk_0_2_1" onclick="victory.clickMarking(0,2,1)" type="button" value="2"><span class="tit">승</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_2_2" name="mk_0_2_2" onclick="victory.clickMarking(0,2,2)" type="button" value="2"><span class="tit">무</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_2_3" name="mk_0_2_3" onclick="victory.clickMarking(0,2,3)" type="button" value="2"><span class="tit">패</span></button></div></div><div class="accCont acdCon bgGray"><span class="perbarTit">투표현황</span><ul class="perbarList"><li class="win"><span class="itemTit"><span class="badgeF red">승</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:39.37106918238994%;"></div></div></div><span class="itemPer">39.4%</span><span class="itemNum">(49,767)</span></li><li class="tie"><span class="itemTit"><span class="badgeF gray">무</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:24.593963846366837%;"></div></div></div><span class="itemPer">24.6%</span><span class="itemNum">(31,088)</span></li><li class="lose"><span class="itemTit"><span class="badgeF blue">패</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:36.03496697124323%;"></div></div></div><span class="itemPer">36%</span><span class="itemNum">(45,550)</span></li></ul><div class="btnWrap"><div class="btnBox"><button class="btn btnMs bdGray btnSlipMatchRecord" id="btnSlipMatchRecord_2" title="팝업 열림" type="button"><span>맞대결정보</span></button><button class="btn btnMs bdGray btnSlipBetCoach" id="btnSlipBetCoach_2" title="팝업 열림" type="button"><span>BET코치</span></button></div></div></div></li><li><div class="subInfo wing"><span class="cell type"><span class="divArea">
+4경기</span></span><span class="cell">23.09.16 (토) 23:00
+
+<div class="tooltipArea stType2 tipWrap"><button class="icoSt1 taBtn tipBtn" type="button"><span class="blind">경기장 상세내용 열기</span></button><div class="taHide tipCon"><div class="tahCon">토트넘홋스퍼스타디움 </div><button class="tipBtnClose tipBtn" type="button"><span class="blind">경기장 상세내용 닫기</span></button></div></div></span></div><div class="vsWrap acdTit"><div class="vsItme hTim"><span class="viTit">토트넘</span><span class="viHome">(홈팀)</span></div><span class="vsItme viVs">vs</span><div class="vsItme aTim"><span class="viAway">(원정팀)</span><span class="viTit">셰필드U</span></div><button class="accArr acdBtn" type="button"><span class="acdTxt">상세내용 열기</span></button></div><div class="ballotWrap ckWrap ckMul"><div class="balCb unNum"><button class="ckBtn" id="mk_0_3_1" name="mk_0_3_1" onclick="victory.clickMarking(0,3,1)" type="button" value="3"><span class="tit">승</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_3_2" name="mk_0_3_2" onclick="victory.clickMarking(0,3,2)" type="button" value="3"><span class="tit">무</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_3_3" name="mk_0_3_3" onclick="victory.clickMarking(0,3,3)" type="button" value="3"><span class="tit">패</span></button></div></div><div class="accCont acdCon bgGray"><span class="perbarTit">투표현황</span><ul class="perbarList"><li class="win"><span class="itemTit"><span class="badgeF red">승</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:93.70040742059254%;"></div></div></div><span class="itemPer">93.7%</span><span class="itemNum">(118,442)</span></li><li class="tie"><span class="itemTit"><span class="badgeF gray">무</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:3.9033266089157865%;"></div></div></div><span class="itemPer">3.9%</span><span class="itemNum">(4,934)</span></li><li class="lose"><span class="itemTit"><span class="badgeF blue">패</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:2.396265970491674%;"></div></div></div><span class="itemPer">2.4%</span><span class="itemNum">(3,029)</span></li></ul><div class="btnWrap"><div class="btnBox"><button class="btn btnMs bdGray btnSlipMatchRecord" id="btnSlipMatchRecord_3" title="팝업 열림" type="button"><span>맞대결정보</span></button><button class="btn btnMs bdGray btnSlipBetCoach" id="btnSlipBetCoach_3" title="팝업 열림" type="button"><span>BET코치</span></button></div></div></div></li><li><div class="subInfo wing"><span class="cell type"><span class="divArea">
+5경기</span></span><span class="cell">23.09.16 (토) 23:00
+
+<div class="tooltipArea stType2 tipWrap"><button class="icoSt1 taBtn tipBtn" type="button"><span class="blind">경기장 상세내용 열기</span></button><div class="taHide tipCon"><div class="tahCon">런던스타디움 </div><button class="tipBtnClose tipBtn" type="button"><span class="blind">경기장 상세내용 닫기</span></button></div></div></span></div><div class="vsWrap acdTit"><div class="vsItme hTim"><span class="viTit">웨스트햄</span><span class="viHome">(홈팀)</span></div><span class="vsItme viVs">vs</span><div class="vsItme aTim"><span class="viAway">(원정팀)</span><span class="viTit">맨체스C</span></div><button class="accArr acdBtn" type="button"><span class="acdTxt">상세내용 열기</span></button></div><div class="ballotWrap ckWrap ckMul"><div class="balCb unNum"><button class="ckBtn" id="mk_0_4_1" name="mk_0_4_1" onclick="victory.clickMarking(0,4,1)" type="button" value="4"><span class="tit">승</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_4_2" name="mk_0_4_2" onclick="victory.clickMarking(0,4,2)" type="button" value="4"><span class="tit">무</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_4_3" name="mk_0_4_3" onclick="victory.clickMarking(0,4,3)" type="button" value="4"><span class="tit">패</span></button></div></div><div class="accCont acdCon bgGray"><span class="perbarTit">투표현황</span><ul class="perbarList"><li class="win"><span class="itemTit"><span class="badgeF red">승</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:9.176061073533484%;"></div></div></div><span class="itemPer">9.2%</span><span class="itemNum">(11,599)</span></li><li class="tie"><span class="itemTit"><span class="badgeF gray">무</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:16.481151853170363%;"></div></div></div><span class="itemPer">16.5%</span><span class="itemNum">(20,833)</span></li><li class="lose"><span class="itemTit"><span class="badgeF blue">패</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:74.34278707329615%;"></div></div></div><span class="itemPer">74.3%</span><span class="itemNum">(93,973)</span></li></ul><div class="btnWrap"><div class="btnBox"><button class="btn btnMs bdGray btnSlipMatchRecord" id="btnSlipMatchRecord_4" title="팝업 열림" type="button"><span>맞대결정보</span></button><button class="btn btnMs bdGray btnSlipBetCoach" id="btnSlipBetCoach_4" title="팝업 열림" type="button"><span>BET코치</span></button></div></div></div></li><li><div class="subInfo wing"><span class="cell type"><span class="divArea">
+6경기</span></span><span class="cell">23.09.16 (토) 23:15
+
+<div class="tooltipArea stType2 tipWrap"><button class="icoSt1 taBtn tipBtn" type="button"><span class="blind">경기장 상세내용 열기</span></button><div class="taHide tipCon"><div class="tahCon">메스타야 </div><button class="tipBtnClose tipBtn" type="button"><span class="blind">경기장 상세내용 닫기</span></button></div></div></span></div><div class="vsWrap acdTit"><div class="vsItme hTim"><span class="viTit">발렌시아</span><span class="viHome">(홈팀)</span></div><span class="vsItme viVs">vs</span><div class="vsItme aTim"><span class="viAway">(원정팀)</span><span class="viTit">AT마드</span></div><button class="accArr acdBtn" type="button"><span class="acdTxt">상세내용 열기</span></button></div><div class="ballotWrap ckWrap ckMul"><div class="balCb unNum"><button class="ckBtn" id="mk_0_5_1" name="mk_0_5_1" onclick="victory.clickMarking(0,5,1)" type="button" value="5"><span class="tit">승</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_5_2" name="mk_0_5_2" onclick="victory.clickMarking(0,5,2)" type="button" value="5"><span class="tit">무</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_5_3" name="mk_0_5_3" onclick="victory.clickMarking(0,5,3)" type="button" value="5"><span class="tit">패</span></button></div></div><div class="accCont acdCon bgGray"><span class="perbarTit">투표현황</span><ul class="perbarList"><li class="win"><span class="itemTit"><span class="badgeF red">승</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:7.7955777065780625%;"></div></div></div><span class="itemPer">7.8%</span><span class="itemNum">(9,854)</span></li><li class="tie"><span class="itemTit"><span class="badgeF gray">무</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:17.419405877932043%;"></div></div></div><span class="itemPer">17.4%</span><span class="itemNum">(22,019)</span></li><li class="lose"><span class="itemTit"><span class="badgeF blue">패</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:74.78501641548989%;"></div></div></div><span class="itemPer">74.8%</span><span class="itemNum">(94,532)</span></li></ul><div class="btnWrap"><div class="btnBox"><button class="btn btnMs bdGray btnSlipMatchRecord" id="btnSlipMatchRecord_5" title="팝업 열림" type="button"><span>맞대결정보</span></button><button class="btn btnMs bdGray btnSlipBetCoach" id="btnSlipBetCoach_5" title="팝업 열림" type="button"><span>BET코치</span></button></div></div></div></li><li><div class="subInfo wing"><span class="cell type"><span class="divArea">
+7경기</span></span><span class="cell">23.09.17 (일) 01:30
+
+<div class="tooltipArea stType2 tipWrap"><button class="icoSt1 taBtn tipBtn" type="button"><span class="blind">경기장 상세내용 열기</span></button><div class="taHide tipCon"><div class="tahCon">세인트제임스파크 </div><button class="tipBtnClose tipBtn" type="button"><span class="blind">경기장 상세내용 닫기</span></button></div></div></span></div><div class="vsWrap acdTit"><div class="vsItme hTim"><span class="viTit">뉴캐슬</span><span class="viHome">(홈팀)</span></div><span class="vsItme viVs">vs</span><div class="vsItme aTim"><span class="viAway">(원정팀)</span><span class="viTit">브렌트퍼</span></div><button class="accArr acdBtn" type="button"><span class="acdTxt">상세내용 열기</span></button></div><div class="ballotWrap ckWrap ckMul"><div class="balCb unNum"><button class="ckBtn" id="mk_0_6_1" name="mk_0_6_1" onclick="victory.clickMarking(0,6,1)" type="button" value="6"><span class="tit">승</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_6_2" name="mk_0_6_2" onclick="victory.clickMarking(0,6,2)" type="button" value="6"><span class="tit">무</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_6_3" name="mk_0_6_3" onclick="victory.clickMarking(0,6,3)" type="button" value="6"><span class="tit">패</span></button></div></div><div class="accCont acdCon bgGray"><span class="perbarTit">투표현황</span><ul class="perbarList"><li class="win"><span class="itemTit"><span class="badgeF red">승</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:66.26794826154028%;"></div></div></div><span class="itemPer">66.3%</span><span class="itemNum">(83,766)</span></li><li class="tie"><span class="itemTit"><span class="badgeF gray">무</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:19.871840512637952%;"></div></div></div><span class="itemPer">19.9%</span><span class="itemNum">(25,119)</span></li><li class="lose"><span class="itemTit"><span class="badgeF blue">패</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:13.860211225821764%;"></div></div></div><span class="itemPer">13.9%</span><span class="itemNum">(17,520)</span></li></ul><div class="btnWrap"><div class="btnBox"><button class="btn btnMs bdGray btnSlipMatchRecord" id="btnSlipMatchRecord_6" title="팝업 열림" type="button"><span>맞대결정보</span></button><button class="btn btnMs bdGray btnSlipBetCoach" id="btnSlipBetCoach_6" title="팝업 열림" type="button"><span>BET코치</span></button></div></div></div></li><li><div class="subInfo wing"><span class="cell type"><span class="divArea">
+8경기</span></span><span class="cell">23.09.17 (일) 01:30
+
+<div class="tooltipArea stType2 tipWrap"><button class="icoSt1 taBtn tipBtn" type="button"><span class="blind">경기장 상세내용 열기</span></button><div class="taHide tipCon"><div class="tahCon">아방카발라이도스스타디움 </div><button class="tipBtnClose tipBtn" type="button"><span class="blind">경기장 상세내용 닫기</span></button></div></div></span></div><div class="vsWrap acdTit"><div class="vsItme hTim"><span class="viTit">RC셀타</span><span class="viHome">(홈팀)</span></div><span class="vsItme viVs">vs</span><div class="vsItme aTim"><span class="viAway">(원정팀)</span><span class="viTit">마요르카</span></div><button class="accArr acdBtn" type="button"><span class="acdTxt">상세내용 열기</span></button></div><div class="ballotWrap ckWrap ckMul"><div class="balCb unNum"><button class="ckBtn" id="mk_0_7_1" name="mk_0_7_1" onclick="victory.clickMarking(0,7,1)" type="button" value="7"><span class="tit">승</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_7_2" name="mk_0_7_2" onclick="victory.clickMarking(0,7,2)" type="button" value="7"><span class="tit">무</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_7_3" name="mk_0_7_3" onclick="victory.clickMarking(0,7,3)" type="button" value="7"><span class="tit">패</span></button></div></div><div class="accCont acdCon bgGray"><span class="perbarTit">투표현황</span><ul class="perbarList"><li class="win"><span class="itemTit"><span class="badgeF red">승</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:57.70578695462996%;"></div></div></div><span class="itemPer">57.7%</span><span class="itemNum">(72,943)</span></li><li class="tie"><span class="itemTit"><span class="badgeF gray">무</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:28.177682844824176%;"></div></div></div><span class="itemPer">28.2%</span><span class="itemNum">(35,618)</span></li><li class="lose"><span class="itemTit"><span class="badgeF blue">패</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:14.116530200545865%;"></div></div></div><span class="itemPer">14.1%</span><span class="itemNum">(17,844)</span></li></ul><div class="btnWrap"><div class="btnBox"><button class="btn btnMs bdGray btnSlipMatchRecord" id="btnSlipMatchRecord_7" title="팝업 열림" type="button"><span>맞대결정보</span></button><button class="btn btnMs bdGray btnSlipBetCoach" id="btnSlipBetCoach_7" title="팝업 열림" type="button"><span>BET코치</span></button></div></div></div></li><li><div class="subInfo wing"><span class="cell type"><span class="divArea">
+9경기</span></span><span class="cell">23.09.17 (일) 04:00
+
+<div class="tooltipArea stType2 tipWrap"><button class="icoSt1 taBtn tipBtn" type="button"><span class="blind">경기장 상세내용 열기</span></button><div class="taHide tipCon"><div class="tahCon">올림픽루이스컴파니스스타디움 </div><button class="tipBtnClose tipBtn" type="button"><span class="blind">경기장 상세내용 닫기</span></button></div></div></span></div><div class="vsWrap acdTit"><div class="vsItme hTim"><span class="viTit">바르셀로</span><span class="viHome">(홈팀)</span></div><span class="vsItme viVs">vs</span><div class="vsItme aTim"><span class="viAway">(원정팀)</span><span class="viTit">베티스</span></div><button class="accArr acdBtn" type="button"><span class="acdTxt">상세내용 열기</span></button></div><div class="ballotWrap ckWrap ckMul"><div class="balCb unNum"><button class="ckBtn" id="mk_0_8_1" name="mk_0_8_1" onclick="victory.clickMarking(0,8,1)" type="button" value="8"><span class="tit">승</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_8_2" name="mk_0_8_2" onclick="victory.clickMarking(0,8,2)" type="button" value="8"><span class="tit">무</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_8_3" name="mk_0_8_3" onclick="victory.clickMarking(0,8,3)" type="button" value="8"><span class="tit">패</span></button></div></div><div class="accCont acdCon bgGray"><span class="perbarTit">투표현황</span><ul class="perbarList"><li class="win"><span class="itemTit"><span class="badgeF red">승</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:88.99252402990389%;"></div></div></div><span class="itemPer">89%</span><span class="itemNum">(112,491)</span></li><li class="tie"><span class="itemTit"><span class="badgeF gray">무</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:7.9142438985799615%;"></div></div></div><span class="itemPer">7.9%</span><span class="itemNum">(10,004)</span></li><li class="lose"><span class="itemTit"><span class="badgeF blue">패</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:3.0932320715161588%;"></div></div></div><span class="itemPer">3.1%</span><span class="itemNum">(3,910)</span></li></ul><div class="btnWrap"><div class="btnBox"><button class="btn btnMs bdGray btnSlipMatchRecord" id="btnSlipMatchRecord_8" title="팝업 열림" type="button"><span>맞대결정보</span></button><button class="btn btnMs bdGray btnSlipBetCoach" id="btnSlipBetCoach_8" title="팝업 열림" type="button"><span>BET코치</span></button></div></div></div></li><li><div class="subInfo wing"><span class="cell type"><span class="divArea">
+10경기</span></span><span class="cell">23.09.17 (일) 21:00
+
+<div class="tooltipArea stType2 tipWrap"><button class="icoSt1 taBtn tipBtn" type="button"><span class="blind">경기장 상세내용 열기</span></button><div class="taHide tipCon"><div class="tahCon">콜리세움알폰소페레스 </div><button class="tipBtnClose tipBtn" type="button"><span class="blind">경기장 상세내용 닫기</span></button></div></div></span></div><div class="vsWrap acdTit"><div class="vsItme hTim"><span class="viTit">헤타페</span><span class="viHome">(홈팀)</span></div><span class="vsItme viVs">vs</span><div class="vsItme aTim"><span class="viAway">(원정팀)</span><span class="viTit">오사수나</span></div><button class="accArr acdBtn" type="button"><span class="acdTxt">상세내용 열기</span></button></div><div class="ballotWrap ckWrap ckMul"><div class="balCb unNum"><button class="ckBtn" id="mk_0_9_1" name="mk_0_9_1" onclick="victory.clickMarking(0,9,1)" type="button" value="9"><span class="tit">승</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_9_2" name="mk_0_9_2" onclick="victory.clickMarking(0,9,2)" type="button" value="9"><span class="tit">무</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_9_3" name="mk_0_9_3" onclick="victory.clickMarking(0,9,3)" type="button" value="9"><span class="tit">패</span></button></div></div><div class="accCont acdCon bgGray"><span class="perbarTit">투표현황</span><ul class="perbarList"><li class="win"><span class="itemTit"><span class="badgeF red">승</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:34.20196985878723%;"></div></div></div><span class="itemPer">34.2%</span><span class="itemNum">(43,233)</span></li><li class="tie"><span class="itemTit"><span class="badgeF gray">무</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:38.486610498002456%;"></div></div></div><span class="itemPer">38.5%</span><span class="itemNum">(48,649)</span></li><li class="lose"><span class="itemTit"><span class="badgeF blue">패</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:27.311419643210318%;"></div></div></div><span class="itemPer">27.3%</span><span class="itemNum">(34,523)</span></li></ul><div class="btnWrap"><div class="btnBox"><button class="btn btnMs bdGray btnSlipMatchRecord" id="btnSlipMatchRecord_9" title="팝업 열림" type="button"><span>맞대결정보</span></button><button class="btn btnMs bdGray btnSlipBetCoach" id="btnSlipBetCoach_9" title="팝업 열림" type="button"><span>BET코치</span></button></div></div></div></li><li><div class="subInfo wing"><span class="cell type"><span class="divArea">
+11경기</span></span><span class="cell">23.09.17 (일) 22:00
+
+<div class="tooltipArea stType2 tipWrap"><button class="icoSt1 taBtn tipBtn" type="button"><span class="blind">경기장 상세내용 열기</span></button><div class="taHide tipCon"><div class="tahCon">바이탈리티스타디움 </div><button class="tipBtnClose tipBtn" type="button"><span class="blind">경기장 상세내용 닫기</span></button></div></div></span></div><div class="vsWrap acdTit"><div class="vsItme hTim"><span class="viTit">본머스</span><span class="viHome">(홈팀)</span></div><span class="vsItme viVs">vs</span><div class="vsItme aTim"><span class="viAway">(원정팀)</span><span class="viTit">첼시</span></div><button class="accArr acdBtn" type="button"><span class="acdTxt">상세내용 열기</span></button></div><div class="ballotWrap ckWrap ckMul"><div class="balCb unNum"><button class="ckBtn" id="mk_0_10_1" name="mk_0_10_1" onclick="victory.clickMarking(0,10,1)" type="button" value="10"><span class="tit">승</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_10_2" name="mk_0_10_2" onclick="victory.clickMarking(0,10,2)" type="button" value="10"><span class="tit">무</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_10_3" name="mk_0_10_3" onclick="victory.clickMarking(0,10,3)" type="button" value="10"><span class="tit">패</span></button></div></div><div class="accCont acdCon bgGray"><span class="perbarTit">투표현황</span><ul class="perbarList"><li class="win"><span class="itemTit"><span class="badgeF red">승</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:16.717693129227484%;"></div></div></div><span class="itemPer">16.7%</span><span class="itemNum">(21,132)</span></li><li class="tie"><span class="itemTit"><span class="badgeF gray">무</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:22.62014951940192%;"></div></div></div><span class="itemPer">22.6%</span><span class="itemNum">(28,593)</span></li><li class="lose"><span class="itemTit"><span class="badgeF blue">패</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:60.662157351370595%;"></div></div></div><span class="itemPer">60.7%</span><span class="itemNum">(76,680)</span></li></ul><div class="btnWrap"><div class="btnBox"><button class="btn btnMs bdGray btnSlipMatchRecord" id="btnSlipMatchRecord_10" title="팝업 열림" type="button"><span>맞대결정보</span></button><button class="btn btnMs bdGray btnSlipBetCoach" id="btnSlipBetCoach_10" title="팝업 열림" type="button"><span>BET코치</span></button></div></div></div></li><li><div class="subInfo wing"><span class="cell type"><span class="divArea">
+12경기</span></span><span class="cell">23.09.17 (일) 23:15
+
+<div class="tooltipArea stType2 tipWrap"><button class="icoSt1 taBtn tipBtn" type="button"><span class="blind">경기장 상세내용 열기</span></button><div class="taHide tipCon"><div class="tahCon">세라미카스타디움 </div><button class="tipBtnClose tipBtn" type="button"><span class="blind">경기장 상세내용 닫기</span></button></div></div></span></div><div class="vsWrap acdTit"><div class="vsItme hTim"><span class="viTit">비야레알</span><span class="viHome">(홈팀)</span></div><span class="vsItme viVs">vs</span><div class="vsItme aTim"><span class="viAway">(원정팀)</span><span class="viTit">알메리아</span></div><button class="accArr acdBtn" type="button"><span class="acdTxt">상세내용 열기</span></button></div><div class="ballotWrap ckWrap ckMul"><div class="balCb unNum"><button class="ckBtn" id="mk_0_11_1" name="mk_0_11_1" onclick="victory.clickMarking(0,11,1)" type="button" value="11"><span class="tit">승</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_11_2" name="mk_0_11_2" onclick="victory.clickMarking(0,11,2)" type="button" value="11"><span class="tit">무</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_11_3" name="mk_0_11_3" onclick="victory.clickMarking(0,11,3)" type="button" value="11"><span class="tit">패</span></button></div></div><div class="accCont acdCon bgGray"><span class="perbarTit">투표현황</span><ul class="perbarList"><li class="win"><span class="itemTit"><span class="badgeF red">승</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:84.63984810727425%;"></div></div></div><span class="itemPer">84.6%</span><span class="itemNum">(106,989)</span></li><li class="tie"><span class="itemTit"><span class="badgeF gray">무</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:11.054151338950199%;"></div></div></div><span class="itemPer">11.1%</span><span class="itemNum">(13,973)</span></li><li class="lose"><span class="itemTit"><span class="badgeF blue">패</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:4.306000553775563%;"></div></div></div><span class="itemPer">4.3%</span><span class="itemNum">(5,443)</span></li></ul><div class="btnWrap"><div class="btnBox"><button class="btn btnMs bdGray btnSlipMatchRecord" id="btnSlipMatchRecord_11" title="팝업 열림" type="button"><span>맞대결정보</span></button><button class="btn btnMs bdGray btnSlipBetCoach" id="btnSlipBetCoach_11" title="팝업 열림" type="button"><span>BET코치</span></button></div></div></div></li><li><div class="subInfo wing"><span class="cell type"><span class="divArea">
+13경기</span></span><span class="cell">23.09.18 (월) 01:30
+
+<div class="tooltipArea stType2 tipWrap"><button class="icoSt1 taBtn tipBtn" type="button"><span class="blind">경기장 상세내용 열기</span></button><div class="taHide tipCon"><div class="tahCon">라몬산체스피스후안 </div><button class="tipBtnClose tipBtn" type="button"><span class="blind">경기장 상세내용 닫기</span></button></div></div></span></div><div class="vsWrap acdTit"><div class="vsItme hTim"><span class="viTit">세비야</span><span class="viHome">(홈팀)</span></div><span class="vsItme viVs">vs</span><div class="vsItme aTim"><span class="viAway">(원정팀)</span><span class="viTit">라스팔마</span></div><button class="accArr acdBtn" type="button"><span class="acdTxt">상세내용 열기</span></button></div><div class="ballotWrap ckWrap ckMul"><div class="balCb unNum"><button class="ckBtn" id="mk_0_12_1" name="mk_0_12_1" onclick="victory.clickMarking(0,12,1)" type="button" value="12"><span class="tit">승</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_12_2" name="mk_0_12_2" onclick="victory.clickMarking(0,12,2)" type="button" value="12"><span class="tit">무</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_12_3" name="mk_0_12_3" onclick="victory.clickMarking(0,12,3)" type="button" value="12"><span class="tit">패</span></button></div></div><div class="accCont acdCon bgGray"><span class="perbarTit">투표현황</span><ul class="perbarList"><li class="win"><span class="itemTit"><span class="badgeF red">승</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:70.7210948933982%;"></div></div></div><span class="itemPer">70.7%</span><span class="itemNum">(89,395)</span></li><li class="tie"><span class="itemTit"><span class="badgeF gray">무</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:20.790316838732643%;"></div></div></div><span class="itemPer">20.8%</span><span class="itemNum">(26,280)</span></li><li class="lose"><span class="itemTit"><span class="badgeF blue">패</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:8.48858826786915%;"></div></div></div><span class="itemPer">8.5%</span><span class="itemNum">(10,730)</span></li></ul><div class="btnWrap"><div class="btnBox"><button class="btn btnMs bdGray btnSlipMatchRecord" id="btnSlipMatchRecord_12" title="팝업 열림" type="button"><span>맞대결정보</span></button><button class="btn btnMs bdGray btnSlipBetCoach" id="btnSlipBetCoach_12" title="팝업 열림" type="button"><span>BET코치</span></button></div></div></div></li><li><div class="subInfo wing"><span class="cell type"><span class="divArea">
+14경기</span></span><span class="cell">23.09.18 (월) 04:00
+
+<div class="tooltipArea stType2 tipWrap"><button class="icoSt1 taBtn tipBtn" type="button"><span class="blind">경기장 상세내용 열기</span></button><div class="taHide tipCon"><div class="tahCon">산티아고베르나베우스타디움 </div><button class="tipBtnClose tipBtn" type="button"><span class="blind">경기장 상세내용 닫기</span></button></div></div></span></div><div class="vsWrap acdTit"><div class="vsItme hTim"><span class="viTit">레알마드</span><span class="viHome">(홈팀)</span></div><span class="vsItme viVs">vs</span><div class="vsItme aTim"><span class="viAway">(원정팀)</span><span class="viTit">소시에다</span></div><button class="accArr acdBtn" type="button"><span class="acdTxt">상세내용 열기</span></button></div><div class="ballotWrap ckWrap ckMul"><div class="balCb unNum"><button class="ckBtn" id="mk_0_13_1" name="mk_0_13_1" onclick="victory.clickMarking(0,13,1)" type="button" value="13"><span class="tit">승</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_13_2" name="mk_0_13_2" onclick="victory.clickMarking(0,13,2)" type="button" value="13"><span class="tit">무</span></button></div><div class="balCb unNum"><button class="ckBtn" id="mk_0_13_3" name="mk_0_13_3" onclick="victory.clickMarking(0,13,3)" type="button" value="13"><span class="tit">패</span></button></div></div><div class="accCont acdCon bgGray"><span class="perbarTit">투표현황</span><ul class="perbarList"><li class="win"><span class="itemTit"><span class="badgeF red">승</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:77.50326332028004%;"></div></div></div><span class="itemPer">77.5%</span><span class="itemNum">(97,968)</span></li><li class="tie"><span class="itemTit"><span class="badgeF gray">무</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:17.208180056168665%;"></div></div></div><span class="itemPer">17.2%</span><span class="itemNum">(21,752)</span></li><li class="lose"><span class="itemTit"><span class="badgeF blue">패</span></span><div class="itemBar"><div class="barBg"><div class="barPer" style="width:5.288556623551283%;"></div></div></div><span class="itemPer">5.3%</span><span class="itemNum">(6,685)</span></li></ul><div class="btnWrap"><div class="btnBox"><button class="btn btnMs bdGray btnSlipMatchRecord" id="btnSlipMatchRecord_13" title="팝업 열림" type="button"><span>맞대결정보</span></button><button class="btn btnMs bdGray btnSlipBetCoach" id="btnSlipBetCoach_13" title="팝업 열림" type="button"><span>BET코치</span></button></div></div></div></li></ul>
+</div>
+<script>
+//페이지내의 변수 
+var victory = {};
+</script>
+<script src="/js/slip/gameSlipVictory.html.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function(){
+		victory.grid = {};
+		victory.gmId = "G011";
+		victory.gmTs = 230051;//180008
+		victory.externalMark = "";
+		victory.frameType = "1";
+		victory.victoryGameTxtList();
+		slipUtil.setSearchGameData(victory);
+	});
+	
+	/**
+	 * 데이터 조회
+	 */
+	 victory.callGridData = function(flag){
+		if(flag == null) flag = true;
+		var param = {
+			gmId : victory.gmId,
+			gmTs : Number(victory.gmTs)
+		};
+		var url = "/buyPsblGame/gameInfoInq.do";
+		requestClient.requestPostMethod(url, param, flag, victory.setGridDataCallback);
+	}
+
+	/**
+	 * 데이터 조회 callback
+	 * @param map 조회된 데이터
+	 */
+	 victory.setGridDataCallback = function(data){
+		memoryScheduleInfo = data;
+		if(victory.externalWhere != "WINNERCLUB" && data.schedulesList != null){
+			victory.setSlipTopData();
+			victory.slipVoteTimerSearch();
+		}
+		victory.setGridDraw();
+	}
+	
+	/**
+	 * 구매투표지 그리드
+	 * @param string 타켓 탭id
+	 */
+	 victory.setGridDraw = function(target){
+		var gridList = memoryScheduleInfo.schedulesList;
+		var tmp = "";
+		var gridIdx = 0;
+		var gridObj = "#dataBodyList";
+		var detailBtnFlag = 2;
+		if(target != undefined) {
+			gridObj = target+" "+gridObj;
+			if($(gridObj).html().length > 0 && $(target+" #winrstTotCaseCnt").text() != "-") return;
+		}else{
+			target = "";
+		}
+		
+		if(victory.gmId == "G011") detailBtnFlag = 1;
+			
+		for (var i = 0; i < gridList.length; i++) {
+			tmp += '<li>';
+				tmp += '<div class="subInfo wing">';
+					tmp += '<span class="cell type">';
+						tmp += '<span class="divArea">'+slipUtil.setGridNoticeContent(gridList[i])+'\n'+gridList[i].matchSeq+'경기</span>';
+					tmp += '</span>';
+					if(victory.externalWhere != "WINNERCLUB") tmp += '<span class="cell">'+gridList[i].gameDateStr+'\n'+slipUtil.setGridPlaceContent(gridList[i])+'</span>';
+					else tmp += '<span class="cell">'+gridList[i].gameDateStr+'</span>';
+				tmp += '</div>';
+				
+				tmp += '<div class="vsWrap acdTit">';
+					tmp += '<div class="vsItme hTim">';
+						tmp += '<span class="viTit">'+gridList[i].homeShortName+'</span>';
+						tmp += '<span class="viHome">(홈팀)</span>';
+					tmp += '</div>';
+					tmp += '<span class="vsItme viVs">vs</span>';
+					tmp += '<div class="vsItme aTim">';
+						tmp += '<span class="viAway">(원정팀)</span>';
+						tmp += '<span class="viTit">'+gridList[i].awayShortName+'</span>';
+					tmp += '</div>';
+				if(victory.externalWhere != "WINNERCLUB") tmp += '<button type="button" class="accArr acdBtn"><span class="acdTxt">상세내용 열기</span></button>';
+				tmp += '</div>';
+				if(victory.externalWhere != "WINNERCLUB"){
+					tmp += '<div class="ballotWrap ckWrap ckMul">';
+				}else{
+					tmp += '<div class="viewType">'; 
+						tmp += '<div class="ballotWrap ckStop viewBallotWrap btnH36">';
+				}
+					tmp += victory.setGameSelectVoteButton(gridList[i],0,i,false,target);
+					tmp += victory.setGameSelectVoteButton(gridList[i],1,i,false,target);
+					tmp += victory.setGameSelectVoteButton(gridList[i],2,i,false,target);
+				if(victory.externalWhere != "WINNERCLUB"){
+					tmp += '</div>';
+				}else{
+						tmp += '</div>';
+					tmp += '</div>';
+				}
+				if(victory.externalWhere != "WINNERCLUB") tmp += slipUtil.setTableVoteStatusInfo(i,gridList[i],memoryScheduleInfo.voteStatus,detailBtnFlag);
+			tmp += '</li>';
+		}
+		
+		$(gridObj).html(tmp);
+		if(victory.externalMark != null && betmanOnlineFront.trim(victory.externalMark) !="" ){
+			victory.renderExternalMark(victory.externalMark);
+		}
+		victory.grid[gridIdx] = $(gridObj);
+		if(victory.externalWhere == "WINNERCLUB" && (victory.externalLoadType == "viewWinrst" || victory.externalLoadType == "cart")){
+			commonSlipWinrst.setBottomData(victory.externalWinMarking);
+		}else{
+			victory.setGameCloseStyle();
+		}
+		
+	}
+</script>
+<!-- // tblList game : 투표지영역 -->
+<!-- //리스트 -->
+<div class="fixCartWrap">
+<!-- 장바구니 버튼 -->
+<div class="fixCartBtn">
+<div class="sets">
+<div class="carting">
+<a class="btnfixCartArea" href="javascript:;" onclick="common.popupFull('btnfixCartArea', 'fixCartArea');">
+<em class="tt">카트담기</em> <em class="ss" id="cartOuterCntAllotTxt" style="display: none;">-</em><!-- (10경기/99.09배) -->
+</a>
+<button class="btn btnS bdGray" id="cartOutterAlloBtn" onclick="slipUtil.viewAllotsRatioPop(this)" style="display: none;" title="팝업 열림" type="button"><span>배당률보기</span></button>
+</div>
+</div>
+</div>
+<!-- //장바구니 버튼 -->
+<!-- 장바구니 레이어 -->
+<div class="fixCartArea">
+<a class="popupFocus" href="javascript:;">레이어 팝업</a>
+<div class="fbody">
+<div class="gameTop">
+<span class="hdt">
+<span class="tt">카트담기</span>
+<span class="stat">
+<em class="badge a" id="cartInnerTopCntTxt" style="display: none;">-조합</em><!-- 5조합 -->
+<em class="badge b" id="cartInnerTopAllotTxt" style="display: none;"></em><!-- 999.09배 -->
+</span>
+</span>
+<!-- 상단의 투표현황 버튼이 삭제될경우 같이 삭제되야함 -->
+<!--// 상단의 투표현황 버튼이 삭제될경우 같이 삭제되야함 -->
+</div>
+<!-- 프로토 승부식일경우 -->
+<div class="gameList" style="display: none;">
+<ul class="glist"></ul>
+</div>
+<!--// 프로토 승부식일경우 -->
+<div class="gameOpts">
+<div class="infos">
+<ul class="lst">
+<li>
+<span class="dt" id="cartInnerCntTitTxt">조합수</span><!-- 조합수/경기수 -->
+<span class="dd"><em class="n" id="cartInnerCntTxt">-</em> <em class="s" id="cartInnerCntTitTxt2">조합</em></span> <!-- 조합/경기 -->
+</li>
+<li style="display: none;">
+<span class="dt">예상적중배당률</span>
+<span class="dd">
+<em class="n" id="cartInnerAlloTxt">-</em> <em class="s">배</em><!-- 배당률 단식 조합수가 1일 경우 -->
+<button class="btn btnS bdGray btPoll" id="cartInnerAlloBtn" onclick="slipUtil.viewAllotsRatioPop(this)" style="display: none;" type="button"><span>배당률보기</span></button><!-- 배당률 복식 -->
+</span>
+</li>
+<li id="bettingMoneyLi">
+<span class="dt">구매금액</span>
+<span class="dd">
+<span class="inputBox prc" id="sumArea" style="display: none;">
+<input class="amt" disabled="" id="txtBettingMoney" type="text"/>
+<button class="del" id="btnDelSlipCartTxtBettingMoney"><span class="blind">삭제</span></button>
+</span><!-- 금액: 변경있을경우 -->
+<em class="n" id="cartInnerBuyAmtTxt" style="">-</em><!-- 금액: 변경없을경우 -->
+<em class="s">원</em>
+</span>
+<!-- 배당률게임만 보여줌 -->
+<div class="gbts" style="display: none;">
+<button class="btn btnS bdGray" data-amt="100" id="cartInnerAmtBtn1" type="button"><span>+1백</span></button>
+<button class="btn btnS bdGray" data-amt="1000" id="cartInnerAmtBtn2" type="button"><span>+1천</span></button>
+<button class="btn btnS bdGray" data-amt="10000" id="cartInnerAmtBtn3" type="button"><span>+1만</span></button>
+</div>
+<!--// 배당률게임만 보여줌 -->
+</li>
+<li>
+<span class="dt" id="cartInnerTotalAmtTitTxt">총 구매금액</span><!-- 예상적중금액/총투표금액 -->
+<span class="dd"><em class="n" id="cartInnerTotalAmtTxt">-</em> <em class="s">원</em></span>
+</li>
+</ul>
+<div class="bts">
+<span class="selectBox gns">
+<select id="slipAutoOption"><option value="vote">다득표</option><option value="0">1,000</option><option value="1">4,000</option><option value="2">8,000</option><option value="3">12,000</option><option value="4">24,000</option><option value="5">32,000</option><option value="6">48,000</option></select><!-- 각 자동선택 유형별의 내용을 적용 -->
+</span>
+<button class="btn btnS bgBlue btAuto" id="cartInnerAutoBtn"><span>AUTO</span></button>
+<button class="btn btnS bdGray btReset" id="cartInnerClearBtn"><span>초기화</span></button>
+</div>
+</div>
+<div class="cartBtn">
+<a class="btn btnM bdRed btCart" href="javascript:;" onclick="rightA.insertToCartCheck();"><span>카트담기</span></a>
+</div>
+</div>
+<button class="btClose" onclick="common.popupFull('btnfixCartArea', 'fixCartArea');" type="button"><span class="blind">카드닫기</span></button>
+</div>
+</div>
+<!-- //장바구니 레이어 -->
+</div>
+<script>
+$(document).ready(function(){
+	//개별투표금액 keyevent start
+	$("#txtBettingMoney").on("keydown",function(event){
+		slipUtil.noCtrlKey(event);
+	});
+	$("#txtBettingMoney").on("keypress",function(event){
+		slipUtil.IsNumber(event);
+	});
+	$("#txtBettingMoney").on("keyup",function(event){
+		this.value = slipUtil.getPageVariable().reCalculateBuyInfo(this);
+	});
+	$("#txtBettingMoney").on("focus",function(event){
+		slipUtil.focusBettingMoney(this);
+	});
+	//개별투표금액 keyevent end
+	//자동선택 
+	$("#cartInnerAutoBtn").on("click",function(){
+		slipUtil.getPageVariable().slipPaperAutoMarking($("#slipAutoOption").val());
+	});
+	//초기화 
+	$("#cartInnerClearBtn").on("click",function(){
+		$("#txtBettingMoney").val("");
+		slipUtil.getPageVariable().slipPaperClear();
+	});
+	//투표현황
+	$("#cartOuterVoteBtn, #cartInnerVoteBtn").on("click",function(){
+		common.popupFull($(this).attr("id"), 'popWrap01');
+		slipVote.viewPop();
+	});
+	//백,천,만 금액버튼 이벤트
+	$("#cartInnerAmtBtn1,#cartInnerAmtBtn2,#cartInnerAmtBtn3").on("click",function(){
+		var thisAmt = Number(betmanOnlineFront.replaceAll($("#txtBettingMoney").val(),","));
+		var plusAmt = Number($(this).attr("data-amt"));
+		$("#txtBettingMoney").val(betmanOnlineFront.setNumberComma(thisAmt+plusAmt));
+		rightA.allotChkFlag = false;
+		slipUtil.getPageVariable().reCalculateBuyInfo(document.getElementById("txtBettingMoney"));
+	});
+	$("#btnDelSlipCartTxtBettingMoney").on("click",function(){
+		$('#txtBettingMoney').val('');
+		rightA.allotChkFlag = false;
+		slipUtil.getPageVariable().reCalculateBuyInfo(document.getElementById("txtBettingMoney"));
+	});
+	// 게임아이디에 따라 초기 데이터 세팅
+	rightA.setCartAreaClearForGmId();
+});
+var rightA = {};
+rightA.cntTit = "조합";
+rightA.allotChkFlag = true;
+
+/**
+ * 배당률 및 조합수 정보 세팅
+ */
+rightA.setCartCntAllotInfo = function(data){
+	$("#cartOuterCntAllotTxt").text(data.outterCntAllot); //(조합수/배당률)
+	
+	$("#cartInnerTopCntTxt").text(data.totSelectCnt+rightA.cntTit);
+	if($("#cartInnerTopCntTxt").text() == "") {
+		$("#cartInnerTopCntTxt").hide();
+	}else{
+		$("#cartInnerTopCntTxt").show();
+		if(Number(data.totSelectCnt) > 1){
+			$("#cartInnerAlloTxt").hide();
+			$("#cartInnerAlloTxt").next().hide();
+			$("#cartInnerAlloBtn").show();
+			
+			
+		}else{
+			$("#cartInnerAlloTxt").show();
+			$("#cartInnerAlloTxt").next().show();
+			$("#cartInnerAlloBtn").hide();
+			$("#cartOutterAlloBtn").hide();
+		}
+	}
+	$("#cartInnerCntTxt").text(data.totSelectCnt);
+	$("#cartInnerAlloTxt").text(data.innerAllot);
+	
+	if(data.totSelectCnt != "" && data.totSelectCnt != "-" && data.totSelectCnt != null) {
+		$("#cartOuterCntAllotTxt").show();
+		if(Number(data.totSelectCnt) == 1) $("#cartInnerTopAllotTxt").show();
+		else $("#cartInnerTopAllotTxt").hide();
+	}else{
+		$("#cartOuterCntAllotTxt").hide();
+		$("#cartInnerTopCntTxt").hide();
+		$("#cartInnerTopAllotTxt").hide();
+	}
+	rightA.setCartBuyAmtInfo(data);
+}
+
+/**
+ * 개별투표금액 및 총투표금액 세팅
+ */
+rightA.setCartBuyAmtInfo = function(data){
+	//게임유형에 따른 금액 입력필드 표시
+	
+		
+			$("#cartInnerBuyAmtTxt").show();//승무패
+			$("#bettingMoneyLi").removeClass("bets");
+			$("#cartInnerAlloTxt").parent().parent().hide();
+			$("#txtBettingMoney").parent().hide();//그외
+			$("#cartInnerAmtBtn1").parent().hide();
+		
+		
+	
+	
+	$("#cartInnerBuyAmtTxt").text(betmanOnlineFront.setNumberComma(data.selectPrice));
+	$("#txtBettingMoney").val(betmanOnlineFront.setNumberComma(data.selectPrice == "-" ? "" : data.selectPrice));
+	$("#cartInnerTotalAmtTxt").text(betmanOnlineFront.setNumberComma(data.totPrice));
+}
+
+/**
+ * 초기화면 세팅
+ */
+rightA.setCartAreaClearForGmId = function(){
+	var protoFlag = false;
+	
+	var cntTit = "조합수";
+	var totalAmtTit = "총 구매금액";
+	if(protoFlag){
+		cntTit = "선택경기수";
+		rightA.cntTit = "경기";
+		totalAmtTit = "예상적중금액";
+	}
+		
+	//투표현황 버튼이 필요없을 경우
+	
+		$("#cartOuterVoteBtn").remove();
+		$("#cartInnerVoteBtn").parent().remove();
+	
+	//조합수/경기수 정보 표시
+	$("#cartInnerCntTitTxt").text(cntTit);//조합수/경기수 제목
+	$("#cartInnerCntTitTxt2").text(rightA.cntTit);
+	var data = {
+		outterCntAllot : "-"
+		,innerCnt : "-"
+		,innerAllot : "-"
+		,selectPrice : "-"
+		,totPrice : "-"
+		,totSelectCnt : "-"
+	};
+	rightA.setCartCntAllotInfo(data);
+
+	//프로토/토토게임에따른 설정
+	$("#cartInnerTotalAmtTitTxt").text(totalAmtTit);
+	
+	//투표옵션 설정
+	var slipTmp = betmanOnlineFront.existFunctionCheck(slipUtil.getPageVariable().getVoteOptionList) ? slipUtil.getPageVariable().getVoteOptionList() : "" ;
+	if(slipTmp != "") {
+		if($("#slipAutoOption").html().length == 0) $("#slipAutoOption").html(slipTmp);
+	}else{
+		$("#slipAutoOption").parent().remove();
+	}
+	rightA.cartData = null;
+}
+
+/**
+ * right 구매하기 선택 데이터 세팅 (등위게임)
+ * @param map 게임정보
+ * @param boolean no data 표시 여부
+ */
+ rightA.setRightDataEqualGame = function(data,flag){
+	slipUtil.setRightData(data);
+	data.outterCntAllot = "("+data.totSelectCnt+rightA.cntTit+")";
+	rightA.setCartCntAllotInfo(data);
+	$("#cartInnerTopAllotTxt").hide();
+}
+
+/**
+ * right 구매하기 선택 데이터 세팅 (배당률:복식,단식)
+ * @param map 게임정보
+ * @param boolean no data 표시 여부
+ */
+ rightA.setRightDataAllotDoubleGame = function(data,flag){
+	slipUtil.setRightData(data);
+	data.outterCntAllot = "("+data.totSelectCnt+rightA.cntTit+")";
+	data.innerAllot = "-";
+	
+	var allotTxt = $("#cartInnerAlloTxt").text();
+	rightA.setCartCntAllotInfo(data);
+	if(rightA.allotChkFlag && data.totSelectCnt == 1){
+		var param = {
+			gmId : data.gmId,
+			gmTs : Number(data.gameTs),
+			userSlipMark : slipUtil.viewAllotsRatioSlipmark()
+		};
+		slipUtil.getPopupAllotGridData(param,rightA.getAllotDataCallback);
+	}else{
+		$("#cartOuterCntAllotTxt").text("("+rightA.cartData.totSelectCnt+rightA.cntTit+"/"+$("#cartInnerAlloTxt").text()+"배)"); //(조합수/배당률)
+		$("#cartInnerTopAllotTxt").text(allotTxt+"배");
+		$("#cartInnerAlloTxt").text(allotTxt);
+	}
+	
+	rightA.allotChkFlag = true;
+}
+
+/**
+ * 프로토 카트 영역 갱신
+ * @param markingList 마킹정보
+ * @param scheduleList 게임정보
+ */
+rightA.setRightDataProtoGame = function(markingList, scheduleList) {
+	// 카트 구매하기 영역 갱신
+	var totalCnt = protoVictory.getSlipTotSelectCnt();
+	var inputPrice = Number($('#txtBettingMoney').val().replace(/,/g, ''));
+//	inputPrice = inputPrice ? inputPrice : slipUtil.baseSellPrice;
+	var data = {
+		gmId : protoVictory.gmId
+		,totSelectCnt : totalCnt
+		,selectPrice : inputPrice
+		,totPrice : totalCnt ? inputPrice * totalCnt : '-'
+		,availableBuyAmount : memoryScheduleInfo.availableBuyAmount
+		,currentLottery : memoryScheduleInfo.currentLottery
+		,gameTs : protoVictory.gmTs
+		,slmkCtt : protoVictory.makeSlmkCtt(inputPrice)
+		,buyAmt : totalCnt ? inputPrice : '-'
+	};
+	 
+	if(data.totSelectCnt) {
+		// 예상 배당률 처리
+		var allot = 1;
+		var html = '';
+		for(var matchSeq in markingList) {
+			var selKey = markingList[matchSeq];
+			var row = scheduleList[matchSeq];
+			row.allot = selKey === 1 ? row.winAllot : selKey === 2 ? row.drawAllot : row.loseAllot;
+			allot *= row.allot*1000;
+			
+			var addClass = '', gameEndStr = '';
+		
+			if (row.winAllot == 1 || row.gameResult == '4') {	// 경기 취소 추가
+				addClass = ' class="disabled"';
+				gameEndStr = '취소';
+			} else if (row.protoStatus == '3') {	//발매마감
+				addClass = ' class="disabled"';
+				gameEndStr = '발매마감';
+			}
+			
+			// 발매차단 처리
+			if(selKey == 1 && (row.gameReject == '1' || ['1', '3', '5', '7'].indexOf(row.buyReject) > -1)) {
+				addClass = ' class="disabled"';
+				gameEndStr = '발매차단'; 
+			}
+			
+			if(selKey == 2 && (row.gameReject == '1' || ['2', '3', '6', '7'].indexOf(row.buyReject) > -1)) {
+				addClass = ' class="disabled"';
+				gameEndStr = '발매차단'; 
+			}
+			
+			if(selKey == 3 && (row.gameReject == '1' || ['4', '5', '6', '7'].indexOf(row.buyReject) > -1)) {
+				addClass = ' class="disabled"';
+				gameEndStr = '발매차단'; 
+			}
+			
+			// 선택된 아이템 목록
+			var addCon = '';
+			switch(row.handi){
+				case 2 :
+				case 12 :
+					// 핸디캡
+					addCon = '<span class="ss red">H' + (row.winHandi > 0 ? '+' : '') + row.winHandi.toFixed(1) + '</span>';
+				case 0 :
+					// 승무패
+					switch(selKey) {
+						case 1 : row.winTxt = '승'; break;
+						case 2 : row.winTxt = '무'; break;
+						case 3 : row.winTxt = '패'; break;
+					}
+					break;
+				case 5 :
+					// 홀짝
+					switch(selKey) {
+						case 1 : row.winTxt = '홀'; break;
+						case 3 : row.winTxt = '짝'; break;
+					}
+					break;
+				case 9 :
+					// 언더오버
+					addCon = '<span class="ss blue">U/O ' + row.winHandi.toFixed(1) + '</span>';
+					switch(selKey) {
+						case 1 : row.winTxt = 'U'; break;
+						case 3 : row.winTxt = 'O'; break;
+					}
+					break;
+				case 13 :
+					// 승1패
+					switch(selKey) {
+						case 1 : row.winTxt = '승'; break;
+						case 2 : row.winTxt = '①'; break;
+						case 3 : row.winTxt = '패'; break;
+					}
+					break;
+				case 14 :
+					// 승5패
+					switch(selKey) {
+						case 1 : row.winTxt = '승'; break;
+						case 2 : row.winTxt = '⑤'; break;
+						case 3 : row.winTxt = '패'; break;
+					}
+					break;
+			}
+						
+			// 배당률 변경 처리
+			var markingAllot = protoVictory.markingAllotList[matchSeq];
+			var allotChangeHtml = '';
+			
+			if(markingAllot != row.allot) {
+				if(markingAllot < row.allot) {
+					allotChangeHtml = ' <em class="icoG updown up"><span class="blind">배당률 상승</span></em></span> ';
+				} else {
+					allotChangeHtml = ' <em class="icoG updown down"><span class="blind">배당률 하락</span></em></span> ';
+				}
+			}
+			
+			html += '<li' + addClass + '>';
+			html += '	<span class="dd nums">' + matchSeq + '</span>';
+			html += '	<span class="dd tits"><span class="tt">' + row.homeName + '</span> ' + addCon + '</span>';
+			html += '	<span class="dd stat">';
+			if(gameEndStr) html += '<span class="bdg">' + gameEndStr + '</span>';
+			html += '	</span>';
+			html += '	<span class="dd dvid"><span class="dvd">' + row.winTxt + row.allot.toFixed(2) + allotChangeHtml + '</span> </span>';
+			html += '	<span class="dd dels"><button type="button" class="btDel" onclick="rightA.delProtoItem(\'' + matchSeq + '\', \'' + selKey + '\');"><span class="blind">' + row.homeName + ' 카트에서 삭제</span></button></span>';
+			html += '</li>';
+			
+			//<em class="icoG updown down"><span class="blind">배당률 하락</span></em></span>
+		}
+		
+		//자바스크립트 연산버그로 인한 float계산
+		for (var i=0; i < data.totSelectCnt ; i++) {
+			allot /= 1000;
+    	}
+		
+		var tmpOneBettingRatio = allot.toString();		
+		//alert("tmpOneBettingRatio===="+tmpOneBettingRatio);
+		
+		
+		if(_slipConfig.gameDivCd != 'S') {
+			//allot = Math.ceil( Math.floor( (Number( allot.toFixed(4) ) * 100).toFixed(2)) / 10) / 10;; //조합의 경우 세자리수 이후 버림, 두자리수에서 올림
+			
+			if(tmpOneBettingRatio.indexOf(".") > -1 ){
+				tmpOneBettingRatio = tmpOneBettingRatio.substr(0, tmpOneBettingRatio.indexOf(".")+3);
+				tmpOneBettingRatio = Math.ceil(tmpOneBettingRatio*10) / 10; // 2째 자리 절상
+				tmpOneBettingRatio = tmpOneBettingRatio.toFixed(1);         //소수1자리까지 표현
+		    }
+			allot = tmpOneBettingRatio;		
+			//alert("allot===="+allot);
+			
+			data.totPrice = Math.floor(allot * 10 * data.selectPrice / 10);
+			$("#cartInnerAlloTxt").text(allot);
+			$("#cartOuterCntAllotTxt").text('(' + data.totSelectCnt + rightA.cntTit + '/' + allot + '배)').show();
+			$('#cartInnerTopAllotTxt').text(allot + '배').show();
+		} else {
+			//data.totPrice = Math.ceil(allot * 100 * data.selectPrice / 100);
+			//data.totPrice = Math.ceil(allot * 100 * data.selectPrice / 100);
+			data.totPrice = (betmanOnlineFront.fixDecimal(allot,2)*100).toFixed(0)*data.selectPrice/100 ; 
+			$("#cartInnerAlloTxt").text(allot.toFixed(2));
+			$("#cartOuterCntAllotTxt").text('(' + data.totSelectCnt + rightA.cntTit + '/' + allot.toFixed(2) + '배)').show();
+			$('#cartInnerTopAllotTxt').text(allot.toFixed(2) + '배').show();
+		}
+		
+		//$("#cartOuterCntAllotTxt").text('(' + data.totSelectCnt + rightA.cntTit + '/' + allot.toFixed(1) + '배)').show();
+		$("#cartInnerTopCntTxt").text(data.totSelectCnt+rightA.cntTit).show();
+		
+		$('.gameList .glist').html(html).show();
+		$('.gameList').show();
+	} else {
+		$("#cartOuterCntAllotTxt").text('').hide();
+		$("#cartInnerTopCntTxt").hide();
+		$('#cartInnerTopAllotTxt').hide();
+		$("#cartInnerAlloTxt").text('-');
+		data.totPrice = '-';
+		
+		$('.gameList .glist').empty();
+		$('.gameList').hide();
+	}
+	
+	$("#cartInnerCntTxt").text(data.totSelectCnt);
+	
+	if(data.selectPrice == 0) data.selectPrice = '-';
+	
+	slipUtil.setRightData(data);
+	rightA.setCartBuyAmtInfo(data);
+}
+
+/**
+ * 프로토 아이템 삭제
+ */
+rightA.delProtoItem = function(matchSeq, selKey) {
+	protoVictory.delGmBuy(matchSeq, selKey);
+}
+ 
+/**
+ * right 구매하기 배당률게임일 경우 조합수 1일때 배당룰 조회 callback
+ * @param map 배당률정보
+ */
+rightA.getAllotDataCallback = function(data){
+	 if(data.allotList != null && data.allotList.length > 0){
+		 $("#cartInnerAlloTxt").text(betmanOnlineFront.formatNumber(data.allotList[0].allot,1));
+		 $("#cartOuterCntAllotTxt").text("("+rightA.cartData.totSelectCnt+rightA.cntTit+"/"+$("#cartInnerAlloTxt").text()+"배)"); //(조합수/배당률)
+		 $("#cartInnerTopAllotTxt").text($("#cartInnerAlloTxt").text()+"배");
+	 }else{
+		 $("#cartInnerAlloTxt").text("-");
+	 }
+}
+
+/**
+ * right 구매하기 목록을 카트에 등록하는 함수
+ */
+rightA.insertToCartCheck = function() {
+	if(!isLogin){
+		if (rightA.cartData.gmId == "G101" ) {
+			var slmkCtt = this.cartData.slmkCtt; 
+			var gameCount = slmkCtt.replace(/^([0-9]+).*$/,'$1'); 
+			if(_slipConfig.gameDivCd != 'S' && (gameCount < 2 || 10 < gameCount)) { 
+				alert(getMessage("BF0060")); // 승부식 게임은 2~10경기까지 구매가능합니다.
+		 		return;
+			}else {
+				slipUtil.callLoginCheckOpenPopMark("BF0043"); //로그인 후 카트담기를 하실 수 있습니다.\r\n 로그인 하시겠습니까?
+			}
+		}else{
+			slipUtil.callLoginCheckOpenPopMark("BF0043"); //로그인 후 카트담기를 하실 수 있습니다.\r\n 로그인 하시겠습니까?
+		}
+	} else {
+		if(rightA.cartData == null || (rightA.cartData.gmId != "G101" && rightA.cartData.gmId != "G102" & ( rightA.cartData.totSelectCnt == "-" || rightA.cartData.totSelectCnt == 0 ))){
+	 		alert(getMessage("BF0061")); // 구매투표지에 예상결과 선택이 빠진 곳이 있습니다. \r\n 확인해 주시기 바랍니다.
+	 		return false;
+	 	}
+	 	if(rightA.valid()) return;
+	 	if(rightA.maxCartValid()) return;
+
+		rightA.directBuy = 'N';
+		var params = {
+			purchaseType : 'DIRECT',    // 구매구분("DIRECT"-바로구매, "CART"-카트내역구매)
+	   		gmIds : rightA.cartData.gmId,		// '#' 구분자 배열값 요청
+	   		gmTss : rightA.cartData.gameTs,	// '#' 구분자 배열값 요청
+	   		slipMakrs : rightA.cartData.slmkCtt,		// '#' 구분자 배열값 요청
+	   		year :  rightA.cartData.year,
+	   		checkType : 'CART'
+		};
+		requestClient.requestPostMethod("/mypgPayment/checkProto.do", params, true, rightA.checkCartCallback, rightA.errorCallback);
+	}
+}
+
+/**
+ * right 카트담기 내용 체크 callback
+ * @param map 리턴 데이터
+ */
+rightA.checkCartCallback = function(result){
+	if(result){
+		if(result.protoChangeMessage){
+			if(result.protoErrorMessage.indexOf("취소된 경기가 있습니다") > -1) {
+				alert("취소된 경기가 있습니다. \n해당 경기를 삭제하고 카트에 담으실 수 있습니다.");
+				//최신정보 조회 및 refresh
+				if(rightA.cartData.gmId == 'G101') rightA.protoVictoryChangeReload(function(){});
+			} else {
+				//배당률 변경팝업
+				var confirmOk = confirm("기존 투표항목의 배당률 또는 사전에 주어진 조건이 변경되었습니다.\n변경된 내용으로 카트에 담으시겠습니까?");
+				if(confirmOk) {
+					//최신정보 조회 및 refresh
+					if(rightA.cartData.gmId == 'G101') rightA.protoVictoryChangeReload(function(){
+						rightA.cartData.slmkCtt = protoVictory.makeSlmkCtt(rightA.cartData.buyAmt, null, true);
+						rightA.insertToCart();
+					});
+				} else {
+					//최신정보 조회 및 refresh
+					if(rightA.cartData.gmId == 'G101') rightA.protoVictoryChangeReload(function(){});
+				}
+			}
+			
+			return false;
+			
+		}else{
+			if(result.protoErrorMessage){
+				if(result.protoErrorMessage.indexOf("취소된 경기가 있습니다") > -1) {
+					alert("취소된 경기가 있습니다. \n해당 경기를 삭제하고 카트에 담으실 수 있습니다.");
+				} else if(result.protoErrorMessage.indexOf('발매가 일시 중지 되었습니다') > -1) {
+					alert(getMessage('BF0065')); //발매 차단 경기가 있습니다. \n해당 경기를 삭제하고 카트에 담으실 수 있습니다.
+				} else {
+					alert(betmanOnlineFront.parseAlertMsg(result.protoErrorMessage));
+					if(result.protoErrorMessage.indexOf('강제탈퇴 되었습니다') > -1) forceLogout();
+				}
+				//최신정보 조회 및 refresh
+				if(rightA.cartData.gmId == 'G101') {
+					rightA.protoVictoryChangeReload(function(){});
+				}
+				return false;
+				
+			} else {
+				rightA.insertToCart();
+				return false;
+			}
+		}
+	}
+	return true;
+}
+
+/**
+ * right 구매하기 목록을 카트에 등록하는 함수
+ */
+rightA.insertToCart = function() {
+	if(!isLogin){
+		slipUtil.callLoginCheckOpenPopMark("BF0043"); //로그인 후 카트담기를 하실 수 있습니다.\r\n 로그인 하시겠습니까?
+	} else {
+	 	/*
+	 	게임ID       - gmId
+	 	게임회차               - gameTs
+	 	슬립마킹내용        - slmkCtt
+	 	개별투표금액               - buyAmt
+	 	*/
+	 	if(rightA.cartData == null || (rightA.cartData.gmId != "G101" && rightA.cartData.gmId != "G102" & ( rightA.cartData.totSelectCnt == "-" || rightA.cartData.totSelectCnt == 0 ))){
+	 		alert(getMessage("BF0061")); // 구매투표지에 예상결과 선택이 빠진 곳이 있습니다. \r\n 확인해 주시기 바랍니다.
+	 		return false;
+	 	}
+	 	if(rightA.valid()) return;
+	 	if(rightA.maxCartValid()) return;
+
+		rightA.directBuy = 'N';
+			
+		var params = {
+	     	gmId : rightA.cartData.gmId,
+	     	gameTs : rightA.cartData.gameTs,
+	     	slmkCtt : rightA.cartData.slmkCtt,
+	     	buyAmt : rightA.cartData.buyAmt
+		};
+
+		requestClient.requestPostMethod("/myCart/insCart.do", params, true, rightA.insertToCartCallback, rightA.errorCallback);
+
+	}
+ }
+ 
+/**
+ * right 구매하기 목록을 카트에 등록하는 함수 callback
+ * @param map 리턴 데이터
+ */
+ rightA.insertToCartCallback = function(result){
+	 if(result.rsMsg.statusCode == 'S') {
+		 alert(getMessage("BF0066"));
+		 slipUtil.getPageVariable().slipPaperClear();
+	 } else {
+		 alert(result.rsMsg.message);
+	 }
+ }
+ 
+
+/**
+ * right 카트담기 validation
+ */
+rightA.valid = function(flag) {
+	var gmId = this.cartData.gmId;
+	var slmkCtt = this.cartData.slmkCtt;
+	var selectPrice = this.cartData.selectPrice == '-' ? 0 : this.cartData.selectPrice;
+	var totPrice = this.cartData.totPrice;
+
+	var availableBuyAmount = this.cartData.availableBuyAmount;
+	var msgCd = null;
+	var minAmt = slipUtil.unitSellPrice;
+	
+	//모의체험인 경우에는 5만원 구매가능 금액 체크 하지 않도록 flag를 둠
+	var chkAmount = true;
+	if (typeof flag != 'undefined' && flag == 'mockJoin') {
+		chkAmount = false;
+	}
+	
+	switch (gmId) {
+	case 'G101':
+		var gameCount = slmkCtt.replace(/^([0-9]+).*$/,'$1');
+		if(_slipConfig.gameDivCd != 'S' && (gameCount < 2 || 10 < gameCount)) {
+			msgCd = 'BF0060';	// 승부식 게임은 2~10경기까지 구매가능합니다.
+		}
+		
+		// 발매차단 게임취소 등 상태 check 추가
+		for(var matchSeq in markingList) {
+			var game = _slipConfig.data.orgScheduleList[matchSeq];
+			var selKey = markingList[matchSeq];
+			
+			//취소 경기 확인
+			if (game.winAllot == 1 || game.gameResult == '4') msgCd = 'BF0177';
+
+			// 마감 경기 확인
+			if(game.protoStatus != '2') msgCd = 'BF0064';
+			
+			// 차단 경기 확인
+			if(selKey == 1 && game.gameReject == '1' && ['1', '3', '5', '7'].indexOf(game.buyReject) > -1) msgCd = 'BF0065';
+			if(selKey == 2 && game.gameReject == '1' && ['2', '3', '6', '7'].indexOf(game.buyReject) > -1) msgCd = 'BF0065';
+			if(selKey == 3 && game.gameReject == '1' && ['4', '5', '6', '7'].indexOf(game.buyReject) > -1) msgCd = 'BF0065';
+		}
+		
+		//적중예상금액 1억 초과
+		if(totPrice > 100000000){
+			alert('투표권당 예상 적중금은 1억원을 초과할 수 없습니다.');
+			return true;
+		}
+		
+		// 프로토 예외 처리
+		totPrice = selectPrice;
+		
+		// 싱글일 경우 구매 최소 금액(1,000원) 변경 처리
+		if(_slipConfig.gameDivCd == 'S') {
+			minAmt = 1000;
+		}
+		
+		break;
+	case 'G102':
+		$('#buyList [name="buyAmt"]').each(function(){
+			var amt = $(this).val().replace(',' ,'')
+			if(amt <= 0) {
+				msgCd = 'BF0112' // 개별투표금액을 입력해 주세요.
+				return false;
+			} else if(amt % minAmt > 0) {
+				msgCd = 'BF0045' // 개별투표금액은 {게임별 최소단위 금액}원 단위로 입력해 주세요.
+				return false;
+			}
+		});
+		break;
+	}
+	
+	if(!msgCd) {
+		if(selectPrice <= 0) {
+			msgCd = 'BF0112' // 개별투표금액을 입력해 주세요.
+		} else if(selectPrice % minAmt > 0) {
+			msgCd = 'BF0045' // 개별투표금액은 {게임별 최소단위 금액}원 단위로 입력해 주세요.
+		}
+		/* 모바일은 카트담기만 가능..
+		else if(totPrice > availableBuyAmount && rightA.directBuy != 'N') {//카트는 가능
+			if (chkAmount) {
+				msgCd = 'BF0068' // 회차별 5만원까지 구매가 가능합니다. \r\n 구매가능금액을 확인해 주세요.
+			}
+		} 
+		*/
+	}
+	
+	var msg;
+	
+	if(msgCd) {
+		if(msgCd == "BF0045") {
+			msg = getMessage(msgCd , betmanOnlineFront.setNumberComma(minAmt));
+		} else {
+			msg = getMessage(msgCd);
+		}
+	}
+	
+	if(msg) {
+		alert(msg);
+		return true;
+	}
+	return false;
+}
+
+/*
+ * 카트 최대 유효성검사
+ */
+rightA.maxCartValid = function(){
+	var gmId = this.cartData.gmId;
+	var gameType = [];
+	var msgCd = null;
+	var totalCount = -1;
+	if(gmId == 'G102') {
+		$("#buyList li").each(function(){
+			if(gameType.indexOf($(this).data("gamealphaid")) == -1) {
+				gameType.push($(this).data("gamealphaid"));	
+			}
+		});
+	}
+	
+	if(gameType.length == 0) gameType.push('A');
+	
+	requestClient.requestPostMethod("/main/inqCartGameListCnt.do", {}, false, function(result){
+		totalCount = result.items.totalCnt;
+	}, rightA.errorCallback);
+	
+	if(totalCount + gameType.length > 100) {
+		msgCd = 'BF0063'; // 쇼핑카트는 현재 100개까지 담으실 수 있습니다. \r\n [현재 카트 보관수 : {0} 개]
+	}
+	
+	if(msgCd) {
+		alert(getMessage(msgCd, totalCount));
+		return true;
+	}
+	if(totalCount == -1) {
+		return true;
+	}
+	return false;
+}
+
+/**
+ * 로그인 세션 에러 콜백 
+ */
+rightA.errorCallback = function(e){
+	if(e.responseText.indexOf("로그인이 필요한 페이지입니다.") > -1) {
+		alert(getMessage('A00261'));
+		location.reload();
+	}
+}
+
+/**
+ * 프로토 승부식 배당률 변경
+ */
+rightA.protoVictoryChangeReload = function(callback) {
+	var params = {gmId : protoVictory.gmId, gmTs : protoVictory.gmTs, gameYear : protoVictory.gameYear};
+	params.gameYear = params.gameYear ? params.gameYear : '';
+	requestClient.requestPostMethod("/buyPsblGame/gameInfoInq.do", params, true, function(result){
+		protoVictory.onGmBuySlipRefresh(result);
+		callback();
+	}, rightA.errorCallback);
+}
+</script>
+<hr class="sp"/>
+<!-- 주의사항 -->
+<ul class="noteAcd acdWrap">
+<li class="noteBox typeTit" style="display: list-item;">
+<div class="nbTit acdTit">
+<span class="tit bgBlack">주의사항</span>
+<button class="ocBtn acdBtn"><span class="acdTxt">상세내용 닫기</span></button>
+</div>
+<ul class="nbNum acdCon" id="gameBuyCautionInfoArea"><p>1. 대상경기 정보는 변경될 수 있으므로, 투표권 구매 전 재확인하여 주시기 바랍니다.<br/>2. 경기장 환경 및 기타 요인 등으로 인해 특정팀 관중의 입장이 제한되거나 무관중 경기로 진행될 수도 있습니다.<br/>3. 적중특례 발생 시 해당경기는 복식구매가 제한될 수 있습니다.</p></ul>
+</li>
+<li class="noteBox typeTit">
+<div class="nbTit acdTit">
+<span class="tit">구매 전 확인하세요</span>
+<button class="ocBtn acdBtn"><span class="acdTxt">상세내용 닫기</span></button>
+</div>
+<ul class="nbBul acdCon" id="gameBuyNoticeInfoArea"><li><em class="icoG er2"><span class="blind">긴급공지</span></em> 표시는 해당경기에 대한 <span class="fcRed">긴급공지</span>입니다.</li><li><em class="icoG stadium3"><span class="blind">중립경기 등 특이사항</span></em> 표시는 해당경기가 중립경기장 및 제2구장, 타 지역 등 경기장소에 특이사항이 있는 경기입니다.</li><li>[다득표 자동선택]을 선택하시면 각 경기별 투표율이 높은 항목에 자동으로 표기됩니다.</li></ul>
+</li>
+</ul>
+<!-- //주의사항 -->
+<div class="betcoach-mobile"></div>
+<div class="matchRecordSlipPop"></div>
+</div>
+<style>
+ /* 삼성 기본브라우저에서 그리드 하단 border 묻히는 현상 */
+.devVotePopClass .DTFC_ScrollWrapper {margin-bottom: 2px;}
+.devVotePopClass .dataTables_scrollBody {border-bottom: 1.5px solid #e0e0e0 !important;}
+</style>
+<script>
+var slipVote = {};
+$(document).ready(function(){
+	/**
+	 * 투표현황 팝업 그리드 생성
+	 */
+	slipVote.viewPop = function(){
+		//투표현황팝업 닫힌상태로 resize 이벤트 호출시 grid 날아가는 현상때문에 추가
+		$(window).resize();
+		
+		if(slipVote.grid != null) return;
+		
+			
+			
+				slipVote.grid = $("#tbl1, #tbl2, #tbl3, #tbl4, #tbl5, #tbl6, #tbl7").DataTable({
+					scrollX:        "100%",
+					scrollXInner:   "200%",
+					paging:         false,
+					searching:      false,
+					info:  	    	false,
+					scrollCollapse: true,
+					ordering:       false,
+					fixedColumns:   {
+						leftColumns: 1
+					}
+				});
+			
+		
+	}
+});
+
+/**
+ * 투표현황 단계별조회 callback
+ * @param map 조회된 결과값
+ */
+slipVote.callVoteAreaStepAllotCallback = function(data){
+	slipUtil.getPageVariable().setSlipVoteBtnData(data);
+	if(slipVote.selectAlloFlag != null && slipVote.selectAlloFlag){ 
+		slipVote.selectSIdx = slipVote.selectSIdx+1;
+		slipVote.setVoteDataSelectbox();
+	}
+}
+</script>
+<script src="/js/slip/slipUtils.js" type="text/javascript"></script>
+<script>
+$(document).ready(function(){
+	slipUtil.callGameSlipLoadEvent();
+	slipUtil.getPageVariable().slipSearch();
+	if(document.referrer.indexOf('buyableGameList') > -1) {
+		//이전페이지버튼 url 추가
+		$("#slipPagePreLocation").attr("href","javascript:location.href='/main/mainPage/gamebuy/buyableGameList.do';");		
+	}
+	else {
+		$("#slipPagePreLocation").attr("href","javascript:history.back();");	
+	}
+	
+	//타이틀변경
+	$("#slipPageTopTit").text("발매중 게임");
+});
+
+/**
+ * 벳코치 팝업 close callback
+ * @param int row 인덱스
+ */
+function callBetCoachClosePop(rowIdx){
+	if(slipUtil.betCoachPop != null){
+		if(rowIdx == null) slipUtil.betCoachPop.focus(); 
+		else betmanOnlineFront.moveScrollFocus($("#dataBodyList").children().eq(rowIdx));
+	}
+}
+</script>
+<!-- mobile footer 영역 -->
+<!-- footer -->
+<footer class="isCart" id="footer">
+<div class="footerArea">
+<h2 class="blind">회사 안내</h2>
+<div class="faMenu">
+<a href="/main/mainPage/customercenter/agreement.do"><span>이용약관</span></a> <a href="/main/mainPage/customercenter/personalInfoPolicy.do"><strong>개인정보처리방침</strong></a>
+</div>
+<div class="faSns">
+<a class="fasItem youtube" href="https://www.youtube.com/channel/UCHrG7Ejj9qX0oO9AagBQIxg" target="_blank"><img alt="유투브" src="/images/comm/icon_youtube.png"/></a>
+<a class="fasItem instagram" href="https://www.instagram.com/sportstoto.toto.proto" target="_blank"><img alt="인스타그램" src="/images/comm/icon_instagram.png"/></a>
+<a class="fasItem facebook" href="https://www.facebook.com/sportstoto.toto.proto" target="_blank"><img alt="페이스북" src="/images/comm/icon_facebook.png"/></a>
+<a class="fasItem blog" href="https://blog.naver.com/sportstoto11" target="_blank"><img alt="블로그" src="/images/comm/icon_blog.png"/></a>
+</div>
+<div class="faSubMenu">
+<a class="btn btnSs bgGray" href="/main/mainPage/mbrsvc/join/joinMbrMain.do"><span>회원가입</span></a>
+<a class="btn btnSs bgGray" href="javascript:;" onclick="openLoginPage();"><span>로그인</span></a>
+<a class="btn btnSs bgGray" href="//www.betman.co.kr?m="><span>PC버전</span></a>
+</div>
+<p class="faBisiness">체육진흥투표권 인터넷발매 수탁사업자 (주)스포츠토토코리아</p>
+<address class="faAddress">
+<ul>
+<li>대표이사 송영웅</li>
+<li>사업자등록번호 442-81-01726</li>
+</ul>
+<ul>
+<li>통신판매번호 제 2020-서울중구-1753 호</li>
+</ul>
+<ul>
+<li>서울특별시 중구 세종대로12길 12 해남2빌딩 4~5층</li>
+</ul>
+<ul>
+<li>고객센터 <a href="tel:1588-4900">1588-4900</a></li>
+<li>팩스번호 02-3433-4098</li>
+</ul>
+<ul>
+<li>문의메일 <a href="mailto:helpdesk@betman.co.kr">helpdesk@betman.co.kr</a></li>
+</ul>
+</address>
+<div class="faCopyright"><span>©</span> 2020 국민체육진흥공단. All Rights Reserved.</div>
+</div>
+</footer>
+<!-- footer -->
+</div>
+</body></html>

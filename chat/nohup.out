@@ -1,0 +1,59 @@
+New connection! (52)
+Connection 52 sending message "{"command":"subscribe","channel":"testroom","uname":"축빠닷컴","ip":"27.122.140.10"}" to 0 other connections
+New connection! (85)
+Connection 85 sending message "{"command":"subscribe","channel":"testroom","uname":"권혁훈","ip":"106.102.128.41"}" to 1 other connection
+Connection 85 sending message "{"command":"message","channel":"testroom","uname":"권혁훈","photo":"/img/human_icon.png","message":"하이","ip":"106.102.128.41"}" to 1 other connection
+Connection 52 sending message "{"command":"message","channel":"testroom","uname":"축빠닷컴","photo":"/board/upImages/thumb/t_mm_2023082321223961435.jpg","message":"방가","ip":"27.122.140.10"}" to 1 other connection
+Connection 52 has disconnected
+Connection 85 has disconnected
+New connection! (98)
+Connection 98 sending message "{"command":"subscribe","channel":"","userid":"admin@chukppa.com","uname":"축빠닷컴","ip":"27.122.140.10"}" to 0 other connections
+Connection 98 sending message "{"command":"message","channel":"","userid":"admin@chukppa.com","uname":"축빠닷컴","photo":"/board/upImages/thumb/t_mm_2023082321223961435.jpg","message":"하하하","ip":"27.122.140.10"}" to 0 other connections
+Connection 98 has disconnected
+New connection! (101)
+Connection 101 sending message "{"command":"subscribe","channel":"testroom","userid":"admin@chukppa.com","uname":"축빠닷컴","ip":"27.122.140.10"}" to 0 other connections
+Connection 101 sending message "{"command":"message","channel":"testroom","userid":"admin@chukppa.com","uname":"축빠닷컴","photo":"/board/upImages/thumb/t_mm_2023082321223961435.jpg","message":"하이요","ip":"27.122.140.10"}" to 0 other connections
+Connection 101 has disconnected
+New connection! (52)
+Connection 52 sending message "{"command":"subscribe","channel":"testroom","userid":"admin@chukppa.com","uname":"축빠닷컴","ip":"27.122.140.10"}" to 0 other connections
+Connection 52 sending message "{"command":"message","channel":"testroom","userid":"admin@chukppa.com","uname":"축빠닷컴","photo":"/board/upImages/thumb/t_mm_2023082321223961435.jpg","message":"다시 하이요","ip":"27.122.140.10"}" to 0 other connections
+PHP Warning:  Undefined variable $data in /var/www/chukppa/chat/MyApp/Chat.php on line 70
+PHP Warning:  Attempt to read property "userid" on null in /var/www/chukppa/chat/MyApp/Chat.php on line 70
+Connection 52 has disconnected
+New connection! (105)
+Connection 105 sending message "{"command":"subscribe","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","ip":"106.102.142.186"}" to 0 other connections
+PHP Warning:  Undefined variable $data in /var/www/chukppa/chat/MyApp/Chat.php on line 70
+PHP Warning:  Attempt to read property "userid" on null in /var/www/chukppa/chat/MyApp/Chat.php on line 70
+Connection 105 has disconnected
+New connection! (108)
+Connection 108 sending message "{"command":"subscribe","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","ip":"106.102.142.186"}" to 0 other connections
+New connection! (111)
+Connection 111 sending message "{"command":"subscribe","channel":"testroom","userid":"ltk8355@gmail.com","uname":"이태근","ip":"220.85.111.116"}" to 1 other connection
+Connection 108 sending message "{"command":"message","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","photo":"/img/human_icon.png","message":"하이","ip":"106.102.142.186"}" to 1 other connection
+Connection 111 sending message "{"command":"message","channel":"testroom","userid":"ltk8355@gmail.com","uname":"이태근","photo":"/img/human_icon.png","message":"ㅋㅋ","ip":"220.85.111.116"}" to 1 other connection
+Connection 108 sending message "{"command":"message","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","photo":"/img/human_icon.png","message":"이정도면 되나","ip":"106.102.142.186"}" to 1 other connection
+Connection 108 sending message "{"command":"message","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","photo":"/img/human_icon.png","message":"어떤 기능이 있어야되지?","ip":"106.102.142.186"}" to 1 other connection
+Connection 111 sending message "{"command":"message","channel":"testroom","userid":"ltk8355@gmail.com","uname":"이태근","photo":"/img/human_icon.png","message":"엔터가 안먹네","ip":"220.85.111.116"}" to 1 other connection
+Connection 108 sending message "{"command":"message","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","photo":"/img/human_icon.png","message":"ㅇㅇ","ip":"106.102.142.186"}" to 1 other connection
+Connection 108 sending message "{"command":"message","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","photo":"/img/human_icon.png","message":"아닉 안만듦","ip":"106.102.142.186"}" to 1 other connection
+Connection 108 sending message "{"command":"message","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","photo":"/img/human_icon.png","message":"","ip":"106.102.142.186"}" to 1 other connection
+Connection 111 sending message "{"command":"message","channel":"testroom","userid":"ltk8355@gmail.com","uname":"이태근","photo":"/img/human_icon.png","message":"이 대화가 apfh 막 자동으로 써져야 된느데","ip":"220.85.111.116"}" to 1 other connection
+Connection 108 sending message "{"command":"message","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","photo":"/img/human_icon.png","message":"메신저도 푸시가 가야되나","ip":"106.102.142.186"}" to 1 other connection
+Connection 108 sending message "{"command":"message","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","photo":"/img/human_icon.png","message":"자동?","ip":"106.102.142.186"}" to 1 other connection
+Connection 111 sending message "{"command":"message","channel":"testroom","userid":"ltk8355@gmail.com","uname":"이태근","photo":"/img/human_icon.png","message":"ai가 대답을 해줘야지","ip":"220.85.111.116"}" to 1 other connection
+Connection 108 sending message "{"command":"message","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","photo":"/img/human_icon.png","message":"챗봇처럼?","ip":"106.102.142.186"}" to 1 other connection
+Connection 111 sending message "{"command":"message","channel":"testroom","userid":"ltk8355@gmail.com","uname":"이태근","photo":"/img/human_icon.png","message":"ㅇㅇ","ip":"220.85.111.116"}" to 1 other connection
+Connection 108 sending message "{"command":"message","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","photo":"/img/human_icon.png","message":"헐","ip":"106.102.142.186"}" to 1 other connection
+Connection 111 sending message "{"command":"message","channel":"testroom","userid":"ltk8355@gmail.com","uname":"이태근","photo":"/img/human_icon.png","message":"ㅋㅋ","ip":"220.85.111.116"}" to 1 other connection
+Connection 108 sending message "{"command":"message","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","photo":"/img/human_icon.png","message":"기본적으로 필요한 기능이 어떤거야?","ip":"106.102.142.186"}" to 1 other connection
+Connection 111 sending message "{"command":"message","channel":"testroom","userid":"ltk8355@gmail.com","uname":"이태근","photo":"/img/human_icon.png","message":"암튼 기획고민좀 해보고","ip":"220.85.111.116"}" to 1 other connection
+Connection 108 sending message "{"command":"message","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","photo":"/img/human_icon.png","message":"그럼 1:1대화가 아니고 ai처럼 컴이랑 대화하는거야?","ip":"106.102.142.186"}" to 1 other connection
+Connection 108 sending message "{"command":"message","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","photo":"/img/human_icon.png","message":"ㅇㅇ","ip":"106.102.142.186"}" to 1 other connection
+Connection 111 sending message "{"command":"message","channel":"testroom","userid":"ltk8355@gmail.com","uname":"이태근","photo":"/img/human_icon.png","message":"ㅇㅇ 그렇긴 한데","ip":"220.85.111.116"}" to 1 other connection
+Connection 108 sending message "{"command":"message","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","photo":"/img/human_icon.png","message":"챗봇은 어려워","ip":"106.102.142.186"}" to 1 other connection
+Connection 108 sending message "{"command":"message","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","photo":"/img/human_icon.png","message":"대기업들도 아직 걸음마 수준인데","ip":"106.102.142.186"}" to 1 other connection
+Connection 111 sending message "{"command":"message","channel":"testroom","userid":"ltk8355@gmail.com","uname":"이태근","photo":"/img/human_icon.png","message":"gpt 이용해서","ip":"220.85.111.116"}" to 1 other connection
+Connection 108 sending message "{"command":"message","channel":"testroom","userid":"hyoukhoon@gmail.com","uname":"권혁훈","photo":"/img/human_icon.png","message":"헐","ip":"106.102.142.186"}" to 1 other connection
+PHP Warning:  Undefined variable $data in /var/www/chukppa/chat/MyApp/Chat.php on line 70
+PHP Warning:  Attempt to read property "userid" on null in /var/www/chukppa/chat/MyApp/Chat.php on line 70
+Connection 111 has disconnected

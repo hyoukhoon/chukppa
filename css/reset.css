@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Noto Sans KR';
+         src: url('font/NotoSansKR-Regular-Hestia.eot'),
+              url('font/NotoSansKR-Regular-Hestia.eot?#iefix') format('embedded-opentype'),
+              url('font/NotoSansKR-Regular-Hestia.otf') format('opentype'),
+              url('font/NotoSansKR-Regular-Hestia.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+         src: url('font/NotoSansKR-Medium-Hestia.eot'),
+              url('font/NotoSansKR-Medium-Hestia.eot?#iefix') format('embedded-opentype'),
+              url('font/NotoSansKR-Medium-Hestia.otf') format('opentype'),
+              url('font/NotoSansKR-Medium-Hestia.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+         src: url('font/NotoSansKR-Bold-Hestia.eot'),
+              url('font/NotoSansKR-Bold-Hestia.eot?#iefix') format('embedded-opentype'),
+              url('font/NotoSansKR-Bold-Hestia.otf') format('opentype'),
+              url('font/NotoSansKR-Bold-Hestia.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Noto Sans KR';
+         src: url('font/NotoSansKR-Black-Hestia.eot'),
+              url('font/NotoSansKR-Black-Hestia.eot?#iefix') format('embedded-opentype'),
+              url('font/NotoSansKR-Black-Hestia.otf') format('opentype'),
+              url('font/NotoSansKR-Black-Hestia.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+body,html {height:99.99%; -webkit-text-size-adjust:none}
+html {overflow-y:scroll}
+body {font-family: 'Noto Sans KR', Dotum, sans-serif; font-size:12px; color:#242424; letter-spacing:-0.025em; -webkit-text-size-adjust:none; margin:0; padding:0}
+p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, div, form, fieldset, legend, input, textarea, button, select, pre, code {margin:0; padding:0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box; box-sizing:border-box}
+table, th, td {margin:0; padding:0}
+input, textarea, select, button, table {font-family: 'Noto Sans KR', Dotum, sans-serif; font-size:12px; color:#242424}
+input, textarea, select, button {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box; box-sizing:border-box}
+a, p, span, strong, em, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, div {line-height:1em}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {display:block; margin:0; padding:0; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; -o-box-sizing:border-box; -ms-box-sizing:border-box; box-sizing:border-box}
+img, fieldset {border:0; vertical-align:middle}
+iframe, button {border:0}
+ul, ol {list-style:none}
+hr, legend, label.hide {position:absolute; top:0; left:0; width:1px; height:1px; overflow:hidden; padding:0; margin:-1px; line-height:0; clip:rect(0,0,0,0); border:0}
+caption {display:none; width:1px; height:1px; overflow:hidden; padding:0; margin:-1px; line-height:0; clip:rect(0,0,0,0); border:0}
+table {/* border-collapse:collapse; */ border-spacing:0; width:100%}
+a {text-decoration:none; font-family: 'Noto Sans KR', Dotum, sans-serif; color:#242424}
+a:hover, a:active, a:focus {}
+a[href^="tel:"] {color:inherit; text-decoration:inherit}
+
+input:not([type=checkbox]):not([type=radio]),
+select {-webkit-appearance:none; appearance:none; display:inline-block; height:40px; line-height:40px; padding:0 10px; font-family: 'Noto Sans KR', Dotum, sans-serif; font-size:14px; color:#242424; font-weight:400; letter-spacing:-0.025em; vertical-align:middle; border-radius:3px; border:1px solid #e5e5f1; box-sizing:border-box}
+input:not([type=checkbox]):not([type=radio]):disabled,
+select:disabled {color:#888; background:#f9f9f9; opacity:1; -webkit-text-fill-color:none}
+/* radio, checkbox */
+input[type="checkbox"],
+input[type="radio"] {-webkit-appearance:none; appearance:none; position:absolute; left:-9999px}
+input[type="checkbox"] + label,
+input[type="radio"] + label {display:inline-block; position:relative; padding-left:26px; line-height:18px; vertical-align:middle; font-size:16px; color:#666; text-align:left}
+input[type="checkbox"] + label:after {content:""; position:absolute; left:0; top:0; width:16px; height:16px; border:1px solid #aeaeb2; border-radius:100%; background:url(/img/ico_checkbox_def.png) center 6px no-repeat; background-size:8px auto}
+input[type="checkbox"]:checked + label:after {border-color:#292929; background:url(/img/ico-checkbox.png) center 6px no-repeat; background-size:8px auto}
+input[type="radio"] + label:before {content:""; position:absolute; left:0; top:0; width:16px; height:16px; border:1px solid #aeaeb2; border-radius:100%}
+input[type="radio"] + label:after {content:""; position:absolute; left:4px; top:4px; width:8px; height:8px; border:1px solid transparent; border-radius:100%; background:#aeaeb2}
+input[type="radio"]:checked + label {color:#242424}
+input[type="radio"]:checked + label:before {border-color:#292929}
+input[type="radio"]:checked + label:after {border-color:#292929; background:#292929}
+textarea {-webkit-appearance:none; appearance:none; width:100%; padding:11px; border-radius:0; border:1px solid #dcdcdc}
+::placeholder {color:#d0d0d0}
+::-webkit-input-placeholder {color:#d0d0d0}
+::-moz-placeholder {color:#d0d0d0}
+:-ms-input-placeholder {color:#d0d0d0}
+:-moz-placeholder {color:#d0d0d0}

@@ -1,0 +1,16 @@
+{
+    "name": "ebo/chat",
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "MyApp/"
+        }
+    },
+    "authors": [
+        {
+            "name": "kwon"
+        }
+    ],
+    "require": {
+        "cboden/ratchet": "^0.4.4"
+    }
+}

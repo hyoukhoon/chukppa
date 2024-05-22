@@ -1,0 +1,747 @@
+@charset "UTF-8";
+
+/* layout */
+#wrapper {min-height:100%; background:#f5f6fb}
+#header {height:48px; background:#e93176}
+#header:after {content:""; display:block; clear:both}
+#header .gnb {float:left; position:relative; width:34px; height:100%}
+#header .gnb:after {content:""; position:absolute; left:50%; top:50%; margin:-6px 0 0 -9px; width:18px; height:2px; background:#fff}
+#header .gnb:before {content:""; position:absolute; left:50%; top:50%; margin:4px 0 0 -9px; width:18px; height:2px; background:#fff}
+#header .gnb span {width:0; height:0; color:transparent; text-indent:-9999em}
+#header .gnb span:after {content:""; position:absolute; left:50%; top:50%; width:18px; height:2px; margin:-1px 0 0 -9px; background:#fff}
+#header .back {float:left; width:32px; height:100%; color:transparent; text-indent:-9999em; background:url(/img/ico-back.png) 50% 50% no-repeat; background-size:16px auto}
+#header .close {float:left; width:32px; height:100%; color:transparent; text-indent:-9999em; background:url(/img/ico-close.png) 50% 50% no-repeat; background-size:16px auto}
+#header .lang {float:right}
+#header .lang select {font-size:10px; color:#fff; height:48px; line-height:48px; padding-right:18px; border:none; background:url(/img/bg-select.png) 100% 50% no-repeat; background-size:14px auto}
+#header .lang select option {color:#242424}
+#header h2 {display:inline-block; line-height:48px; padding-left:26px; font-weight:600; font-size:20px; color:#fff}
+#container {padding-bottom:100px;height:100%;}
+[class*='section-'] {padding:18px 8px 0}
+[class*='section-'] .cont-section ~ .cont-section {padding-top:31px}
+[class*='section-'] .cont-section h3 {padding-bottom:4px; font-weight:400; font-size:17px; color:#004a7c; letter-spacing:-0.075em}
+[class*='section-'] .bx-round {border-radius:3px; border:1px solid #e5e5f1; background:#fff}
+#footer {position:fixed; right:0; bottom:0; left:0}
+#footer .menu-bottom ul {display:-webkit-flex; display:-ms-flexbox; display:flex; height:56px; border-top:1px solid #dedfe1; background:#fff}
+#footer .menu-bottom ul li {-webkit-flex:1; -ms-flex:1; flex:1; display:inline-block}
+#footer .menu-bottom ul li a {display:block; position:relative; height:100%; padding-top:46px; text-align:center}
+#footer .menu-bottom ul li .badge {position:absolute; top:8px; right:50%; width:17px; height:17px; line-height:17px; margin-right:-24px; font-weight:800; font-size:9px; color:#fff; letter-spacing:-0.075em; text-align:center; border-radius:100%; background:#e60012}
+#footer .menu-bottom ul li.active {background-color:#dedfe1}
+#footer .menu-bottom ul li.buy a {background:url(/img/ico-menu-bottom1.png) 50% 0px no-repeat; background-size:90px auto}
+#footer .menu-bottom ul li.send a {background:url(/img/ico-menu-bottom2.png) 50% 0px no-repeat; background-size:90px auto}
+#footer .menu-bottom ul li.dash a {background:url(/img/ico-menu-bottom3.png) 50% 0px no-repeat; background-size:90px auto}
+#footer .menu-bottom ul li.his a {background:url(/img/ico-menu-bottom4.png) 50% 0px no-repeat; background-size:90px auto}
+#footer .menu-bottom ul li.sell a {background:url(/img/ico-menu-bottom5.png) 50% 0px no-repeat; background-size:90px auto}
+
+
+#gnbMenu {display:none; position:fixed; top:0; right:0; bottom:0; left:0; z-index:1000}
+#gnbMenu .inner {position:relative; left:-65%; width:65%; height:100%; background:#2e3a57}
+#gnbMenu .logo {height:25%; min-height:64px; text-align:center; background:#222631}
+#gnbMenu .logo:before {content:""; display:inline-block; width:0; height:100%; vertical-align:middle}
+#gnbMenu .logo span {display:inline-block; height:64px; line-height:64px; padding-left:83px; font-size:32px; color:#fff; letter-spacing:-0.075em; vertical-align:middle; background:url(/img/logo.png) 0 50% no-repeat; background-size:64px auto}
+#gnbMenu .menu ul {padding:0 23px}
+#gnbMenu .menu ul li {border-bottom:1px solid #6d758a}
+#gnbMenu .menu ul li a {display:block; position:relative; white-space:nowrap; height:60px; line-height:60px; padding-right:45px; font-size:19px; color:#fff; letter-spacing:-0.075em; text-align:right; box-sizing:border-box}
+#gnbMenu .menu ul li a:after {content:""; position:absolute; right:11px; top:50%; }
+#gnbMenu .menu ul li.m1 a:after {width:20px; height:20px; margin-top:-9px; background:url(/img/ico-set.png) no-repeat; background-size:20px auto}
+#gnbMenu .menu ul li.m2 a:after {width:20px; height:16px; margin-top:-8px; background:url(/img/ico-list.png) no-repeat; background-size:20px auto}
+#gnbMenu .menu ul li.login a:after {width:20px; height:15px; margin-top:-6px; background:url(/img/ico-log-inout.png) no-repeat; background-size:20px auto}
+#gnbMenu .menu ul li.login.out a:after {-moz-transform:scaleX(-1); -o-transform:scaleX(-1); -webkit-transform:scaleX(-1); transform:scaleX(-1);}
+
+/** common **/
+/* buttons */
+[class*='btn-'] {display:inline-block; height:40px; font-weight:600; font-size:16px; padding:0 20px; color:#fff; letter-spacing:-0.075em; text-align:center; vertical-align:middle; box-sizing:border-box; border-radius:3px; border:1px solid}
+[class*='btn-'] span {display:inline-block; line-height:38px}
+[class*='btn-'].small {height:27px; padding:0 15px; font-size:14px}
+[class*='btn-'].small span {line-height:25px}
+.btn-blue {border-color:#3558a8; background:#3558a8} /* basic button */
+.btn-lblue {border-color:#42d2f6; background:#42d2f6} /* light blue button */
+.btn-sblue {border-color:#4a90e2; background:#4a90e2} /* sub blue button */
+.btn-blk {border-color:#333; background:#333} /* black button */
+.btn-gray {border-color:#666667; background:#666667} /* black button */
+.btns-submit {padding:28px 47px 0; text-align:center}
+.btns-submit a {width:100%}
+
+/* basic submit form */
+.frm-basic {text-align:left}
+.frm-basic .set ~ .set {padding-top:30px}
+.frm-basic .set .inner ~ .inner {padding-top:10px}
+.frm-basic .set .inner label {display:block; line-height:16px; padding-bottom:5px; font-size:16px; color:#666}
+.frm-basic .set .inner input[type="text"],
+.frm-basic .set .inner input[type="number"],
+.frm-basic .set .inner input[type="email"],
+.frm-basic .set .inner input[type="password"] {width:100%}
+.frm-basic .set .inner .inp:after {content:""; display:block; clear:both}
+.frm-basic .set .inner .inp input[type="text"],
+.frm-basic .set .inner .inp input[type="number"],
+.frm-basic .set .inner .inp input[type="email"],
+.frm-basic .set .inner .inp input[type="password"] {float:left; width:calc(100% - 75px)}
+.frm-basic .set .inner .inp input[type="text"] + a,
+.frm-basic .set .inner .inp input[type="number"] + a,
+.frm-basic .set .inner .inp input[type="email"] + a,
+.frm-basic .set .inner .inp input[type="email"] + a,
+.frm-basic .set .inner .inp input[type="password"] + a {float:left; width:70px; margin-left:5px; padding:0 10px}
+.frm-basic .set .alert {padding:5px; color:#fff; background:#4a90e2}
+
+/* popup */
+.popup-wrap {position:fixed; top:0; right:0; bottom:0; left:0; z-index:100; text-align:center; background:rgba(0, 0, 0, .7); -webkit-overflow-scrolling:touch}
+.popup-wrap:before {content:""; display:inline-block; width:0; height:100%; vertical-align:middle}
+.popup-wrap .popup-section {display:inline-block; overflow-y:auto; width:calc(100% - 18px); max-height:100%; text-align:left; vertical-align:middle; background:#fff}
+.popup-wrap .popup-section .popup-header {position:relative; height:54px; line-height:54px; text-align:center; background:#f5f6fb}
+.popup-wrap .popup-section .popup-header h3 {line-height:54px; font-weight:700; font-size:19px; color:#333}
+.popup-wrap .popup-section .popup-header .close {position:absolute; right:0; top:0; width:40px; height:40px; line-height:0; color:transparent; text-indent:-9999em; background:url(/img/ico-popup-close.png) 50% 50% no-repeat; background-size:25px auto}
+.popup-wrap .popup-section .popup-content {padding:23px 18px}
+.popup-wrap .popup-section .btns-submit {padding:20px 0 0}
+.popup-wrap .popup-section .btns-submit a {width:161px; height:39px; font-weight:400; border-radius:0}
+.popup-wrap .popup-section .btns-submit a span {line-height:37px}
+.popup-wrap .popup-section .btns-submit.double:after {content:""; display:block; clear:both}
+.popup-wrap .popup-section .btns-submit.double a {float:left; width:50%}
+
+/* select current */
+.sel-current {display:inline-block}
+.sel-current .nation {display:inline-block; position:relative; width:51px; height:23px; border-radius:1px; border:1px solid #d8d9dc; background:#f9fafc url(/img/ico-arrow-down-small.png) 100% 0 no-repeat; background-size:16px auto}
+.sel-current .nation .name {font-size:0; color:transparent; text-indent:-9999em}
+.sel-current .nation:after {content:""; position:absolute; left:3px; top:50%; width:25px; height:18px; margin-top:-9px}
+
+.sel-current .nation.ad:after {background:url(/img/ico-ad.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ae:after {background:url(/img/ico-ae.png) no-repeat; background-size:25px auto}
+.sel-current .nation.af:after {background:url(/img/ico-af.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ag:after {background:url(/img/ico-ag.png) no-repeat; background-size:25px auto}
+.sel-current .nation.al:after {background:url(/img/ico-al.png) no-repeat; background-size:25px auto}
+.sel-current .nation.am:after {background:url(/img/ico-am.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ao:after {background:url(/img/ico-o0.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ar:after {background:url(/img/ico-ar.png) no-repeat; background-size:25px auto}
+.sel-current .nation.at:after {background:url(/img/ico-tz.png) no-repeat; background-size:25px auto}
+.sel-current .nation.au:after {background:url(/img/ico-au.png) no-repeat; background-size:25px auto}
+.sel-current .nation.az:after {background:url(/img/ico-az.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.ba:after {background:url(/img/ico-ba.png) no-repeat; background-size:25px auto}
+.sel-current .nation.bb:after {background:url(/img/ico-bb.png) no-repeat; background-size:25px auto}
+.sel-current .nation.bd:after {background:url(/img/ico-bd.png) no-repeat; background-size:25px auto}
+.sel-current .nation.be:after {background:url(/img/ico-be.png) no-repeat; background-size:25px auto}
+.sel-current .nation.bf:after {background:url(/img/ico-bf.png) no-repeat; background-size:25px auto}
+.sel-current .nation.bg:after {background:url(/img/ico-bg.png) no-repeat; background-size:25px auto}
+.sel-current .nation.bh:after {background:url(/img/ico-bh.png) no-repeat; background-size:25px auto}
+.sel-current .nation.bi:after {background:url(/img/ico-bi.png) no-repeat; background-size:25px auto}
+.sel-current .nation.bj:after {background:url(/img/ico-bj.png) no-repeat; background-size:25px auto}
+.sel-current .nation.bn:after {background:url(/img/ico-bn.png) no-repeat; background-size:25px auto}
+.sel-current .nation.bo:after {background:url(/img/ico-bo.png) no-repeat; background-size:25px auto}
+.sel-current .nation.br:after {background:url(/img/ico-br.png) no-repeat; background-size:25px auto}
+.sel-current .nation.bs:after {background:url(/img/ico-bs.png) no-repeat; background-size:25px auto}
+.sel-current .nation.bt:after {background:url(/img/ico-bt.png) no-repeat; background-size:25px auto}
+.sel-current .nation.bw:after {background:url(/img/ico-bw.png) no-repeat; background-size:25px auto}
+.sel-current .nation.by:after {background:url(/img/ico-by.png) no-repeat; background-size:25px auto}
+.sel-current .nation.bz:after {background:url(/img/ico-bz.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.ca:after {background:url(/img/ico-ca.png) no-repeat; background-size:25px auto}
+.sel-current .nation.cb:after {background:url(/img/ico-cb.png) no-repeat; background-size:25px auto}
+.sel-current .nation.cd:after {background:url(/img/ico-cd.png) no-repeat; background-size:25px auto}
+.sel-current .nation.cf:after {background:url(/img/ico-cf.png) no-repeat; background-size:25px auto}
+.sel-current .nation.cg:after {background:url(/img/ico-cg.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ch:after {background:url(/img/ico-ch.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ci:after {background:url(/img/ico-ci.png) no-repeat; background-size:25px auto}
+.sel-current .nation.cl:after {background:url(/img/ico-cl.png) no-repeat; background-size:25px auto}
+.sel-current .nation.cm:after {background:url(/img/ico-cm.png) no-repeat; background-size:25px auto}
+.sel-current .nation.cn:after {background:url(/img/ico-cn.png) no-repeat; background-size:25px auto}
+.sel-current .nation.co:after {background:url(/img/ico-co.png) no-repeat; background-size:25px auto}
+.sel-current .nation.cr:after {background:url(/img/ico-cr.png) no-repeat; background-size:25px auto}
+.sel-current .nation.cu:after {background:url(/img/ico-cu.png) no-repeat; background-size:25px auto}
+.sel-current .nation.cy:after {background:url(/img/ico-cy.png) no-repeat; background-size:25px auto}
+.sel-current .nation.cz:after {background:url(/img/ico-cz.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.de:after {background:url(/img/ico-de.png) no-repeat; background-size:25px auto}
+.sel-current .nation.dj:after {background:url(/img/ico-dj.png) no-repeat; background-size:25px auto}
+.sel-current .nation.dk:after {background:url(/img/ico-dk.png) no-repeat; background-size:25px auto}
+.sel-current .nation.dm:after {background:url(/img/ico-dm.png) no-repeat; background-size:25px auto}
+.sel-current .nation.do:after {background:url(/img/ico-do.png) no-repeat; background-size:25px auto}
+.sel-current .nation.dz:after {background:url(/img/ico-dz.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.ec:after {background:url(/img/ico-ec.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ee:after {background:url(/img/ico-ee.png) no-repeat; background-size:25px auto}
+.sel-current .nation.eg:after {background:url(/img/ico-eg.png) no-repeat; background-size:25px auto}
+.sel-current .nation.eh:after {background:url(/img/ico-eh.png) no-repeat; background-size:25px auto}
+.sel-current .nation.er:after {background:url(/img/ico-er.png) no-repeat; background-size:25px auto}
+.sel-current .nation.es:after {background:url(/img/ico-es.png) no-repeat; background-size:25px auto}
+.sel-current .nation.et:after {background:url(/img/ico-et.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.fi:after {background:url(/img/ico-fi.png) no-repeat; background-size:25px auto}
+.sel-current .nation.fj:after {background:url(/img/ico-fj.png) no-repeat; background-size:25px auto}
+.sel-current .nation.fm:after {background:url(/img/ico-fm.png) no-repeat; background-size:25px auto}
+.sel-current .nation.fr:after {background:url(/img/ico-fr.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.ga:after {background:url(/img/ico-ga.png) no-repeat; background-size:25px auto}
+.sel-current .nation.gb:after {background:url(/img/ico-gb.png) no-repeat; background-size:25px auto}
+.sel-current .nation.gd:after {background:url(/img/ico-gd.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ge:after {background:url(/img/ico-ge.png) no-repeat; background-size:25px auto}
+.sel-current .nation.gh:after {background:url(/img/ico-gh.png) no-repeat; background-size:25px auto}
+.sel-current .nation.gm:after {background:url(/img/ico-gm.png) no-repeat; background-size:25px auto}
+.sel-current .nation.gn:after {background:url(/img/ico-gn.png) no-repeat; background-size:25px auto}
+.sel-current .nation.gq:after {background:url(/img/ico-gq.png) no-repeat; background-size:25px auto}
+.sel-current .nation.gr:after {background:url(/img/ico-gr.png) no-repeat; background-size:25px auto}
+.sel-current .nation.gt:after {background:url(/img/ico-gt.png) no-repeat; background-size:25px auto}
+.sel-current .nation.gw:after {background:url(/img/ico-gw.png) no-repeat; background-size:25px auto}
+.sel-current .nation.gy:after {background:url(/img/ico-gy.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.hn:after {background:url(/img/ico-hn.png) no-repeat; background-size:25px auto}
+.sel-current .nation.hr:after {background:url(/img/ico-hr.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ht:after {background:url(/img/ico-ht.png) no-repeat; background-size:25px auto}
+.sel-current .nation.hu:after {background:url(/img/ico-hu.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.id:after {background:url(/img/ico-id.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ie:after {background:url(/img/ico-ie.png) no-repeat; background-size:25px auto}
+.sel-current .nation.il:after {background:url(/img/ico-il.png) no-repeat; background-size:25px auto}
+.sel-current .nation.in:after {background:url(/img/ico-in.png) no-repeat; background-size:25px auto}
+.sel-current .nation.iq:after {background:url(/img/ico-iq.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ir:after {background:url(/img/ico-ir.png) no-repeat; background-size:25px auto}
+.sel-current .nation.is:after {background:url(/img/ico-is.png) no-repeat; background-size:25px auto}
+.sel-current .nation.it:after {background:url(/img/ico-it.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.jm:after {background:url(/img/ico-jm.png) no-repeat; background-size:25px auto}
+.sel-current .nation.jo:after {background:url(/img/ico-jo.png) no-repeat; background-size:25px auto}
+.sel-current .nation.jp:after {background:url(/img/ico-jp.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.ke:after {background:url(/img/ico-ke.png) no-repeat; background-size:25px auto}
+.sel-current .nation.kg:after {background:url(/img/ico-kg.png) no-repeat; background-size:25px auto}
+.sel-current .nation.kh:after {background:url(/img/ico-kh.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ki:after {background:url(/img/ico-ki.png) no-repeat; background-size:25px auto}
+.sel-current .nation.km:after {background:url(/img/ico-km.png) no-repeat; background-size:25px auto}
+.sel-current .nation.kn:after {background:url(/img/ico-kn.png) no-repeat; background-size:25px auto}
+.sel-current .nation.kp:after {background:url(/img/ico-kp.png) no-repeat; background-size:25px auto}
+.sel-current .nation.kr:after {background:url(/img/ico-kr.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ks:after {background:url(/img/ico-ks.png) no-repeat; background-size:25px auto}
+.sel-current .nation.kw:after {background:url(/img/ico-kw.png) no-repeat; background-size:25px auto}
+.sel-current .nation.kz:after {background:url(/img/ico-kz.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.la:after {background:url(/img/ico-la.png) no-repeat; background-size:25px auto}
+.sel-current .nation.lb:after {background:url(/img/ico-lb.png) no-repeat; background-size:25px auto}
+.sel-current .nation.lc:after {background:url(/img/ico-lc.png) no-repeat; background-size:25px auto}
+.sel-current .nation.li:after {background:url(/img/ico-li.png) no-repeat; background-size:25px auto}
+.sel-current .nation.lk:after {background:url(/img/ico-lk.png) no-repeat; background-size:25px auto}
+.sel-current .nation.lr:after {background:url(/img/ico-lr.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ls:after {background:url(/img/ico-ls.png) no-repeat; background-size:25px auto}
+.sel-current .nation.lt:after {background:url(/img/ico-lt.png) no-repeat; background-size:25px auto}
+.sel-current .nation.lu:after {background:url(/img/ico-lu.png) no-repeat; background-size:25px auto}
+.sel-current .nation.lv:after {background:url(/img/ico-lv.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ly:after {background:url(/img/ico-ly.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.ma:after {background:url(/img/ico-ma.png) no-repeat; background-size:25px auto}
+.sel-current .nation.mc:after {background:url(/img/ico-mc.png) no-repeat; background-size:25px auto}
+.sel-current .nation.md:after {background:url(/img/ico-md.png) no-repeat; background-size:25px auto}
+.sel-current .nation.me:after {background:url(/img/ico-me.png) no-repeat; background-size:25px auto}
+.sel-current .nation.mg:after {background:url(/img/ico-mg.png) no-repeat; background-size:25px auto}
+.sel-current .nation.mh:after {background:url(/img/ico-mh.png) no-repeat; background-size:25px auto}
+.sel-current .nation.mk:after {background:url(/img/ico-mk.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ml:after {background:url(/img/ico-ml.png) no-repeat; background-size:25px auto}
+.sel-current .nation.mm:after {background:url(/img/ico-mm.png) no-repeat; background-size:25px auto}
+.sel-current .nation.mn:after {background:url(/img/ico-mn.png) no-repeat; background-size:25px auto}
+.sel-current .nation.mr:after {background:url(/img/ico-mr.png) no-repeat; background-size:25px auto}
+.sel-current .nation.mt:after {background:url(/img/ico-mt.png) no-repeat; background-size:25px auto}
+.sel-current .nation.mu:after {background:url(/img/ico-mu.png) no-repeat; background-size:25px auto}
+.sel-current .nation.mv:after {background:url(/img/ico-mv.png) no-repeat; background-size:25px auto}
+.sel-current .nation.mw:after {background:url(/img/ico-mw.png) no-repeat; background-size:25px auto}
+.sel-current .nation.mx:after {background:url(/img/ico-mx.png) no-repeat; background-size:25px auto}
+.sel-current .nation.my:after {background:url(/img/ico-my.png) no-repeat; background-size:25px auto}
+.sel-current .nation.mz:after {background:url(/img/ico-mz.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.na:after {background:url(/img/ico-na.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ne:after {background:url(/img/ico-ne.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ng:after {background:url(/img/ico-ng.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ni:after {background:url(/img/ico-ni.png) no-repeat; background-size:25px auto}
+.sel-current .nation.nl:after {background:url(/img/ico-nl.png) no-repeat; background-size:25px auto}
+.sel-current .nation.no:after {background:url(/img/ico-no.png) no-repeat; background-size:25px auto}
+.sel-current .nation.np:after {background:url(/img/ico-np.png) no-repeat; background-size:25px auto}
+.sel-current .nation.nr:after {background:url(/img/ico-nr.png) no-repeat; background-size:25px auto}
+.sel-current .nation.nz:after {background:url(/img/ico-nz.png) no-repeat; background-size:25px auto}
+.sel-current .nation.om:after {background:url(/img/ico-om.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.pa:after {background:url(/img/ico-pa.png) no-repeat; background-size:25px auto}
+.sel-current .nation.pe:after {background:url(/img/ico-pe.png) no-repeat; background-size:25px auto}
+.sel-current .nation.pg:after {background:url(/img/ico-pg.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ph:after {background:url(/img/ico-ph.png) no-repeat; background-size:25px auto}
+.sel-current .nation.pk:after {background:url(/img/ico-pk.png) no-repeat; background-size:25px auto}
+.sel-current .nation.pl:after {background:url(/img/ico-pl.png) no-repeat; background-size:25px auto}
+.sel-current .nation.pt:after {background:url(/img/ico-pt.png) no-repeat; background-size:25px auto}
+.sel-current .nation.pw:after {background:url(/img/ico-pw.png) no-repeat; background-size:25px auto}
+.sel-current .nation.py:after {background:url(/img/ico-py.png) no-repeat; background-size:25px auto}
+.sel-current .nation.qa:after {background:url(/img/ico-qa.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.ro:after {background:url(/img/ico-ro.png) no-repeat; background-size:25px auto}
+.sel-current .nation.rs:after {background:url(/img/ico-rs.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ru:after {background:url(/img/ico-ru.png) no-repeat; background-size:25px auto}
+.sel-current .nation.rw:after {background:url(/img/ico-rw.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.sa:after {background:url(/img/ico-sa.png) no-repeat; background-size:25px auto}
+.sel-current .nation.sb:after {background:url(/img/ico-sb.png) no-repeat; background-size:25px auto}
+.sel-current .nation.sc:after {background:url(/img/ico-sc.png) no-repeat; background-size:25px auto}
+.sel-current .nation.sd:after {background:url(/img/ico-sd.png) no-repeat; background-size:25px auto}
+.sel-current .nation.se:after {background:url(/img/ico-se.png) no-repeat; background-size:25px auto}
+.sel-current .nation.sg:after {background:url(/img/ico-sg.png) no-repeat; background-size:25px auto}
+.sel-current .nation.si:after {background:url(/img/ico-si.png) no-repeat; background-size:25px auto}
+.sel-current .nation.sk:after {background:url(/img/ico-sk.png) no-repeat; background-size:25px auto}
+.sel-current .nation.sl:after {background:url(/img/ico-sl.png) no-repeat; background-size:25px auto}
+.sel-current .nation.sm:after {background:url(/img/ico-sm.png) no-repeat; background-size:25px auto}
+.sel-current .nation.sn:after {background:url(/img/ico-sn.png) no-repeat; background-size:25px auto}
+.sel-current .nation.so:after {background:url(/img/ico-so.png) no-repeat; background-size:25px auto}
+.sel-current .nation.sr:after {background:url(/img/ico-sr.png) no-repeat; background-size:25px auto}
+.sel-current .nation.st:after {background:url(/img/ico-st.png) no-repeat; background-size:25px auto}
+.sel-current .nation.sv:after {background:url(/img/ico-sv.png) no-repeat; background-size:25px auto}
+.sel-current .nation.sy:after {background:url(/img/ico-sy.png) no-repeat; background-size:25px auto}
+.sel-current .nation.sz:after {background:url(/img/ico-sz.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation.td:after {background:url(/img/ico-td.png) no-repeat; background-size:25px auto}
+.sel-current .nation.tg:after {background:url(/img/ico-tg.png) no-repeat; background-size:25px auto}
+.sel-current .nation.th:after {background:url(/img/ico-th.png) no-repeat; background-size:25px auto}
+.sel-current .nation.tj:after {background:url(/img/ico-tj.png) no-repeat; background-size:25px auto}
+.sel-current .nation.tl:after {background:url(/img/ico-tl.png) no-repeat; background-size:25px auto}
+.sel-current .nation.tm:after {background:url(/img/ico-tm.png) no-repeat; background-size:25px auto}
+.sel-current .nation.tn:after {background:url(/img/ico-tn.png) no-repeat; background-size:25px auto}
+.sel-current .nation.to:after {background:url(/img/ico-to.png) no-repeat; background-size:25px auto}
+.sel-current .nation.tr:after {background:url(/img/ico-tr.png) no-repeat; background-size:25px auto}
+.sel-current .nation.tt:after {background:url(/img/ico-tt.png) no-repeat; background-size:25px auto}
+.sel-current .nation.tv:after {background:url(/img/ico-tv.png) no-repeat; background-size:25px auto}
+.sel-current .nation.tw:after {background:url(/img/ico-tw.png) no-repeat; background-size:25px auto}
+.sel-current .nation.tz:after {background:url(/img/ico-tz.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ua:after {background:url(/img/ico-ua.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ug:after {background:url(/img/ico-ug.png) no-repeat; background-size:25px auto}
+.sel-current .nation.us:after {background:url(/img/ico-us.png) no-repeat; background-size:25px auto}
+.sel-current .nation.uy:after {background:url(/img/ico-uy.png) no-repeat; background-size:25px auto}
+.sel-current .nation.uz:after {background:url(/img/ico-uz.png) no-repeat; background-size:25px auto}
+.sel-current .nation.va:after {background:url(/img/ico-va.png) no-repeat; background-size:25px auto}
+.sel-current .nation.vc:after {background:url(/img/ico-vc.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ve:after {background:url(/img/ico-ve.png) no-repeat; background-size:25px auto}
+.sel-current .nation.vn:after {background:url(/img/ico-vn.png) no-repeat; background-size:25px auto}
+.sel-current .nation.vu:after {background:url(/img/ico-vu.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ws:after {background:url(/img/ico-ws.png) no-repeat; background-size:25px auto}
+.sel-current .nation.ye:after {background:url(/img/ico-ye.png) no-repeat; background-size:25px auto}
+.sel-current .nation.za:after {background:url(/img/ico-za.png) no-repeat; background-size:25px auto}
+.sel-current .nation.zm:after {background:url(/img/ico-zm.png) no-repeat; background-size:25px auto}
+.sel-current .nation.zw:after {background:url(/img/ico-zw.png) no-repeat; background-size:25px auto}
+
+.sel-current .nation select {position:absolute; left:0; top:0; width:51px; height:23px; color:transparent; border:none; background:transparent}
+.sel-current .nation select option {color:#252525}
+
+
+/* current state popup */
+.popup-state .popup-section {border:1px solid #e4e4ee}
+.popup-state .popup-section .popup-content {position:relative; padding:25px 10px}
+.popup-state .popup-section .popup-content .fold {position:absolute; right:0; top:0; width:36px; height:36px; line-height:0; color:transparent; text-indent:-9999em; background:url(/img/ico-arrow-down.png) 50% 50% no-repeat; background-size:13px auto}
+.popup-state .popup-section .popup-content .visual-area {position:relative}
+.popup-state .popup-section .popup-content .visual-area:after {content:""; display:block; clear:both}
+.popup-state .popup-section .popup-content .visual-area .arrow {position:absolute; top:65px; width:14px; height:9px; background:#000; opacity:.2}
+.popup-state .popup-section .popup-content .visual-area .arrow1 {left:50%; margin-left:-47px}
+.popup-state .popup-section .popup-content .visual-area .arrow2 {left:50%; margin-left:-12px}
+.popup-state .popup-section .popup-content .visual-area .arrow3 {left:50%; margin-left:23px}
+.popup-state .popup-section .popup-content .visual-area .arrow:after {content:""; position:absolute; right:-11px; top:50%; width:0; height:0; margin-top:-11px; border-top:11px solid transparent; border-left:11px solid #000; border-bottom:11px solid transparent}
+.popup-state .popup-section .popup-content .visual-area .cont {float:left; width:33.33%; text-align:center}
+.popup-state .popup-section .popup-content .visual-area .cont ~ .cont {float:right}
+.popup-state .popup-section .popup-content .visual-area .cont .bg {display:inline-block; width:70px; height:70px; margin-top:9px}
+.popup-state .popup-section .popup-content .visual-area .cont .name {display:block; width:100%; line-height:1.2em; font-size:14px; color:#333; letter-spacing:0; word-break:break-all}
+.popup-state .popup-section .popup-content .visual-area .cont.one .bg {background:url(/img/logo.png) 50% 100% no-repeat; background-size:70px auto}
+.popup-state .popup-section .popup-content .visual-area .cont.other .bg {height:67px; background:url(/img/ico-wallet.png) 50% 100% no-repeat; background-size:64px auto}
+.popup-state .popup-section .popup-content .desc {line-height:1.2em; padding-top:8px; font-weight:600; font-size:18px; text-align:center}
+.popup-state.ing .popup-section {height:202px}
+.popup-state.end .popup-section .popup-content {padding-bottom:18px}
+.popup-state.end .popup-section .popup-content .desc {font-weight:400; font-size:14px; color:#666}
+.popup-state.end .popup-section .popup-content .desc strong {display:block; padding-bottom:5px; font-weight:400; font-size:18px; color:#e60012}
+.popup-state.bar {top:inherit; bottom:76px; left:8px; right:8px; background:none}
+.popup-state.bar:before {display:none}
+.popup-state.bar .popup-section {width:100%; height:65px !important}
+.popup-state.bar .popup-section .popup-content {padding:17px 10px}
+.popup-state.bar .popup-section .popup-content .fold {z-index:1; width:65px; height:65px; -moz-transform:scaleY(-1); -o-transform:scaleY(-1); -webkit-transform:scaleY(-1); transform:scaleY(-1);}
+.popup-state.bar .popup-section .popup-content:after {content:""; display:block; clear:both}
+.popup-state.bar .popup-section .popup-content .visual-area {float:left; width:126px}
+.popup-state.bar .popup-section .popup-content .visual-area .cont .name {position:absolute; left:-9999em; line-height:0; color:transparent; text-indent:-9999em}
+.popup-state.bar .popup-section .popup-content .visual-area .cont .bg {width:29px; height:29px; margin-top:0}
+.popup-state.bar .popup-section .popup-content .visual-area .cont.one .bg {background-size:29px auto}
+.popup-state.bar .popup-section .popup-content .visual-area .cont.other .bg {height:27px; background-size:26px auto}
+.popup-state.bar .popup-section .popup-content .visual-area .arrow {top:14px; width:5px; height:4px}
+.popup-state.bar .popup-section .popup-content .visual-area .arrow1 {margin-left:-20px}
+.popup-state.bar .popup-section .popup-content .visual-area .arrow2 {margin-left:-5px}
+.popup-state.bar .popup-section .popup-content .visual-area .arrow3 {margin-left:9px}
+.popup-state.bar .popup-section .popup-content .visual-area .arrow:after {right:-5px; margin-top:-5px; border-top-width:5px; border-left-width:5px; border-bottom-width:5px}
+.popup-state.bar .popup-section .popup-content .desc {float:left; width:calc(100% - 181px); line-height:30px; padding-top:0; font-size:16px}
+.popup-state.end.bar .popup-section .popup-content .desc span {display:none}
+.popup-state.end.bar .popup-section .popup-content .desc strong {font-size:16px; padding-bottom:0}
+.popup-state.end.bar .popup-section .popup-content .btns-submit {display:none}
+
+/* login */
+.section-login {padding-top:48px; text-align:center}
+.section-login .logo {line-height:0; padding-top:180px; color:transparent; text-indent:-9999em; background:url(/img/logo.png) 50% 0 no-repeat; background-size:150px auto}
+.section-login .bx-round {padding:20px 25px 30px}
+.section-login .btns-extra {padding-top:10px; text-align:right}
+.section-login .btns-extra .find-pw {font-size:14px; color:#666; border-bottom:1px solid #666}
+.section-login .btns-submit {padding-top:36px}
+
+/* login without the wallet */
+.section-login.initial {padding-top:100px}
+.section-login.initial .logo {padding-top:187px}
+.section-login.initial .btns-submit a ~ a {margin-top:27px}
+
+/* finding password */
+.section-login.find-pw .frm-basic .set .inner .desc {line-height:1.3em; font-size:14px}
+
+/* security password */
+.section-login.security {padding-top:96px}
+.section-login.security .logo {padding-top:201px}
+.section-login.security .security-area strong {font-weight:400; font-size:16px; color:#666}
+.section-login.security .security-area .inps {padding-top:30px}
+.section-login.security .security-area .inps input[type="password"] {width:40px; height:40px; text-align:center; /*color:transparent*/}
+/* .section-login.security .security-area .inps input[type="password"]:hover,
+.section-login.security .security-area .inps input[type="password"]:focus {-webkit-text-fill-color:transparent; background:#4a90e2} */
+
+/* wallet */
+.section-wallet .chk-member {position:relative; padding:7px 0 10px}
+.section-wallet .chk-member ul:after {content:""; display:block; clear:both}
+.section-wallet .chk-member ul li {float:left; width:50%}
+.section-wallet .chk-member ul li input[type="radio"] + label {font-size:16px; color:#666}
+.section-wallet .bx-round {margin-top:6px; padding:25px 25px 30px}
+.section-wallet .chk-agree {padding-top:12px; text-align:center}
+.section-wallet .chk-agree input[type="checkbox"] + label {font-size:14px; color:#b6b7ba}
+.section-wallet .chk-agree input[type="checkbox"]:checked + label {color:#292929}
+.section-wallet .chk-agree .link-agree {padding-top:10px}
+.section-wallet .chk-agree .link-agree ul li {display:inline-block; padding-top:10px}
+.section-wallet .chk-agree .link-agree ul li ~ li {margin-left:13px}
+.section-wallet .chk-agree .link-agree a {font-size:14px; color:#666; border-bottom:1px solid #666}
+.section-wallet .btns-submit {padding-top:31px}
+.popup-terms .popup-section .popup-content .bx-agree {overflow-x:hidden; overflow-y:auto; height:280px; -webkit-overflow-scrolling:touch}
+.popup-terms .popup-section .popup-content .bx-agree .inner {font-size:16px; color:#666}
+.popup-terms .popup-section .popup-content .bx-agree .inner * {line-height:1.2em}
+.popup-terms .popup-section .popup-content .bx-agree .inner p ~ p {padding-top:20px}
+
+/* dashboard */
+.section-dashboard {height:100%}
+.section-dashboard .cont-detail.state .bx-round {padding:22px 18px}
+.section-dashboard .cont-detail.state .bx-round .cnz-state {margin-top:-8px; border-bottom:2px solid #383838}
+.section-dashboard .cont-detail.state .bx-round .cnz-state p {padding:8px 0 8px 31px; font-weight:700; font-size:24px; letter-spacing:-0.05em; text-align:right; background:url(/img/logo-small.png) 0 50% no-repeat; background-size:22px auto}
+.section-dashboard .cont-detail.state .bx-round .cnz-state p span {display:inline-block; max-width:calc(100% - 50px)}
+.section-dashboard .cont-detail.state .bx-round .exchange {padding-top:8px}
+.section-dashboard .cont-detail.state .bx-round .exchange:after {content:""; display:block; clear:both}
+.section-dashboard .cont-detail.state .bx-round .exchange p {float:right; width:calc(100% - 61px); padding-top:1px; font-size:17px; color:#666; text-align:right}
+.section-dashboard .cont-detail.state .bx-round .exchange p span {display:inline-block; max-width:calc(100% - 33px)}
+.section-dashboard .cont-detail.calc .bx-calc:after {content:""; display:block; clear:both}
+.section-dashboard .cont-detail.calc .bx-calc .sel-current {float:left; width:49%; height:58px; padding:10px 15px; border:1px solid #e5e5f1; background:#f9fafc}
+.section-dashboard .cont-detail.calc .bx-calc .sel-current .nation {width:100%; height:100%; padding-left:32px; border:none; background:url(/img/ico-arrow-down.png) 100% 50% no-repeat; background-size:13px auto}
+.section-dashboard .cont-detail.calc .bx-calc .sel-current .nation:after {left:0; top:2px; margin-top:0}
+.section-dashboard .cont-detail.calc .bx-calc .sel-current .nation .name {font-size:14px; color:#242424; text-indent:0}
+.section-dashboard .cont-detail.calc .bx-calc .sel-current .nation .name em {display:block; padding-top:5px; font-style:normal; font-size:12px; color:#666}
+.section-dashboard .cont-detail.calc .bx-calc .sel-current .nation select {width:100%; height:100%}
+.section-dashboard .cont-detail.calc .bx-calc .inp-num {float:right; width:51%; height:58px; padding-top:5px; border:1px solid #e5e5f1; border-left:none; background:#fff}
+.section-dashboard .cont-detail.calc .bx-calc .inp-num input[type="number"] {width:100%; height:26px; line-height:26px; padding:0 18px; font-weight:700; font-size:19px; letter-spacing:-0.05em; text-align:right; border:none}
+.section-dashboard .cont-detail.calc .bx-calc .inp-num .unit {padding:0 18px; font-size:14px; color:#666; text-align:right}
+.section-dashboard .cont-detail.calc .bx-calc ~ .bx-calc {margin-top:30px}
+.section-dashboard .cont-detail.calc .bx-calc ~ .bx-calc .sel-current .nation {background:none}
+.section-dashboard .cont-detail.calc .sel-current .nation.cnz:after {height:23px; background:url(/img/logo-small.png) no-repeat; background-size:22px auto}
+.section-dashboard .cont-detail.calc .btns-extra {padding-top:15px; text-align:right}
+
+/* purchasing coin */
+.section-coin-order .bx-round {padding:20px 17px 30px}
+.section-coin-order .order-sheet ~ .order-sheet {margin-top:17px; padding-top:17px; border-top:3px solid #383838}
+.section-coin-order .order-sheet .row ~ .row {margin-top:8px}
+.section-coin-order .order-sheet .row:after {content:""; display:block; clear:both}
+.section-coin-order .order-sheet .row > div {float:left; width:76%}
+.section-coin-order .order-sheet .row > div:after {content:""; display:block; clear:both}
+.section-coin-order .order-sheet .row > div input[type="number"],
+.section-coin-order .order-sheet .row > div strong {float:left; width:calc(100% - 56px); padding-right:9px; text-align:right; box-sizing:border-box}
+.section-coin-order .order-sheet .row > div strong {height:34px; line-height:34px}
+.section-coin-order .order-sheet .row .tit {float:left; width:24%; height:40px; line-height:40px; font-size:16px; color:#666}
+.section-coin-order .order-sheet .row .unit {float:right; width:56px; height:40px; line-height:40px; padding-left:5px; font-size:17px; letter-spacing:-0.05em; text-align:left; vertical-align:top; box-sizing:border-box}
+.section-coin-order .order-sheet .row .inp {position:relative}
+.section-coin-order .order-sheet .row .inp .sel-current {position:absolute; left:6px; top:50%; margin-top:-11px}
+.section-coin-order .order-sheet .row .inp input[type="number"] {text-align:right}
+.section-coin-order .order-sheet .row.cnz .inp:after {content:""; position:absolute; left:9px; top:50%; width:22px; height:22px; margin-top:-11px; background:url(/img/logo-small.png) 0 0 no-repeat; background-size:22px auto}
+.section-coin-order .order-sheet .row.cnz .inp input[type="number"] {padding-left:39px; font-weight:700; font-size:24px}
+.section-coin-order .order-sheet .row.cnz .inp .unit {font-weight:700}
+.section-coin-order .order-sheet .row.current .inp input[type="number"] {padding-left:61px; font-size:17px; color:#f81515}
+.section-coin-order .order-sheet .row.current .inp .unit {color:#f81515}
+.section-coin-order .order-sheet.enter {position:relative}
+.section-coin-order .order-sheet.enter .btn-max {position:absolute; right:-18px; top:-55px; height:30px; padding:0 10px; border-color:#d64649; background-color:#d64649}
+.section-coin-order .order-sheet.enter .btn-max span {line-height:28px}
+.section-coin-order .order-sheet.result .row .tit {height:34px; line-height:34px}
+.section-coin-order .order-sheet.result .row .tit span {margin:0 8px}
+.section-coin-order .order-sheet.result .row div:not(.amount) strong {font-weight:400; font-size:17px}
+.section-coin-order .order-sheet.result .row .unit {height:34px; line-height:34px}
+.section-coin-order .order-sheet.result .row .amount {font-weight:700; font-size:19px}
+.section-coin-order .order-sheet.result .row .charge {font-size:17px; color:#215fec}
+.section-coin-order .order-sheet.result .row .total {font-size:17px; color:#f81515}
+
+/* map */
+.section-map .map-content {overflow:hidden; border-radius:3px; border:1px solid #e4e4ee; background:#fff}
+.section-map .map-content .tit {display:block; position:relative; height:41px; line-height:41px; padding:0 15px; font-size:19px; color:#333}
+.section-map .map-content .tit .toggle {position:absolute; right:15px; top:50%; margin-top:-8px; padding-bottom:1px; font-weight:400; font-size:14px; color:#666; border-bottom:1px solid #666}
+.section-map .map-content .map-detail {border-top:4px solid #e4e4ee}
+.section-map .map-content .map-detail p {height:49px; padding:0 15px}
+.section-map .map-content .map-detail .add {display:inline-block; line-height:49px; font-size:17px; vertical-align:top}
+.section-map .map-content .map-detail .links {float:right}
+.section-map .map-content .map-detail .links a {display:inline-block; line-height:49px; font-size:17px; color:#1463a6; vertical-align:top}
+.section-map .map-content .map-detail .links a ~ a {position:relative; margin-left:14px}
+.section-map .map-content .map-detail .links a ~ a:after {content:""; position:absolute; left:-8px; top:50%; width:1px; height:15px; margin-top:-7px; background:#e5e5e5}
+.section-map .map-content .map-detail .links .my-loca {padding-left:22px; background:url(/img/bg-location.png) 0 50% no-repeat; background-size:17px auto}
+.section-map .map-content .map-detail .map-area {height:167px; background:#ccc}
+.section-map .list-location {padding-top:25px}
+.section-map .list-location .sort a {display:inline-block; position:relative; padding-left:8px; font-size:15px; color:#999; letter-spacing:0}
+.section-map .list-location .sort a:after {content:""; position:absolute; left:0; top:50%; width:5px; height:5px; margin-top:-2px; border-radius:100%; background:#999}
+.section-map .list-location .sort a ~ a {margin-left:17px}
+.section-map .list-location .sort a.active {font-weight:700; color:#333}
+.section-map .list-location .sort a.active:after {background:#333}
+.section-map .list-location .list {padding-top:7px}
+.section-map .list-location .list ul {border:1px solid #e4e4ee}
+.section-map .list-location .list ul li {position:relative; padding:13px 10px 15px; background:#fff}
+.section-map .list-location .list ul li ~ li {border-top:1px solid #e4e4ee}
+.section-map .list-location .list ul li .name {font-weight:600; font-size:18px; color:#1463a6; letter-spacing:0}
+.section-map .list-location .list ul li .name strong {font-weight:700}
+.section-map .list-location .list ul li .add {position:relative; overflow:hidden; width:calc(100% - 73px); /* height:17px; */ margin:7px 0 0 0; font-weight:600}
+.section-map .list-location .list ul li .add:after {content:""; display:block; clear:both}
+.section-map .list-location .list ul li .add:before {display:none; content:""; position:absolute; right:31px; top:8px; width:13px; height:9px; background:url(/img/ico-arrow-down.png) no-repeat; background-size:13px auto}
+/* .section-map .list-location .list ul li .add.open:before {display:none} */
+.section-map .list-location .list ul li .add .dist {float:left; position:relative; width:46px; line-height:16px; margin-right:7px; font-size:13px; color:#be4647; letter-spacing:-0.045em}
+.section-map .list-location .list ul li .add .dist:after {content:""; position:absolute; right:-8px; top:50%; width:1px; height:15px; margin-top:-7px; background:#e5e5e5}
+.section-map .list-location .list ul li .add .info {float:left; width:calc(100% - 60px); line-height:16px; margin-left:7px; font-size:14px; color:#424242; letter-spacing:0; box-sizing:border-box}
+.section-map .list-location .list ul li .grade {display:inline-block; height:17px; line-height:17px; margin-top:7px; padding-right:111px; font-weight:600; font-size:13px; color:#999; background:url(/img/bg-grade.png) 100% 0 no-repeat; background-size:104px auto}
+.section-map .list-location .list ul li .grade.grade1 {background-position:100% -17px}
+.section-map .list-location .list ul li .grade.grade2 {background-position:100% -34px}
+.section-map .list-location .list ul li .grade.grade3 {background-position:100% -51px}
+.section-map .list-location .list ul li .grade.grade4 {background-position:100% -68px}
+.section-map .list-location .list ul li .grade.grade5 {background-position:100% -85px}
+.section-map .list-location .list ul li .request {position:absolute; right:20px; top:50%; height:25px; line-height:25px; margin-top:-12px; padding:0 8px; font-size:14px; color:#c3c4c6; text-align:center; border:1px solid #e4e7ed}
+.section-map .btns-extra {padding-top:35px; text-align:center}
+.section-map .btns-extra .more {display:inline-block; padding-bottom:2px; font-size:18px; color:#333; border-bottom:1px solid #333}
+.section-map.agent .list-location .list ul li {padding:18px 10px 20px}
+.section-map.agent .list-location .list ul li .dist {width:57px}
+.section-map.agent .list-location .list ul li .info {width:calc(100% - 77px)}
+
+/* trading/sending coin */
+.section-trading .bx-trade {padding-top:15px; border:1px solid #e5e5f1; background:#fff}
+.section-trading .bx-trade ~ .bx-trade {padding-bottom:20px; border-top-width:6px}
+.section-trading .bx-trade .obj {text-align:center}
+.section-trading .bx-trade .obj.type2 {padding:13px 0}
+.section-trading .bx-trade .obj .name {font-size:23px; color:#1463a6; letter-spacing:0}
+.section-trading .bx-trade .obj .info {line-height:1.2em; padding-top:12px; font-weight:600; font-size:17px; color:#424242; letter-spacing:0}
+.section-trading .bx-trade .obj .grade {margin-top:10px; font-weight:600; font-size:14px; color:#999}
+.section-trading .bx-trade .obj .grade .star {display:inline-block; height:17px; line-height:17px; padding-right:113px; vertical-align:top; background:url(/img/bg-grade.png) 0 0 no-repeat; background-size:104px }
+.section-trading .bx-trade .obj .grade.grade1 .star {background-position:100% -17px}
+.section-trading .bx-trade .obj .grade.grade2 .star {background-position:100% -34px}
+.section-trading .bx-trade .obj .grade.grade3 .star {background-position:100% -51px}
+.section-trading .bx-trade .obj .grade.grade4 .star {background-position:100% -68px}
+.section-trading .bx-trade .obj .grade.grade5 .star {background-position:100% -85px}
+.section-trading .bx-trade .obj .grade .count {position:relative; line-height:17px; margin-left:10px; padding-left:10px; vertical-align:top}
+.section-trading .bx-trade .obj .grade .count:after {content:""; position:absolute; left:-1px; top:50%; width:1px; height:15px; margin-top:-6px; background:#e5e5e5}
+.section-trading .bx-trade .contact {margin-top:12px; border-top:1px solid #e5e5f1}
+.section-trading .bx-trade .contact ul {display:-webkit-flex; display:-ms-flexbox; display:flex}
+.section-trading .bx-trade .contact ul li {display:inline-block; -webkit-flex:1; -ms-flex:1; height:42px; text-align:center}
+.section-trading .bx-trade .contact ul li ~ li {border-left:1px solid #e5e5f1}
+.section-trading .bx-trade .contact ul li a {display:block; position:relative; height:100%; font-weight:600; font-size:15px; color:#333; letter-spacing:0}
+.section-trading .bx-trade .contact ul li a .count {position:absolute; right:50%; top:3px; width:20px; height:20px; line-height:20px; margin-right:-51px; font-size:14px; color:#fff; text-align:center; border-radius:100%; background:#e60012}
+.section-trading .bx-trade .contact ul li a span {display:inline-block; line-height:42px}
+.section-trading .bx-trade .contact ul li.msg a span:not(.count) {padding-left:26px; background:url(/img/ico-msg.png) 0 50% no-repeat; background-size:19px auto}
+.section-trading .bx-trade .contact ul li.call a span:not(.count) {padding-left:23px; background:url(/img/ico-call.png) 0 50% no-repeat; background-size:15px auto}
+.section-trading .bx-trade .contact ul li.route a span:not(.count) {padding-left:25px; background:url(/img/ico-route.png) 0 50% no-repeat; background-size:16px auto}
+.section-trading .bx-trade .connect-area {text-align:center}
+.section-trading .bx-trade .connect-area.qr {padding:0 23px}
+.section-trading .bx-trade .connect-area.qr .qr-code {display:inline-block; padding:19px; border:5px solid #08b5e5}
+.section-trading .bx-trade .connect-area.qr .qr-code img {width:130px}
+.section-trading .bx-trade .connect-area.qr .copy {padding-top:10px}
+.section-trading .bx-trade .connect-area.qr .copy:after {content:""; display:block; clear:both}
+.section-trading .bx-trade .connect-area.qr .copy input[type="text"] {float:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; width:calc(100% - 75px); height:40px; line-height:40px; padding:0 10px; font-size:15px; color:#666; text-align:left; border-radius:3px; border:1px solid #e5e5f1; box-sizing:border-box}
+.section-trading .bx-trade .connect-area.qr .copy input[type="text"] + a {float:left; width:70px; margin-left:5px; padding:0 9px}
+.section-trading .bx-trade .connect-area.send {padding:0 10px 10px}
+.section-trading .bx-trade .connect-area.send p {line-height:1.3em; padding-bottom:9px; font-weight:600; font-size:16px; color:#424242; letter-spacing:0}
+.section-trading .bx-trade .connect-area.send p span {display:block; line-height:1.3em}
+.section-trading .bx-trade .connect-area.send p strong {font-weight:600; color:#e60012}
+.section-trading .bx-trade .connect-area.send input[type="text"] {width:100%}
+.section-trading .bx-trade .connect-area.send table {margin-top:15px; border-right:1px solid #d3d3d3; border-bottom:1px solid #d3d3d3}
+.section-trading .bx-trade .connect-area.send table thead th {height:40px; font-weight:400; font-size:16px; color:#666; border-top:1px solid #d3d3d3; border-left:1px solid #d3d3d3; background:#e4e4ee}
+.section-trading .bx-trade .connect-area.send table tbody td {word-break:break-all; height:52px; line-height:1.2em; font-size:14px; border-top:1px solid #d3d3d3; border-left:1px solid #d3d3d3}
+.section-trading .bx-trade .connect-area.send table tbody td.num {font-weight:800; letter-spacing:-0.05em}
+.section-trading .bx-trade .connect-area.send table tbody td.fee {font-weight:700; color:#215fec}
+.section-trading .bx-trade .connect-area.send table tbody td.price {font-weight:700; color:#f81515}
+.section-trading .popup-msg .popup-section .popup-header {position:relative; height:40px; line-height:40px; padding:0 40px 0 10px; text-align:left; background:#ebebeb}
+.section-trading .popup-msg .popup-section .popup-header h3 {overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:40px; padding-left:24px; color:#3558a8; font-weight:600; font-size:16px; letter-spacing:0; background:url(/img/ico-user.png) 0 50% no-repeat; background-size:17px auto}
+.section-trading .popup-msg .popup-section .popup-content {padding:0 10px 20px}
+.section-trading .popup-msg .popup-section .popup-content .msg-area {overflow:hidden; overflow-y:auto; height:243px; -webkit-overflow-scrolling: touch}
+.section-trading .popup-msg .popup-section .popup-content .msg-area .inner-chat {display:table}
+.section-trading .popup-msg .popup-section .popup-content .msg-area .inner-chat .cont {display:table-row}
+.section-trading .popup-msg .popup-section .popup-content .msg-area .inner-chat .cont .name {display:table-cell; width:80px; line-height:1.2em; font-weight:600; word-break:break-all; border-bottom:1px solid #dedede}
+.section-trading .popup-msg .popup-section .popup-content .msg-area .inner-chat .cont p {display:table-cell; line-height:1.5em; padding:10px 7px 12px; font-size:15px; color:#333; letter-spacing:0; word-break:break-all; border-bottom:1px solid #dedede}
+.section-trading .popup-msg .popup-section .popup-content .msg-area .inner-chat .cont p .time {display:inline-block; line-height:15px; margin-left:9px; font-size:12px; color:#666; vertical-align:middle}
+.section-trading .popup-msg .popup-section .popup-content .msg-area .inner-chat .cont.user .name {color:#ec620f}
+.section-trading .popup-msg .popup-section .popup-content .msg-area .inner-chat .cont.other .name {color:#3558a8}
+.section-trading .popup-msg .popup-section .popup-content .enter-area {padding-top:25px}
+.section-trading .popup-msg .popup-section .popup-content .enter-area:after {content:""; display:block; clear:both}
+.section-trading .popup-msg .popup-section .popup-content .enter-area input[type="text"] {float:left; width:calc(100% - 75px)}
+.section-trading .popup-msg .popup-section .popup-content .enter-area .btn-send {float:left; width:70px; margin-left:5px; padding:0 10px; border-color:#efb608; background-color:#efb608}
+
+/* order list for agent */
+.section-agent-list {padding-top:40px}
+.section-agent-list .bx-round {padding:25px 0 20px; text-align:center}
+.section-agent-list .bx-round p {line-height:1.3em; padding-top:72px; font-size:17px; color:#666; background:url(/img/ico-agent-coin.png) 50% 0 no-repeat; background-size:50px auto}
+.section-agent-list .bx-round p strong {font-size:19px; color:#e60415}
+.section-agent-list .btns-submit {padding-top:23px}
+
+/* coin transfer */
+.section-transfer .tab-basic  {padding-bottom:12px}
+.section-transfer .tab-basic ul {display:-webkit-flex; display:-ms-flexbox; display:flex; border:1px solid #414f71}
+.section-transfer .tab-basic ul li {display:inline-block; -webkit-flex:1; -ms-flex:1; flex:1}
+.section-transfer .tab-basic ul li a {display:block; height:38px; line-height:38px; font-weight:600; font-size:18px; color:#666; letter-spacing:-0.075em; text-align:center; background:#fff}
+.section-transfer .tab-basic ul li.active a {color:#fff; background:#414f71}
+.section-transfer .bx-round .send-address {padding:20px 12px 10px}
+.section-transfer .bx-round .send-address .tit {line-height:1.3em; padding-bottom:5px; font-weight:600; font-size:17px; color:#424242; letter-spacing:0}
+.section-transfer .bx-round .send-address .add {word-break:break-all; line-height:1.2em; padding:12px 5px; font-size:15px; color:#666}
+.section-transfer .bx-round .send-address input[type="text"] {width:100%; color:#666}
+.section-transfer .bx-round .send-detail {padding:0 12px 35px}
+.section-transfer .bx-round .send-detail .inner {padding-top:14px; border-top:3px solid #383838}
+.section-transfer .bx-round .send-detail .inner:after {content:""; display:block; clear:both}
+.section-transfer .bx-round .send-detail .inner .set {float:left; width:calc(50% - 7px)}
+.section-transfer .bx-round .send-detail .inner .set ~ .set {margin-left:14px}
+.section-transfer .bx-round .send-detail .inner .set label {display:block; height:25px; line-height:25px; font-size:16px; color:#666; text-align:center}
+.section-transfer .bx-round .send-detail .inner .set .inp {position:relative}
+.section-transfer .bx-round .send-detail .inner .set .inp input[type="number"] {width:100%; padding-right:45px; font-size:17px; color:#215fec; text-align:right}
+.section-transfer .bx-round .send-detail .inner .set .inp input[type="number"] + .unit {position:absolute; right:10px; top:0; height:40px; line-height:40px; font-size:17px; color:#215fec}
+.section-transfer .bx-round .send-detail .inner .set .sel-curr {text-align:center}
+.section-transfer .bx-round .send-detail .inner .set .sel-curr select {height:25px; line-height:25px; padding-right:18px; font-size:16px; color:#666; border:none; background:url(/img/ico-arrow-down-gray.png) 100% 50% no-repeat; background-size:13px auto}
+.section-transfer .bx-round .send-detail .inner .set .sel-curr + .inp input[type="number"],
+.section-transfer .bx-round .send-detail .inner .set .sel-curr + .inp input[type="number"]  + .unit {color:#333}
+.section-transfer .bx-round .send-detail .inner table {margin:-6px 0 19px; border-bottom:1px solid #d3d3d3; border-right:1px solid #d3d3d3}
+.section-transfer .bx-round .send-detail .inner table tbody th,
+.section-transfer .bx-round .send-detail .inner table tbody td {height:38px; font-weight:400; font-size:16px; color:#666; text-align:center; word-break:break-all; border-top:1px solid #d3d3d3; border-left:1px solid #d3d3d3}
+.section-transfer .bx-round .send-detail .inner table tbody th.amount {background:#ffe9ea}
+.section-transfer .bx-round .send-detail .inner table tbody th.fee {background:#e9f0ff}
+.section-transfer .bx-round .send-detail .max {padding-top:8px; font-size:13px; color:#666}
+.section-transfer .bx-round .send-detail .max strong {font-weight:400; color:#215fec}
+.section-transfer .bx-round .send-fee .bx-fee {padding:15px 20px 15px 12px; background:#e4e4ee}
+.section-transfer .bx-round .send-fee .bx-fee:after {content:""; display:block; clear:both}
+.section-transfer .bx-round .send-fee .bx-fee .tit {font-size:16px; color:#666}
+.section-transfer .bx-round .send-fee .bx-fee .cont {float:right; width:80%; text-align:right}
+.section-transfer .bx-round .send-fee .bx-fee .cont strong {font-weight:800; font-size:19px; letter-spacing:-0.05em}
+.section-transfer .bx-round .send-fee .bx-fee .cont strong .unit {margin-left:4px}
+.section-transfer .bx-round .send-fee .bx-fee .exc {padding-top:5px; font-size:14px; color:#666}
+.section-transfer .bx-round .send-fee .time {height:37px; padding:0 20px; font-size:14px; color:#08b5e5; letter-spacing:-0.05em; text-align:right}
+.section-transfer .bx-round .send-fee .time span {display:inline-block; line-height:35px; padding-left:20px; background:url(/img/bg-clock.png) 0 50% no-repeat; background-size:16px auto}
+.section-transfer .btns-submit {padding-top:15px}
+.section-transfer.request .bx-round {padding:30px 12px 40px; text-align:center}
+.section-transfer.request .bx-round .desc {line-height:1.2em; font-weight:600; font-size:17px; color:#424242; letter-spacing:0}
+.section-transfer.request .bx-round .connect-area {padding-top:22px}
+.section-transfer.request .bx-round .connect-area .qr-code {display:inline-block; padding:13px; border:5px solid #08b5e5}
+.section-transfer.request .bx-round .connect-area .qr-code img {width:131px}
+.section-transfer.request .bx-round .connect-area .copy {padding-top:23px}
+.section-transfer.request .bx-round .connect-area .copy .lb-code input[type="text"] {width:100%; font-size:15px; border:none}
+.section-transfer.request .bx-round .connect-area .copy .lb-code strong {display:block; width:100%; line-height:1.3em; font-weight:400; font-size:15px; color:#666; word-break:break-all; border:none}
+
+/* Transaction */
+#container.section-transaction {padding-top:0; padding-left:0; padding-right:0}
+.section-transaction .bx-balance {padding:15px 13px 17px; text-align:right; border-bottom:4px solid #e9e9e9; background:#f5f6fb}
+.section-transaction .bx-balance strong {display:inline-block; max-width:calc(100% - 31px); line-height:1.2em; padding-left:31px; font-size:21px; color:#333; word-break:break-all; background:url(/img/logo-small.png) 0 2px no-repeat; background-size:22px auto}
+.section-transaction .list-history ul li {border-bottom:1px solid #e4e4ee}
+.section-transaction .list-history ul li a {display:block; height:62px; padding:0 20px; box-sizing:border-box}
+.section-transaction .list-history ul li a:after {content:""; display:block; clear:both}
+.section-transaction .list-history ul li a .time {float:left; position:relative; width:54%; line-height:62px; font-weight:700; font-size:16px; color:#000}
+.section-transaction .list-history ul li a .time .state {position:absolute; left:88px; top:50%; height:22px; line-height:22px; margin-top:-11px; padding:0 10px; font-size:13px; color:#fff; text-align:center}
+.section-transaction .list-history ul li a strong {float:right; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; width:46%; line-height:62px; font-weight:600; font-size:16px; text-align:right}
+.section-transaction .list-history ul li.receive a .time .state {background:#12bcf4}
+.section-transaction .list-history ul li.send a .time .state {background:#f19900}
+.section-transaction .list-history ul li.buy a .time .state,
+.section-transaction .list-history ul li.buy-order a .time .state {background:#007ae2}
+.section-transaction .list-history ul li.sell a .time .state,
+.section-transaction .list-history ul li.sell-order a .time .state {background:#e63e3a}
+.section-transaction .list-history ul li.receive a strong {color:#12bcf4}
+.section-transaction .list-history ul li.send a strong {color:#f19900}
+.section-transaction .list-history ul li.buy a strong,
+.section-transaction .list-history ul li.buy-order a strong {color:#007ae2}
+.section-transaction .list-history ul li.sell a strong,
+.section-transaction .list-history ul li.sell-order a strong {color:#e63e3a}
+.section-transaction.details .bx-balance {position:relative}
+.section-transaction.details .bx-balance .tit {position:absolute; left:20px; top:16px; font-weight:700; font-size:24px; color:#333}
+.section-transaction.details .bx-balance strong {max-width:calc(100% - 63px); padding-left:0; font-size:24px; background:none}
+.section-transaction.details .bx-balance p {padding-top:3px; font-size:16px; color:#999; letter-spacing:-0.05em; word-break:break-all}
+.section-transaction.details .detail-content .memo {padding:10px 20px}
+.section-transaction.details .detail-content .memo:after {content:""; display:block; clear:both}
+.section-transaction.details .detail-content .memo input[type="text"] {float:left; width:calc(100% - 75px)}
+.section-transaction.details .detail-content .memo .enter {float:left; width:70px; margin-left:5px; padding:0 10px}
+.section-transaction.details .detail-content .memo .enter span {width:25px; color:transparent; text-indent:-9999em; background:url(/img/ico-note.png) 50% 50% no-repeat; background-size:25px auto}
+.section-transaction.details .detail-content .info {padding:8px 20px 0; border-top:1px solid #e4e4ee}
+.section-transaction.details .detail-content .info ul {display:table; table-layout:fixed; width:100%}
+.section-transaction.details .detail-content .info ul li {display:table-row}
+.section-transaction.details .detail-content .info ul li .tit {display:table-cell; width:72px; height:33px; padding:10px 0; font-size:16px; color:#666; border-bottom:1px solid #e9e9e9}
+.section-transaction.details .detail-content .info ul li .cont {display:table-cell; position:relative; width:calc(100% - 72px); padding:10px 0; border-bottom:1px solid #e9e9e9; vertical-align:middle}
+.section-transaction.details .detail-content .info ul li .cont strong {display:block; font-weight:400; font-size:16px; color:#333}
+.section-transaction.details .detail-content .info ul li .cont strong:after {content:""; display:block; clear:both}
+.section-transaction.details .detail-content .info ul li .cont strong .id {float:left; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; width:calc(100% - 75px); line-height:25px; font-weight:700}
+.section-transaction.details .detail-content .info ul li .cont .btn-rate {position:absolute; right:0; top:10px; height:25px; padding:0 10px; font-weight:400; font-size:14px; border-radius:0; border-color:#333; background-color:#666667}
+.section-transaction.details .detail-content .info ul li .cont .btn-rate span {line-height:23px}
+.section-transaction.details .detail-content .info ul li .cont .add {display:block; line-height:1.2em; padding-top:7px; font-size:12px; color:#999; word-break:break-all}
+.section-transaction.details .detail-content .info ul li:first-child .tit {padding-top:15px}
+.section-transaction.details .detail-content .info ul li.single .tit {vertical-align:middle}
+.popup-rating .popup-section {width:335px}
+.popup-rating .popup-section .popup-header {height:45px; line-height:45px; padding:0; text-align:center; background:none}
+.popup-rating .popup-section .popup-header h3 {line-height:45px; font-weight:400; font-size:17px}
+.popup-rating .popup-section .popup-content {padding:0 8px 8px}
+.popup-rating .popup-section .popup-content .rating-area {padding:12px 0 15px; text-align:center}
+.popup-rating .popup-section .popup-content .rating-area .inner {display:inline-block}
+.popup-rating .popup-section .popup-content .rating-area .inner:after {content:""; display:block; clear:both}
+.popup-rating .popup-section .popup-content .rating-area .inner .star {float:left; width:23px; height:22px; background:url(/img/ico-star.png) 0 0 no-repeat; background-size:23px auto; opacity:.1}
+.popup-rating .popup-section .popup-content .rating-area .inner .star ~ .star {margin-left:13px}
+.popup-rating .popup-section .popup-content .rating-area .inner .star.selected {opacity:1}
+.popup-rating .popup-section .popup-content .rating-area + .total {width:1px; height:1px; line-height:0; color:transparent; text-indent:-9999em}
+
+/* setting */
+#container.section-setting {padding-left:0; padding-right:0}
+.section-setting .set-area ~ .set-area {padding-top:35px}
+.section-setting .set-area h3 {padding:0 20px 7px; font-size:19px}
+.section-setting .set-area .cont {background:#fff}
+.section-setting .set-area .cont ul {padding:0 20px}
+.section-setting .set-area .cont ul li {position:relative; padding:12px 0}
+.section-setting .set-area .cont ul li ~ li {border-top:1px solid #e9e9e9}
+.section-setting .set-area .cont ul li .tit {line-height:25px; font-size:16px; color:#666}
+.section-setting .set-area .cont ul li .tit .sub {display:inline-block; line-height:23px; margin:2px 0 0 5px; font-size:12px; color:#999; vertical-align:top}
+.section-setting .set-area .cont ul li [class*='btn-'] {position:absolute; right:0; top:50%; min-width:67px; height:25px; margin-top:-12px; padding:0 10px; font-weight:400; font-size:14px; border-radius:0}
+.section-setting .set-area .cont ul li [class*='btn-'] span {line-height:23px}
+.section-setting .set-area .cont ul li .info {line-height:1.2em; font-size:12px; color:#999}
+.section-setting .set-area .cont ul li .verify {position:absolute; right:0; top:50%; width:67px; margin-top:-7px; font-size:14px; color:#999; letter-spacing:-0.075em; text-align:center}
+.section-setting .set-area .cont ul li .verify.verified {color:#1c56db}
+.section-setting .set-area .cont ul li .sel-curr {padding-top:1px}
+.section-setting .set-area .cont ul li .sel-curr select {height:20px; line-height:20px; padding-left:0; padding-right:17px; font-size:12px; color:#999; border:none; background:url(/img/ico-arrow-down-gray.png) 100% 50% no-repeat; background-size:13px auto}
+.section-setting .set-area .cont ul li .btn-noti {border-color:#cdcdcd; background-color:#cdcdcd}
+.section-setting .set-area .cont ul li .btn-noti.on {border-color:#08b5e5; background-color:#08b5e5}
+.section-setting .set-area.set4 .cont ul li {padding:0}
+.section-setting .set-area.set4 .cont ul li a {display:block; position:relative; padding:12px 0}
+.section-setting .set-area.set4 .cont ul li ~ li a:after {content:""; position:absolute; right:12px; top:50%; width:15px; height:15px; margin-top:-7px; background:url(/img/ico-move.png) no-repeat; background-size:15px auto}
+.section-setting .set-area.set4 .cont ul li ~ li .tit {color:#333}
+.section-setting .set-area.set4 .cont ul li .ver {float:right; font-weight:700; font-size:13px; color:#666; text-align:right}
+.section-setting .set-area.set4 .cont ul li .ver .updated {display:block; padding-top:2px; font-weight:400; font-size:12px; color:#999}
+.section-setting .set-area.set4 .cont ul li:first-child:after {content:""; display:block; clear:both}
+.popup-change-pw .popup-section .popup-content {padding:15px 8px 8px}
+.popup-change-pw .popup-section .popup-content .frm-basic {padding:0 12px}
+.popup-version .popup-section .popup-header {display:none}
+.popup-version .popup-section .popup-content {text-align:center}
+.popup-version .popup-section .popup-content .logo {display:inline-block; height:64px; line-height:64px; padding-left:80px; font-weight:400; font-size:32px; color:#3558a8; letter-spacing:-0.075em; background:url(/img/logo.png) 0 50% no-repeat; background-size:64px auto}
+.popup-version .popup-section .popup-content .info {padding-top:44px; font-size:13px; color:#999}
+.popup-version .popup-section .popup-content .info .ver {display:block; padding-bottom:2px; font-size:14px; color:#333}
+
+/* wallet addresses */
+#container.section-address {padding-left:0; padding-right:0}
+.section-address .add-area ~ .add-area {padding-top:35px}
+.section-address .add-area h3 {padding:0 20px 7px; font-size:19px}
+.section-address .add-area .cont {background:#fff}
+.section-address .add-area .cont > ul {padding:0 20px}
+.section-address .add-area .cont > ul > li {position:relative; min-height:80px; padding:12px 0 15px; border-bottom:1px solid #e9e9e9}
+.section-address .add-area .cont > ul > li .my-add-code {display:inline-block; max-width:calc(100% - 73px); line-height:1.2em; font-size:12px; color:#999; vertical-align:middle; word-break:break-all}
+.section-address .add-area .cont > ul > li .my-qr-code {position:absolute; right:0; top:50%; width:64px; height:64px; margin-top:-32px; padding:6px; border:2px solid #18bae7}
+.section-address .add-area .cont > ul > li .my-qr-code img {width:47px}
+.section-address .add-area .cont > ul > li .name {line-height:1.2em; font-size:16px; color:#666; word-break:break-all}
+.section-address .add-area .cont > ul > li .add {display:block; width:calc(100% - 32px); line-height:1.2em; font-size:13px; color:#999; word-break:break-all}
+.section-address .add-area .cont > ul > li .note {width:calc(100% - 32px); line-height:1.2em; padding-top:11px; font-size:11px; color:#999; word-break:break-all}
+.section-address .add-area .cont > ul > li [class*='btn-'] {min-width:67px; height:25px; padding:0 10px; font-weight:400; font-size:14px; border-radius:0}
+.section-address .add-area .cont > ul > li [class*='btn-'] span {line-height:23px}
+.section-address .add-area .cont > ul > li .edit-area {position:absolute; right:0; top:50%; margin-top:-13px}
+.section-address .add-area .cont > ul > li .edit-area .inner {position:relative}
+.section-address .add-area .cont > ul > li .edit {display:inline-block; width:27px; height:27px; text-align:center}
+.section-address .add-area .cont > ul > li .edit span {display:inline-block; width:1px; height:1px; line-height:0; color:transparent; text-indent:-9999em}
+.section-address .add-area .cont > ul > li .edit span:after {content:""; position:absolute; left:50%; top:50%; width:5px; height:5px; margin:-3px 0 0 -3px; border-radius:100%; background:#000}
+.section-address .add-area .cont > ul > li .edit:after {content:""; position:absolute; left:50%; top:50%; width:5px; height:5px; margin:-10px 0 0 -3px; border-radius:100%; background:#000}
+.section-address .add-area .cont > ul > li .edit:before {content:""; position:absolute; left:50%; top:50%; width:5px; height:5px; margin:4px 0 0 -3px; border-radius:100%; background:#000}
+.section-address .add-area .cont > ul > li .btns {display:none; position:absolute; top:25px; right:11px; z-index:1}
+.section-address .add-area .cont > ul > li .btns li ~ li {margin-top:1px}
+.section-address .add-area.add1 .cont > ul > li {height:105px; border:none}
+.section-address .add-area.add1 .cont > ul > li:before {content:""; display:inline-block; width:0; height:100%; vertical-align:middle}
+.section-address .add-area .btns-submit {padding-bottom:40px; background:#fff}
+.section-address .add-area .btns-submit a span {padding-left:25px; background:url(/img/ico-add.png) 0 50% no-repeat; background-size:17px auto}
+.popup-address-edit .popup-section .popup-content {padding:15px 8px 8px}
+.popup-address-edit .popup-section .popup-content .frm-basic {padding:0 12px}

@@ -1,0 +1,21 @@
+0 */1 * * * php /var/www/html/subject.php > /dev/null 2>&1
+0 04 * * * php /var/www/zzarbang/board/cron_file_delete.php > /dev/null 2>&1
+0 05 * * * php /var/www/chukppa/board/cron_file_delete.php > /dev/null 2>&1
+0 */1 * * * sleep 59; python3 /home/ebo/subject_count.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/clien_def_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/eto_def_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/ddanzi_free_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/ppomppu_free_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/todayhumor_def_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/slrclub_def_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/ruliweb_def_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/bobae_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/utdae_ela.py > /dev/null 2>&1
+*/10 * * * * python3 /home/ebo/inven_ela.py > /dev/null 2>&1
+*/30 * * * * python3 /home/ebo/soccer_def_ela.py > /dev/null 2>&1
+*/10 7-23 * * * python3 /home/ebo/zzar.py > /dev/null 2>&1
+10 0,03,06,12,18 * * * php /var/www/chukppa/gs_week.php > /dev/null 2>&1
+*/10 * * * * php /var/www/chukppa/gs.php > /dev/null 2>&1
+10,30,50 0,01 * * * php /var/www/chukppa/gs_yes.php > /dev/null 2>&1
+40 0,06,12,18 * * * php /var/www/chukppa/update_team.php > /dev/null 2>&1
+*/10 * * * * php /var/www/chukppa/chuk_cnt.php > /dev/null 2>&1

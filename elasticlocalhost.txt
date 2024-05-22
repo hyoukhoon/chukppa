@@ -1,0 +1,295 @@
+https://techexpert.tips/ko/category/%ed%83%84%ec%84%b1-%ea%b2%80%ec%83%89/
+https://12bme.tistory.com/483
+https://qbox.io/blog/maximize-guide-elasticsearch-indexing-performance-part-2/
+https://d2.naver.com/helloworld/273788
+https://november11tech.tistory.com/149
+https://danawalab.github.io/elastic/2020/05/20/Elasticsearch-basic-security.html
+
+https://gem1n1.tistory.com/88 -> 이거보고함
+
+54.180.100.216
+
+
+curl 'localhost:9200'
+전체 인덱스 조회
+curl -u elastic:soon06051007 -XGET 'localhost:9200/_cat/indices?v'
+yellow open   eve            iN1cRqUXSPuZyiIipUjU5g   1   1      19885         3455     13.5mb         13.5mb : 201114
+yellow open   eve            iN1cRqUXSPuZyiIipUjU5g   1   1      52350       352292    249.2mb        249.2mb : 1115
+yellow open   eve            iN1cRqUXSPuZyiIipUjU5g   1   1    1082165       119252    527.2mb        527.2mb : 1204
+
+---
+2023.01.27
+health status index                   uuid                   pri rep docs.count docs.deleted store.size pri.store.size
+yellow open   news                    RcOXYts-RmeK0sfBBKaSOQ   1   1         29            0     46.4kb         46.4kb
+green  open   .security-7             qY78E1LGSyGgROLYBT6fbg   1   0          7            0     25.6kb         25.6kb
+yellow open   eve                     pU-J8ZmtQxO9jzRjmWC7zw   1   1   10359957        83734      3.2gb          3.2gb
+yellow open   magento2_product_1_v254 DtAEYId4R6i2ZvrvEV_4vQ   1   1          7            0     28.1kb         28.1kb
+
+
+curl -u elastic:soon06051007 'localhost:9200'
+
+체크
+curl -u elastic:soon06051007 -XGET 'localhost:9200/_cluster/health'
+
+인덱스추가및 매핑
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/eve?pretty'
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/cboard?pretty'
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/cboard_grade?pretty'
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/zzarbang?pretty'//매핑할때는 인덱스추가 없이 아래 매핑만 하면됨
+
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/chat?pretty' -H 'Content-Type: application/json' -d '{ "mappings": { "properties": { "regdate": { "type": "date", "format": "yyyy-MM-dd HH:mm:ss" }, "room": { "type": "keyword"}, "userid": { "type": "keyword" }, "uname": { "type": "keyword" }, "msg": { "type": "keyword"} , "ip": { "type": "keyword" } } } }'
+
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/xc_games_fs?pretty' -H 'Content-Type: application/json' -d '{ "mappings": { "properties": {"country": { "type": "keyword"}, "league": { "type": "keyword" }, "roundname": { "type": "keyword" }, "gamedate": { "type": "date", "format": "yyyy-MM-dd" }, "gametime": { "type": "date", "format": "HH:mm:ss" }, "playtime": { "type": "keyword"}, "hometeam": { "type": "keyword" }, "awayteam": { "type": "keyword" }, "hometeamid": { "type": "keyword" }, "awayteamid": { "type": "keyword" }, "hometeamfull": { "type": "keyword" }, "awayteamfull": { "type": "keyword" }, "hometeambetman": { "type": "keyword" }, "awayteambetman": { "type": "keyword" }, "status": { "type": "keyword" }, "score": { "type": "keyword" }, "penalty": { "type": "keyword" }, "gubun": { "type": "integer"}, "regdate": { "type": "date", "format": "yyyy-MM-dd HH:mm:ss" } } } }'
+
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/xc_games2?pretty' -H 'Content-Type: application/json' -d '{ "mappings": { "properties": {"country": { "type": "keyword"}, "league": { "type": "keyword" }, "roundname": { "type": "keyword" }, "gamedate": { "type": "date", "format": "yyyy-MM-dd" }, "gametime": { "type": "date", "format": "HH:mm:ss" }, "playtime": { "type": "integer"}, "hometeam": { "type": "keyword" }, "awayteam": { "type": "keyword" }, "hometeamid": { "type": "keyword" }, "awayteamid": { "type": "keyword" }, "hometeamfull": { "type": "keyword" }, "awayteamfull": { "type": "keyword" }, "hometeambetman": { "type": "keyword" }, "awayteambetman": { "type": "keyword" }, "status": { "type": "keyword" }, "score": { "type": "keyword" }, "penalty": { "type": "keyword" }, "gubun": { "type": "integer"}, "regdate": { "type": "date", "format": "yyyy-MM-dd HH:mm:ss" } } } }'
+
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/xc_games2?pretty' -H 'Content-Type: application/json' -d '{ "mappings": { "properties": {"country": { "type": "keyword"}, "league": { "type": "keyword" }, "roundname": { "type": "keyword" }, "gamedate": { "type": "date", "format": "yyyy-MM-dd" }, "gametime": { "type": "date", "format": "HH:mm:ss" }, "playtime": { "type": "integer"}, "hometeam": { "type": "keyword" }, "awayteam": { "type": "keyword" }, "hometeamfull": { "type": "keyword" }, "awayteamfull": { "type": "keyword" }, "hometeambetman": { "type": "keyword" }, "awayteambetman": { "type": "keyword" }, "status": { "type": "keyword" }, "score": { "type": "keyword" }, "penalty": { "type": "keyword" }, "gubun": { "type": "integer"}, "regdate": { "type": "date", "format": "yyyy-MM-dd HH:mm:ss" } } } }'
+
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/chat?pretty' -H 'Content-Type: application/json' -d '{ "mappings": { "properties": { "regdate": { "type": "date", "format": "yyyy-MM-dd HH:mm:ss" }, "room": { "type": "keyword"}, "uname": { "type": "keyword" }, "msg": { "type": "keyword"} , "ip": { "type": "keyword" } } } }'
+
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/xc_games2?pretty' -H 'Content-Type: application/json' -d '{ "mappings": { "properties": {"country": { "type": "keyword"}, "league": { "type": "keyword" }, "gamedate": { "type": "date", "format": "yyyy-MM-dd" }, "gametime": { "type": "date", "format": "HH:mm:ss" }, "playtime": { "type": "integer"}, "hometeam": { "type": "keyword" }, "awayteam": { "type": "keyword" }, "hometeamfull": { "type": "keyword" }, "awayteamfull": { "type": "keyword" }, "status": { "type": "keyword" }, "score": { "type": "keyword" }, "penalty": { "type": "keyword" }, "gubun": { "type": "integer"}, "regdate": { "type": "date", "format": "yyyy-MM-dd HH:mm:ss" } } } }'
+
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/xc_games?pretty' -H 'Content-Type: application/json' -d '{ "mappings": { "properties": {"country": { "type": "keyword"}, "league": { "type": "keyword" }, "gamedate": { "type": "date", "format": "yyyy-MM-dd" }, "gametime": { "type": "date", "format": "HH:mm:ss" }, "playtime": { "type": "integer"}, "hometeam": { "type": "keyword" }, "awayteam": { "type": "keyword" }, "status": { "type": "keyword" }, "score": { "type": "keyword" }, "gubun": { "type": "integer"}, "regdate": { "type": "date", "format": "yyyy-MM-dd HH:mm:ss" } } } }'
+
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/xc_weblogs?pretty' -H 'Content-Type: application/json' -d '{ "mappings": { "properties": { "site_reg_date": { "type": "date", "format": "yyyy-MM-dd HH:mm:ss" }, "referer": { "type": "keyword"}, "httpuseragent": { "type": "keyword" }, "phpself": { "type": "keyword"} , "ip": { "type": "keyword" }, "software": { "type": "keyword" }, "subject": { "type": "keyword" } } } }'
+
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/weblogs3?pretty' -H 'Content-Type: application/json' -d '{ "mappings": { "properties": { "site_reg_date": { "type": "date", "format": "yyyy-MM-dd HH:mm:ss" }, "referer": { "type": "keyword"}, "httpuseragent": { "type": "keyword" }, "phpself": { "type": "keyword"} , "ip": { "type": "keyword" }, "software": { "type": "keyword" }, "subject": { "type": "keyword" } } } }'
+
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/zzarbang?pretty' -H 'Content-Type: application/json' -d '{ "mappings": { "properties": { "site_reg_date": { "type": "date", "format": "yyyy/MM/dd HH:mm:ss" }, "subject": { "type": "text" }, "username": { "type": "keyword" }, "multi": { "type": "keyword" }, "thumbnail": { "type": "keyword" }, "url": { "type": "text" }, "site_num": { "type": "integer" }, "userid": { "type": "keyword" }, "uid": { "type": "keyword" }, "site_cnt": { "type": "integer" }, "isdisp": { "type": "integer" }, "recom": { "type": "integer" }, "memo_cnt": { "type": "integer" } } } }'
+
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/ozzal?pretty' -H 'Content-Type: application/json' -d '{ "mappings": { "properties": { "site_reg_date": { "type": "date", "format": "yyyy/MM/dd HH:mm:ss" }, "subject": { "type": "text" }, "username": { "type": "keyword" }, "multi": { "type": "keyword" }, "thumbnail": { "type": "keyword" }, "url": { "type": "text" }, "site_num": { "type": "integer" }, "userid": { "type": "keyword" }, "uid": { "type": "keyword" }, "site_cnt": { "type": "integer" }, "memo_cnt": { "type": "integer" } } } }'
+
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/eve?pretty' -H 'Content-Type: application/json' -d '{ "mappings": { "properties": { "site_reg_date": { "type": "date", "format": "yyyy/MM/dd HH:mm:ss" }, "subject": { "type": "text" }, "site_name": { "type": "keyword" }, "multi": { "type": "keyword" }, "site_domain": { "type": "keyword" }, "url": { "type": "text" }, "site_num": { "type": "integer" }, "uid": { "type": "keyword" }, "site_cnt": { "type": "integer" }, "memo_cnt": { "type": "integer" } } } }'
+
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/eve?pretty' -H 'Content-Type: application/json' -d '{"site_name": "etoland", "multi": "star", "site_domain": "http://www.etoland.co.kr", "subject": "\n[걸그룹]\xa0일본인인데 상당히 키가 큰 카즈하, 레이.gif\xa0 [2]   ", "url": "https://www.etoland.co.kr/bbs/board.php?bo_table=star01&wr_id=716456&page=1", "site_num": 716456, "uid": "etoland_star_716456", "site_reg_date": "2023/02/15 12:10:00", "site_cnt": 351}'
+
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/eve?pretty' -H 'Content-Type: application/json' -d '{"site_name": "soccerline", "multi": "sports", "site_domain": "https://soccerline.kr", "subject": "첼시처럼 돈 쓰고 무너지는 구단도 있었나요? ", "url": "https://soccerline.kr/board/16968418?searchWindow=&searchType=0&searchText=&categoryDepth01=1&page=4", "site_num": 16968418, "uid": "soccer_sports_16968418", "site_reg_date": "2023/02/21 00:24:00", "site_cnt": 746}'
+
+다큐멘트추가
+
+curl -XPUT localhost:9200/eve/_doc/1 -H 'Content-Type: application/json' -d'{"name": "Jongmin Kim2","message": "안녕하세요 Elasticsearch2"}'
+
+curl -XPOST localhost:9200/customer2/info/1?pretty -H 'Content-Type: application/json' -d '{ "name": "victolee" }'
+
+curl -XPOST localhost:9200/customer2/info?pretty -H 'Content-Type: application/json' -d '{"name": "victolee2"}'
+
+curl -XPOST localhost:9200/eve/_doc/free_00001?pretty -H 'Content-Type: application/json' -d '{"sitename": "free","cnt":2500}'
+curl -XPUT localhost:9200/eve/_doc/free_00001?pretty -H 'Content-Type: application/json' -d '{"sitename": "free","cnt":500}'
+curl -XPUT localhost:9200/eve/_doc/free_00002?pretty -H 'Content-Type: application/json' -d '{"sitename": "free","cnt":1500}'
+
+curl -XPOST 'localhost:9200/customer2/info/2?pretty' -H 'Content-Type: application/json' -d @data.json
+
+curl -u elastic:soon06051007 -XPUT localhost:9200/eve/_doc/ssfree_38196036?pretty -H 'Content-Type: application/json' -d '{"site_name": "slrclub", "multi": "free", "site_domain": "http://www.slrclub.com", "subject": "아무도 없는 아침 텐트 풍경 [4]", "url": "http://www.slrclub.com/bbs/vx2.php?id=free&page=724481&no=38196036", "site_num": 38196036, "uid": "slrclub_free_38196036", "site_reg_date": "2020/11/16 09:32:16", "site_cnt": 5599}'
+
+
+
+
+
+조회
+curl -u elastic:soon06051007 -XGET 'localhost:9200/eve/_search?pretty'
+curl -u elastic:soon06051007 -XGET 'localhost:9200/ozzal/_search?pretty'
+curl -u elastic:soon06051007 -XGET 'localhost:9200/zzarbang/_search?pretty'
+curl -u elastic:soon06051007 -XGET 'localhost:9200/cboard/_search?pretty'
+curl -u elastic:soon06051007 -XGET 'localhost:9200/cboard_grade/_search?pretty'
+curl -u elastic:soon06051007 -XGET 'localhost:9200/weblogs/_search?pretty'
+curl -u elastic:soon06051007 -XGET 'localhost:9200/xc_games/_search?pretty'
+
+curl -u elastic:soon06051007 -XGET 'localhost:9200/weblogs/_search?pretty' -H 'Content-Type: application/json' -d '{ "size": 10, "from": 0, "sort": {"site_reg_date":"desc"} }'
+
+curl -u elastic:soon06051007 -XGET 'localhost:9200/ozzal/_search?pretty' -H 'Content-Type: application/json' -d '{ "query": { "query_string" : { "fields" : ["subject", "url"], "query" : "*근황*" } }, "size": 20, "from": 0, "sort": {"site_reg_date":"desc","site_cnt":"desc"} }'
+
+curl -u elastic:soon06051007 -XGET 'localhost:9200/ozzal/_search?pretty' -H 'Content-Type: application/json' -d '{ "query": { "bool": { "filter": [ { "terms": { "multi": ["ozzal"] } }, { "range": { "site_cnt": { "gt": "0" } } } ], "must": [ { "range": { "site_reg_date":{"lt": "2023/06/07 00:00:00"} } } ] } }, "size": 5, "from": 0, "sort": {"site_reg_date":"desc","site_cnt":"desc"} }'
+
+
+curl -u elastic:soon06051007 -XGET 'localhost:9200/eve/_search?pretty' -H 'Content-Type: application/json' -d '{ "query": { "bool": { "filter": [ { "terms": { "site_name": ["ddanzi","clien","etoland","ppomppu","todayhumor","utdae","bobae","slrclub","ruliweb","soccerline","inven"] } }, { "range": { "site_cnt": { "gt": "0" } } } ], "must": [ { "term": { "multi" : "free" }} ] } }, "size": 50, "from": 0, "sort": {"site_reg_date":"desc"} }'
+
+curl -u elastic:soon06051007 -XGET 'localhost:9200/eve/_search?pretty' -H 'Content-Type: application/json' -d '{ "query": { "bool": { "filter": [ { "terms": { "site_name": ["clien"] } }, { "range": { "site_cnt": { "gt": "0" } } } ], "must": [ { "range": { "site_reg_date":{ "gt": "2023/02/01 00:00:00" , "lt": "2023/02/02 00:00:00"} } } ] } }, "size": 50, "from": 0, "sort": {"site_reg_date":"desc"} }'
+
+curl -XGET 'localhost:9200/eve/_search?pretty' -H 'Content-Type: application/json' -d '{"query": { "bool": { "filter": [ { "terms":  { "multi": "review" }}]}}}'
+
+curl -XGET 'localhost:9200/eve/_search?pretty' -H 'Content-Type: application/json' -d '{"query": {"bool": {"filter": [{"range": {"site_cnt": {"gt": "0"}}}], "must_not": [{"range": {"site_reg_date": {"lt": "2020/10/07"}}}, {"term": {"multi": "review"}}]}}, "size": 10, "from": 0,"sort": {"site_cnt":"asc"}}'
+
+curl -u elastic:soon06051007 -XGET 'localhost:9200/eve/_search?pretty' -H 'Content-Type: application/json' -d '{ "query": { "bool": { "filter": [ { "terms": { "site_name": ["ddanzi","clien","etoland","ppomppu","todayhumor","utdae","bobae","theqoo","slrclub","ruliweb"] } } ], "must": [ { "term": { "subject" : "카즈하" }} ] } }, "size": 10, "from": 0, "sort": { "site_reg_date":"desc" } }'
+
+curl -u elastic:soon06051007 -XGET 'localhost:9200/eve/_search?pretty' -H 'Content-Type: application/json' -d '{ "query": { "bool": { "filter": [ { "terms": { "site_name": ["ozzal"] } }, { "range": { "site_cnt": { "gt": "0" } } } ], "must": [ { "range": { "site_reg_date":{"lt": "2023/05/24 00:00:00"} } } ] } }, "size": 50, "from": 0, "sort": {"site_reg_date":"desc"} }'
+
+
+
+curl -u elastic:soon06051007 -XGET 'localhost:9200/eve/_search?pretty' -H 'Content-Type: application/json' -d '{ "query": { "bool": { "filter": [ { "terms": { "site_name": ["etoland"] } }, { "range": { "site_cnt": { "gt": "0" } } } ], "must": [ { "term": { "subject" : "카즈하" }} ], "must_not": [ { "range": { "site_reg_date": { "lt": "2019/10/08 00:00:00" } } }, { "term": { "multi": "review" } } ] } }, "size": 50, "from": 0, "sort": {"site_reg_date":"desc"} }'
+
+
+curl -u elastic:soon06051007 -XGET 'localhost:9200/eve/_doc/slrclub_free_38055985?pretty' - 11월11일입력
+
+curl -XGET 'localhost:9200/eve/_doc/eto_star_281902?pretty'
+
+curl -XGET 'localhost:9200/_sql/translate?pretty' -H 'Content-Type: application/json' -d '{"query": "SELECT * FROM ebo"}'
+
+curl -X GET "localhost:9200/_search?pretty" -H 'Content-Type: application/json' -d'
+{
+    "query": {
+        "match_phrase_prefix" : {
+            "subject" : "아침*"
+        }
+    }
+}'
+
+curl -u elastic:soon06051007 -X GET "localhost:9200/eve/_search?pretty" -H 'Content-Type: application/json' -d'{"query": {"query_string" : {"fields" : ["subject", "url"],"query" : "*아린*"}},"size": 100,	"from": 0,"sort": {"site_reg_date":"desc"}}'
+
+
+curl -u elastic:soon06051007 -X GET "localhost:9200/eve/_search?pretty" -H 'Content-Type: application/json' -d'{ "query": { "bool": { "filter": [ { "terms": { "site_name": ["ddanzi","clien","etoland","ppomppu","todayhumor","utdae","bobae","theqoo","slrclub","ruliweb"] } }, { "range": { "site_cnt": { "gt": "0" } } } ], "must_not": [ { "range": { "site_reg_date": { "lt": "2020/01/01 00:00:00" } } }, { "term": { "multi": "review" } } ] } }, "size": 50, "from": 0, "sort": {"site_reg_date":"desc"} }'
+
+curl -u elastic:soon06051007 -X GET "localhost:9200/eve/_search?pretty" -H 'Content-Type: application/json' -d'{ "query": { "bool": { "filter": [ { "terms": { "site_name": ["ddanzi","clien","etoland","ppomppu","todayhumor","utdae","bobae","theqoo","slrclub","ruliweb"] } }, { "range": { "site_cnt": { "gt": "0" } } } ], "must_not": [ { "range": { "site_reg_date": { "lt": "2020/01/26 00:00:00" } } }, { "term": { "multi": "review" } } ] } }, "size": 10, "from": 0, "sort": {"site_reg_date":"desc"} }'
+
+
+
+
+
+curl -X GET "localhost:9200/eve/_search?pretty" -H 'Content-Type: application/json' -d'
+{
+   "query" :{
+      "bool" : {             
+          "must" : [{"range": {"site_reg_date": {"gte": "2020/10/24 00:00:00","lte": "2020/10/24 23:59:59"}}}]
+      }
+    },
+	"size": 50,	
+	"from": 0,	
+	"sort": {"site_reg_date":"asc"}
+ }
+'
+
+curl -u elastic:soon06051007 -X GET "localhost:9200/eve/_search?pretty" -H 'Content-Type: application/json' -d'{"size": 50, "sort": {"site_reg_date":"desc"} }'
+
+
+
+curl -X GET "localhost:9200/eve/_search?pretty" -H 'Content-Type: application/json' -d'{ "query": { "bool": { "filter": [ { "terms": { "site_name": ["ddanzi","clien","etoland","ppomppu","todayhumor","utdae","bobae","theqoo","slrclub","ruliweb"] } }, { "range": { "site_cnt": { "gt": "0" } } } ], "must_not": [ { "range": { "site_reg_date": { "lt": "2019/10/18 00:00:00" } } }, { "term": { "multi": "review" } } ] } }, "size": 50, "from": 0, "sort": {"site_reg_date":"desc"} }'
+
+
+
+매핑
+
+curl -u elastic:soon06051007  -XGET 'localhost:9200/ozzal/_mapping?pretty'
+curl -u elastic:soon06051007  -XGET 'localhost:9200/zzarbang/_mapping?pretty'
+
+curl -XPUT 'localhost:9200/ebo?pretty' -H 'Content-Type: application/json' -d '{"mappings": {"properties": {"site_cnt": {"type": "integer"}} }}'
+
+curl -u elastic:soon06051007 -XPUT 'localhost:9200/eve?pretty' -H 'Content-Type: application/json' -d '{ "mappings": { "properties": { "site_reg_date": { "type": "date", "format": "yyyy/MM/dd HH:mm:ss" }, "subject": { "type": "text" }, "site_name": { "type": "keyword" }, "multi": { "type": "keyword" }, "site_domain": { "type": "keyword" }, "url": { "type": "text" }, "site_num": { "type": "integer" }, "uid": { "type": "keyword" }, "site_cnt": { "type": "integer" } } } }'
+
+curl -u elastic:soon06051007 -XPOST localhost:9200/eve/post/38196036?pretty -H 'Content-Type: application/json' -d '{"site_name": "tistory", "multi": "free", "site_domain": "test", "subject": "매핑테스트", "url": "test", "site_num": 38196036, "uid": "slrclub_free_38196036", "site_reg_date": "2020-10-02 09:32:16", "site_cnt": 585}'
+
+인덱스복사
+curl -XPOST "localhost:9200/_reindex?wait_for_completion=false" -H 'Content-Type: application/json' -d'{"source": {"index": "ebo"},  "dest": {"index": "ebogood"}}'
+
+
+
+특정값 삭제
+curl -s -XDELETE 'localhost:9200/ebo/_mapping' -d'{"properties" : {"site_cnt" : { "type" : "text" }}}'
+
+
+
+아이디조회
+curl -XGET 'localhost:9200/customer2/info/1?pretty'
+curl -XGET 'localhost:9200/eve/post/slrclub_free_38196036?pretty'
+
+curl -XGET 'localhost:9200/customer2/info/2?pretty&filter_path=_source'
+curl -XGET 'localhost:9200/customer2/info/2?pretty&filter_path=_source.name'
+
+수정
+curl -XPUT 'localhost:9200/customer2/info/1?pretty' -H 'Content-Type: application/json' -d '{  "name": "victolee_update" }'
+
+삭제 다큐멘트
+curl -XDELETE 'localhost:9200/customer2/info/1?pretty'
+
+삭제 인덱스
+curl -XDELETE -u elastic:soon06051007 'localhost:9200/xc_games2?pretty'
+curl -XDELETE -u elastic:soon06051007 'localhost:9200/xc_games?pretty'
+curl -XDELETE -u elastic:soon06051007 'localhost:9200/ozzalnew?pretty'
+curl -XDELETE -u elastic:soon06051007 'localhost:9200/ozzalnew?pretty'
+curl -XDELETE -u elastic:soon06051007 'localhost:9200/cboard?pretty'
+curl -XDELETE -u elastic:soon06051007 'localhost:9200/cboard_grade?pretty'
+curl -XDELETE -u elastic:soon06051007 'localhost:9200/weblogs?pretty'
+curl -XDELETE -u elastic:soon06051007 'localhost:9200/chat?pretty'
+curl -u elastic:000000 -XDELETE 'localhost:9200/.kibana'
+
+curl -XDELETE 'localhost:9200/eve?pretty'
+
+조회
+curl -XGET localhost:9200/_cat/indices?v
+curl -XGET localhost:9200/_cat/shards?v
+curl -H "Content-Type: application/json" localhost:9200/_cat/indices?v | grep -i kibana
+
+상태변경 -상태를 green으로 바꿔줌
+curl -XPUT 'localhost:9200/_settings?pretty' -d '{"index":{"number_of_replicas": 0}}' -H 'Content-Type: application/json'
+
+curl -XPOST 'localhost:9200/bank/account/_bulk?pretty&refresh' -H "Content-Type: application/json" --data-binary "@data.json"
+
+curl -XGET 'localhost:9200/_cat/indices?v'
+
+조회
+curl -XGET 'localhost:9200/bank/account/_search?q=age:39&pretty'
+
+curl -XGET 'localhost:9200/bank/account/_search?pretty' -H 'Content-Type: application/json' -d @query.json
+
+localhost:5601
+
+python3 /home/ebo/ppomppu_free_ela.py
+
+
+삭제
+
+curl -XDELETE 'localhost:9200/eve?pretty'
+
+키바나
+http://localhost:5601
+
+조건삭제
+
+curl -u elastic:soon06051007 -X POST 'localhost:9200/xc_games2/_delete_by_query' -H 'Content-Type: application/json' -d'{
+    "query" : {
+        "match" : {
+            "gubun" : "1"
+        }
+    }
+}'
+
+curl -u elastic:soon06051007 -X POST 'localhost:9200/ozzal/_delete_by_query' -H 'Content-Type: application/json' -d'{
+    "query" : {
+        "match" : {
+            "url" : "/board/view.php?num=30"
+        }
+    }
+}'
+
+curl -u elastic:soon06051007 -X POST 'localhost:9200/eve/_delete_by_query' -H 'Content-Type: application/json' -d'{
+    "query" : {
+        "match" : {
+            "site_reg_date" : "2021/12/22"
+        }
+    }
+}'
+
+
+curl -u elastic:soon06051007 -X GET "localhost:9200/eve/_search?pretty" -H 'Content-Type: application/json' -d'{
+  "query": {
+    "range": {
+      "site_reg_date": {
+         "gte": "2021/01/27 00:00:00"
+         }
+      }
+   }
+}'
+
+
+
+curl -u elastic:soon06051007 -X POST 'localhost:9200/eve/_delete_by_query?conflicts=proceed&pretty' -H 'Content-Type: application/json' -d'{
+  "query": {
+    "range": {
+      "site_reg_date": {
+         "gte": "2021/01/27 00:00:00"
+         }
+      }
+   }
+}'
+
+
+백업
+
