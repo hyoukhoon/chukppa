@@ -14,7 +14,7 @@ if(!$_SESSION['loginValue']['SEMAIL']){
   <form class="row g-3 needs-validation" method="get" action="chatroom.php" onsubmit="return sendform();">
 
     <h1 class="h3 mb-3 fw-normal">대화방 입장</h1>
-
+    <span>대화방을 선택하고 입장을 클릭하세요.</span>
     <div class="form-floating">
       <select name="channelid">
 		<option value="testroom">대화방1</option>
